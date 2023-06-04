@@ -1,0 +1,128 @@
+#navbar {
+  .mobile_menu,
+  .hamburger {
+    display: none;
+  }
+
+  .desktop_menu {
+    @include basicStyle(10vh, 0, 10rem);
+    @include flexStyles(space-between, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    backdrop-filter: blur(7px);
+    // box-shadow: 0px 1px 20px rgba(33, 149, 243, 0.105);
+
+    .logo {
+      width: 5%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .menu {
+      width: 40%;
+      @include flexStyles(space-between, center);
+
+      .link {
+        @include flexStyles(center, center);
+        padding: 0.5rem 0.2rem;
+        margin: 0 1rem;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        p {
+          margin: 0.3rem 0.5rem 0rem 0.5rem;
+          color: $secondaryDarkText;
+          transition: all 0.3s;
+        }
+
+        img {
+          width: 10%;
+        }
+
+        .downArrow {
+          color: $secondaryDarkText;
+          transition: all 0.3s;
+          margin-top: 0.3rem;
+        }
+
+        &:hover .downArrow,
+        &:hover p {
+          color: $primaryDarkText;
+        }
+      }
+
+      .link.active {
+        p {
+          color: $primaryDarkText;
+        }
+      }
+    }
+
+    .navButtons {
+      width: 25%;
+      height: 50%;
+      @include flexStyles(space-between, center);
+
+      .linkBtn {
+        width: 40%;
+        height: 80%;
+
+        button {
+          width: 100%;
+          height: 100%;
+          background: $highlight;
+
+          @include flexStyles(center, center);
+          img {
+            width: 11%;
+            margin-right: 0.5rem;
+          }
+          p {
+            width: auto;
+          }
+
+          cursor: pointer;
+        }
+      }
+
+      .linkBtn:first-child {
+        button {
+          color: $secondaryDarkText;
+          background: $buttonBG;
+
+          &:hover {
+            background: #ffffff46;
+            color: #fff;
+          }
+        }
+      }
+      .linkBtn:nth-child(2) {
+        button {
+          color: #fff;
+          &:hover {
+            background: $highlightHover;
+          }
+        }
+      }
+
+      .sun,
+      .moon {
+        cursor: pointer;
+        font-size: 1.1rem;
+        transition: 0.3s;
+
+        &:hover {
+          transform: rotate(30deg);
+        }
+      }
+
+      .sun {
+        color: rgb(247, 220, 69);
+      }
+    }
+  }
+}

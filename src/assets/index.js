@@ -1,0 +1,14 @@
+export { default as logo } from "./logo.png";
+export { default as home } from "./home.png";
+export { default as aboutus } from "./aboutus.png";
+export { default as courses } from "./courses.png";
+export { default as login } from "./login.png";
+export { default as peoples } from "./people.png";
+export { default as seminar } from "./seminar.png";
+export { default as circle } from "./circle.png";
+export { default as user } from "./user.jpg";
+export { default as student } from "./student.png";
+export { default as boy } from "./boy.png";
+export { default as girl } from "./girl.png";
+export { default as start } from "./start.png";
+export { default as end } from "./end.png";

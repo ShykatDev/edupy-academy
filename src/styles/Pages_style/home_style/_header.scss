@@ -1,0 +1,386 @@
+#header {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 10rem 0rem 10rem;
+  position: relative;
+
+  .gradient1,
+  .gradient2 {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(200px);
+  }
+
+  .gradient1 {
+    background: rgba(200, 255, 0, 0.221);
+    top: 0%;
+    left: 0;
+    animation: g1 15s ease-in-out infinite;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes g1 {
+    50% {
+      top: 5%;
+      left: 50%;
+    }
+    100% {
+      top: 25%;
+      left: 80%;
+    }
+  }
+
+  .gradient2 {
+    background: rgba(123, 0, 255, 0.413);
+    right: 0;
+    bottom: 10%;
+    animation: g2 15s ease-in-out infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+  }
+
+  @keyframes g2 {
+    50% {
+      bottom: 5%;
+      right: 50%;
+    }
+    100% {
+      bottom: 35%;
+      right: 80%;
+    }
+  }
+
+  .details {
+    width: 100%;
+    height: 55vh;
+    @include flexStyles(space-between, center);
+
+    .left-col {
+      width: 50%;
+      height: 100%;
+      @include flexStyles(center, start);
+      flex-direction: column;
+      position: relative;
+
+      h2 {
+        font-size: 2.3rem;
+        line-height: 3rem;
+      }
+
+      h1 {
+        width: 100%;
+        font-size: 5rem;
+        line-height: 6rem;
+        z-index: 1;
+      }
+
+      span {
+        font-size: 6rem;
+        background: -webkit-linear-gradient(-45deg, #51ff00, #028dff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .circle {
+        position: absolute;
+        bottom: 20%;
+        left: -7%;
+      }
+    }
+
+    .right-col {
+      width: 50%;
+      height: 100%;
+      @include flexStyles(center, end);
+      flex-direction: column;
+      position: absolute;
+      right: 10rem;
+
+      p {
+        width: 40%;
+        text-align: right;
+      }
+      .btn-group {
+        @include flexStyles(space-between, center);
+        width: 50%;
+        height: auto;
+        margin-top: 3rem;
+
+        .linkBtn {
+          width: 45%;
+          height: 100%;
+
+          button {
+            width: auto;
+            height: 50px;
+            @include flexStyles(center, center);
+
+            img {
+              width: 10%;
+            }
+
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .linkBtn:first-child {
+          button {
+            color: #fff;
+            background: $highlight;
+            &:hover {
+              background: $highlightHover;
+            }
+          }
+        }
+        .linkBtn:last-child {
+          button {
+            color: $secondaryDarkText;
+            background: $buttonBG;
+
+            &:hover {
+              background: #ffffff46;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .review-section {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5rem;
+    @include flexStyles(space-between, center);
+
+    .star-review {
+      width: auto;
+      height: 100%;
+      @include flexStyles(start, center);
+
+      h1 {
+        height: 50%;
+        padding-right: 0.5rem;
+        border-right: 1px solid $star;
+        color: $star;
+        font-size: 2rem;
+      }
+      div {
+        height: 50%;
+        .stars {
+          margin-left: 0.6rem;
+          .star {
+            padding: 0;
+            color: $star;
+            margin-right: 0.3rem;
+          }
+          .star:last-child {
+            color: #ffecb6;
+          }
+        }
+        small {
+          margin-left: 0.7rem;
+          font-weight: 500;
+          color: #ffecb6;
+        }
+      }
+    }
+
+    .text-review {
+      width: 27%;
+      height: 10vh;
+      position: relative;
+      @include flexStyles(end, end);
+
+      .bubble {
+        width: 80%;
+        height: 60px;
+        background: url("../../../assets/bubble.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include flexStyles(start, center);
+        padding-left: 0.7rem;
+      }
+
+      .user {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .banner {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+
+    .student {
+      width: 20%;
+      position: absolute;
+      left: 50%;
+      top: -66%;
+      transform: translate(-50%, 0%);
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      background: $dark3;
+      border: 1px solid $bannerBorder;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 1rem;
+      @include flexStyles(space-between, center);
+      padding: 3rem 10rem 3rem 2rem;
+      overflow: hidden;
+
+      .illustrations {
+        width: 50%;
+        height: 100%;
+        position: relative;
+
+        .boy {
+          position: absolute;
+          width: 70%;
+          left: 0;
+          bottom: 0;
+        }
+
+        .girl {
+          position: absolute;
+          width: 50%;
+          bottom: 0%;
+          left: 20%;
+        }
+      }
+      .details {
+        width: 50%;
+        height: 100%;
+        @include flexStyles(space-between, end);
+        flex-direction: column;
+
+        .banner-title {
+          padding: 0.7rem 1.3rem;
+          background: #1010104e;
+          border-radius: 0.5rem;
+          color: $gradientText1;
+        }
+        h1 {
+          font-size: 3rem;
+          color: $enrollBtnDark;
+          span {
+            color: $primaryDarkText;
+          }
+        }
+
+        .timing {
+          width: 90%;
+          @include flexStyles(space-between, center);
+          margin-top: 1rem;
+
+          .start,
+          .end {
+            @include flexStyles(space-between, center);
+
+            img {
+              margin-right: 1rem;
+            }
+            .time {
+              h2 {
+                line-height: 1.5rem;
+              }
+            }
+          }
+
+          .start {
+            .time {
+              h2 {
+                color: #16cb2b;
+              }
+            }
+          }
+          .end {
+            .time {
+              h2 {
+                color: #ff4534;
+              }
+            }
+          }
+        }
+
+        .price {
+          font-size: 1.8rem;
+          padding: 1rem 0;
+          margin: 1rem 0;
+          width: auto;
+          span {
+            color: $enrollBtnDark;
+          }
+        }
+
+        .btn-group {
+          @include flexStyles(space-between, center);
+          width: 60%;
+          height: auto;
+
+          .linkBtn {
+            width: 45%;
+            height: 100%;
+            button {
+              width: auto;
+              height: 40px;
+              @include flexStyles(center, center);
+
+              img {
+                width: 10%;
+                margin-right: 0.5rem;
+              }
+
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          .linkBtn:last-child {
+            button {
+              color: #fff;
+              background: $enrollBtn;
+              &:hover {
+                background: $enrollBtnDark;
+              }
+            }
+          }
+          .linkBtn:first-child {
+            button {
+              color: $secondaryDarkText;
+              background: $buttonBG;
+
+              &:hover {
+                background: #ffffff46;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

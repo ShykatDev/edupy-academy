@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;600;700&display=swap");
+
+//Colors---------------------------------
+$dark1: #000a11;
+$dark2: #002641;
+$dark3: #00192b;
+$darkBanner: #002F51;
+$blueGradient: #147fd67b;
+$darkNav: #06060644;
+$lightNav: #ffffff3a;
+$primaryDarkText: #f3f3f3;
+$bannerBorder:#cccccc67;
+$secondaryDarkText: #aeaeae;
+$secondaryLightText: #323232;
+$highlight: #008f45;
+$highlightHover: #01ae54;
+$gradientText1: #52ff00;
+$gradientText2: #1a94f5;
+$buttonBG: #ffffff28;
+$star: #F4BE28;
+$enrollBtn: #583CEA;
+$enrollBtnDark: #a357ff;
+
+//themes---------------------------------
+.light {
+  .primary-text {
+    color: $dark2;
+  }
+  .secondary-text {
+    color: $secondaryLightText;
+  }
+  .background {
+    background: #fff;
+  }
+  .nav-bg {
+    background: $lightNav;
+  }
+}
+
+.dark {
+  .primary-text {
+    color: $primaryDarkText;
+  }
+  .secondary-text {
+    color: $secondaryDarkText;
+  }
+  .background {
+    background: linear-gradient(#000a11, #002641);
+  }
+  .nav-bg {
+    background: $darkNav;
+  }
+}
+
+//Fonts----------------------------------
+$hind: "Hind Siliguri", sans-serif;
+
+//Same Code------------------------------
+@mixin basicStyle($height, $yPadding, $xPadding) {
+  width: 100%;
+  height: $height;
+  padding: $yPadding $xPadding;
+}
+
+@mixin flexStyles($justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $hind;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@import "./Components_style/navbar";
+@import "./Pages_style/home_style/homepage";
+@import "./Pages_style/home_style/header";

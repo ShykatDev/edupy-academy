@@ -13,7 +13,7 @@ import {
 } from "../../assets";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import JourneyCard from "../Journey/JourneyCard";
+import JourneyCard from "../Cards/JourneyCard";
 import { motion } from "framer-motion";
 
 const Journey = () => {
@@ -22,8 +22,8 @@ const Journey = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 2000,
+    speed: 1000,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };

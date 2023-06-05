@@ -5,6 +5,7 @@ import {
   circle,
   end,
   girl,
+  money,
   peoples,
   seminar,
   start,
@@ -12,6 +13,7 @@ import {
   user,
 } from "../../assets";
 import { BsStarFill } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
@@ -19,27 +21,29 @@ const Header = () => {
       <div className="gradient1"></div>
       <div className="gradient2"></div>
       <div className="details">
-        <div className="left-col">
+        <motion.div
+          whileInView={{ x: [-50, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="left-col"
+        >
           <h2 className="primary-text">শিখবেন আপনি সহজ ভাবে</h2>
           <h1 className="primary-text">
             শেখাবো আমরা <br />
             <span> গল্পবলে</span>
           </h1>
           <img src={circle} alt="" className="circle" />
-        </div>
-        <div className="right-col">
+        </motion.div>
+        <motion.div
+          whileInView={{ x: [50, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.7, delay: 1 }}
+          className="right-col"
+        >
           <p className="secondary-text">
             অনলাইন শিক্ষার জন্য একটি ওয়েবসাইট যা পাঠকের সাথে সংযোগ স্থাপন করে
             এবং আধুনিক শিক্ষা সুবিধা সরবরাহ করে।
           </p>
 
           <div className="btn-group">
-            {/* <Link to="/batch" className="linkBtn">
-              <button>
-                <img src={peoples} alt="" className="ico" />
-                <p>ব্যাচ 01 </p>
-              </button>
-            </Link> */}
             <Link to="/batch" className="linkBtn">
               <button>
                 <img src={peoples} alt="" className="ico" />
@@ -54,10 +58,14 @@ const Header = () => {
               </button>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="review-section">
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.7, delay: 1.3 }}
+        className="review-section"
+      >
         <div className="star-review">
           <h1>4.7</h1>
           <div>
@@ -81,11 +89,21 @@ const Header = () => {
             <img src={user} alt="" />
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="banner">
-        <img src={student} alt="" className="student" />
-        <div className="content">
+        <motion.img
+          whileInView={{ y: [50, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.7 }}
+          src={student}
+          alt=""
+          className="student"
+        />
+        <motion.div
+          whileInView={{ y: [50, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.7, delay: 2 }}
+          className="content"
+        >
           <div className="illustrations">
             <img src={boy} alt="" className="boy" />
             <img src={girl} alt="" className="girl" />
@@ -122,6 +140,7 @@ const Header = () => {
                 </button>
               </Link>
               <Link to="/batch" className="linkBtn">
+                <img src={money} alt="" className="cash" />
                 <button>
                   <img src={peoples} alt="" className="ico" />
                   <p>এখনি শুরু করো</p>
@@ -129,7 +148,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

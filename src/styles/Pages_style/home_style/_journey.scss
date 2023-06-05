@@ -1,0 +1,169 @@
+#journey {
+  width: 100%;
+  height: auto;
+  padding: 0 10rem 5rem 10rem;
+  @include flexStyles(space-between, center);
+
+  .left-slider {
+    opacity: 0;
+    width: 45%;
+    height: 45vh;
+
+    #journeyCard {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1rem;
+
+      .card-item {
+        border-radius: 0.5rem;
+        height: 21.5vh;
+        @include flexStyles(center, center);
+        flex-direction: column;
+        background: $darkNav;
+
+        img {
+          width: 20%;
+          margin-bottom: 1rem;
+        }
+      }
+      .card-item:nth-child(1) {
+        width: 11rem;
+        background: $dark3;
+
+        h3 {
+          color: $gradientText2;
+        }
+        span {
+          padding: 0.5rem 0.8rem;
+          background: $primaryDarkText;
+          border-radius: 50%;
+          margin-bottom: 1rem;
+        }
+      }
+      .card-item:nth-child(3) {
+        width: 3rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .card-item:nth-child(2) {
+        width: 22rem;
+        grid-column: 2/4;
+        background: $blueGradient;
+
+        small {
+          width: 70%;
+          text-align: center;
+          font-size: 1rem;
+          color: $primaryDarkText;
+        }
+        img {
+          width: 12%;
+        }
+      }
+      .card-item:nth-child(5) {
+        width: 100%;
+        grid-column: 2/4;
+        background: $blueGradient;
+
+        small {
+          width: 70%;
+          text-align: center;
+          font-size: 1rem;
+          color: $primaryDarkText;
+        }
+        img {
+          width: 12%;
+        }
+      }
+      .card-item:nth-child(4) {
+        width: 11rem;
+        background: $dark3;
+
+        h3 {
+          color: $gradientText2;
+        }
+        span {
+          padding: 0.5rem 0.8rem;
+          background: $primaryDarkText;
+          border-radius: 50%;
+          margin-bottom: 1rem;
+        }
+      }
+      .card-item:nth-child(6) {
+        width: 3rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+  .right-details {
+    opacity: 0;
+    width: 45%;
+    height: 100%;
+
+    .path {
+      width: 10%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      width: 80%;
+      line-height: 3.5rem;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 1rem;
+    }
+    .btn-group {
+      @include flexStyles(space-between, center);
+      width: 70%;
+      height: auto;
+      margin-top: 2.5rem;
+
+      .linkBtn {
+        width: 45%;
+        height: 100%;
+
+        button {
+          width: 100%;
+          height: 50px;
+          @include flexStyles(center, center);
+
+          img {
+            width: 10%;
+          }
+
+          p {
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            margin-top: 0;
+          }
+        }
+      }
+
+      .linkBtn:first-child {
+        button {
+          color: #fff;
+          background: $highlight;
+          &:hover {
+            background: $highlightHover;
+          }
+        }
+      }
+      .linkBtn:last-child {
+        button {
+          color: $secondaryDarkText;
+          background: $buttonBG;
+
+          &:hover {
+            background: #ffffff46;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

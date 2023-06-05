@@ -1,6 +1,23 @@
 import React, { useState } from "react";
-import { aboutus, courses, home, logo, login, peoples } from "../../assets";
-import { BsFillCaretDownFill, BsMoon, BsSun } from "react-icons/bs";
+import {
+  aboutus,
+  courses,
+  home,
+  logo,
+  login,
+  peoples,
+  under10,
+  all,
+  career,
+  eng,
+  ssc,
+} from "../../assets";
+import {
+  BsFillCaretDownFill,
+  BsFillCaretRightFill,
+  BsMoon,
+  BsSun,
+} from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NavLink, Link } from "react-router-dom";
 
@@ -22,14 +39,64 @@ const Navbar = () => {
             <img src={home} alt="" className="ico" />
             <p>হোম</p>
           </NavLink>
+
           <NavLink to="/about-us" className="link">
             <img src={aboutus} alt="" className="ico" />
             <p>আমাদের বিস্তারিত</p>
           </NavLink>
-          <NavLink to="/courses" className="link">
+
+          <NavLink to="/about-us" className="link d-link">
             <img src={courses} alt="" className="ico" />
             <p>কোর্স সমূহ</p>
             <BsFillCaretDownFill className="downArrow" />
+            <ul className="nav-bg">
+              <li>
+                {" "}
+                <Link className="menuLink secondary-text" to="/about-us">
+                  <img src={under10} alt="" />
+                  <p>অনূর্ধ্ব 10</p>
+                  <BsFillCaretRightFill className="rightArrow" />
+                </Link>
+              </li>{" "}
+              <li>
+                <Link className="menuLink secondary-text" to="/storie">
+                  <img src={ssc} alt="" />
+
+                  <p>এসএসসি/এইচএসসি</p>
+                  <BsFillCaretRightFill className="rightArrow" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="menuLink secondary-text"
+                  to="/impact-initiatives"
+                >
+                  <img src={eng} alt="" />
+                  <p>ইঞ্জিনিয়ারিং</p>
+                  <BsFillCaretRightFill className="rightArrow" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="menuLink secondary-text"
+                  to="/research-innovation"
+                >
+                  <img src={career} alt="" />
+                  <p>ক্যারিয়ার</p>
+                  <BsFillCaretRightFill className="rightArrow" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="menuLink secondary-text"
+                  to="/research-innovation"
+                >
+                  <img src={all} alt="" />
+                  <p className="all-course">সকল কোর্স</p>
+                  <BsFillCaretRightFill className="rightArrow" />
+                </Link>
+              </li>
+            </ul>
           </NavLink>
         </ul>
         <div className="navButtons">

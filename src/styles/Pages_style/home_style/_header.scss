@@ -14,7 +14,7 @@
   }
 
   .gradient1 {
-    background: rgba(200, 255, 0, 0.221);
+    background: rgba(0, 255, 229, 0.221);
     top: 0%;
     left: 0;
     animation: g1 15s ease-in-out infinite;
@@ -59,6 +59,7 @@
     @include flexStyles(space-between, center);
 
     .left-col {
+      opacity: 0;
       width: 50%;
       height: 100%;
       @include flexStyles(center, start);
@@ -92,6 +93,7 @@
     }
 
     .right-col {
+      opacity: 0;
       width: 50%;
       height: 100%;
       @include flexStyles(center, end);
@@ -114,7 +116,7 @@
           height: 100%;
 
           button {
-            width: auto;
+            width: 100%;
             height: 50px;
             @include flexStyles(center, center);
 
@@ -124,6 +126,7 @@
 
             p {
               font-size: 1rem;
+              margin-left: 0.5rem;
             }
           }
         }
@@ -153,6 +156,7 @@
   }
 
   .review-section {
+    opacity: 0;
     width: 100%;
     height: 10vh;
     margin-bottom: 5rem;
@@ -230,14 +234,15 @@
     position: relative;
 
     .student {
+      opacity: 0;
       width: 20%;
       position: absolute;
-      left: 50%;
+      left: 38%;
       top: -66%;
-      transform: translate(-50%, 0%);
     }
 
     .content {
+      opacity: 0;
       width: 100%;
       height: 100%;
       background: $dark3;
@@ -248,7 +253,7 @@
       left: 0;
       border-radius: 1rem;
       @include flexStyles(space-between, center);
-      padding: 3rem 10rem 3rem 2rem;
+      padding: 2rem 10rem 2rem 2rem;
       overflow: hidden;
 
       .illustrations {
@@ -277,16 +282,16 @@
         flex-direction: column;
 
         .banner-title {
-          padding: 0.7rem 1.3rem;
-          background: #1010104e;
+          padding: 0.7rem 1.4rem;
+          background: #6060604e;
           border-radius: 0.5rem;
           color: $gradientText1;
         }
         h1 {
           font-size: 3rem;
-          color: $enrollBtnDark;
+          color: $primaryDarkText;
           span {
-            color: $primaryDarkText;
+            color: $enrollBtnDark;
           }
         }
 
@@ -328,7 +333,7 @@
         .price {
           font-size: 1.8rem;
           padding: 1rem 0;
-          margin: 1rem 0;
+          margin: 1rem 5rem 0rem 0;
           width: auto;
           span {
             color: $enrollBtnDark;
@@ -343,6 +348,7 @@
           .linkBtn {
             width: 45%;
             height: 100%;
+            position: relative;
             button {
               width: auto;
               height: 40px;
@@ -356,6 +362,12 @@
               p {
                 font-size: 1rem;
               }
+            }
+            .cash {
+              width: 40%;
+              right: 0;
+              bottom: 100%;
+              position: absolute;
             }
           }
 

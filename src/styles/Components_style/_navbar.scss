@@ -25,10 +25,11 @@
     .menu {
       width: 40%;
       @include flexStyles(space-between, center);
+      position: relative;
 
       .link {
         @include flexStyles(center, center);
-        padding: 0.5rem 0.2rem;
+        padding: 1.6rem 0.2rem;
         margin: 0 1rem;
         transition: all 0.3s;
         cursor: pointer;
@@ -44,7 +45,7 @@
         }
 
         .downArrow {
-          color: $secondaryDarkText;
+          color: $gradientText2;
           transition: all 0.3s;
           margin-top: 0.3rem;
         }
@@ -58,6 +59,50 @@
       .link.active {
         p {
           color: $primaryDarkText;
+        }
+      }
+
+      .d-link {
+        position: relative;
+        ul {
+          width: auto;
+          height: auto;
+          display: none;
+          position: absolute;
+          top: 100%;
+          padding-top: 1rem;
+          border-bottom-left-radius: 0.3rem;
+          border-bottom-right-radius: 0.3rem;
+
+          li {
+            list-style: none;
+            padding: 0.5rem 1rem;
+
+            .menuLink {
+              @include flexStyles(space-between, center);
+              p {
+                width: 10rem;
+              }
+              .rightArrow {
+                color: $gradientText2;
+              }
+              .all-course {
+                color: $gradientText2;
+              }
+            }
+
+            &:hover {
+              p {
+                color: $gradientText2;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          ul {
+            display: block;
+          }
         }
       }
     }

@@ -12,3 +12,18 @@ export { default as boy } from "./boy.png";
 export { default as girl } from "./girl.png";
 export { default as start } from "./start.png";
 export { default as end } from "./end.png";
+export { default as money } from "./cash.png";
+export { default as path } from "./destination.png";
+export { default as under10 } from "./under10.png";
+export { default as ssc } from "./college.png";
+export { default as eng } from "./code.png";
+export { default as career } from "./career-choice.png";
+export { default as all } from "./all.png";
+
+export { default as demo } from "./demo.png";
+export { default as basic } from "./basic.png";
+export { default as advance } from "./advance.png";
+export { default as exam } from "./exam.png";
+export { default as lifeTime } from "./lifeTime.png";
+export { default as job } from "./job.png";
+export { default as work } from "./work.png";

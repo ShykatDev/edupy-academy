@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;600;700&display=swap");
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 
 //Colors---------------------------------
 $dark1: #000a11;
 $dark2: #002641;
-$dark3: #00192b;
-$darkBanner: #002F51;
+$dark3: #001523;
+$darkBanner: #002f51;
 $blueGradient: #147fd67b;
 $darkNav: #06060644;
 $lightNav: #ffffff3a;
 $primaryDarkText: #f3f3f3;
-$bannerBorder:#cccccc67;
+$bannerBorder: #cccccc67;
 $secondaryDarkText: #aeaeae;
 $secondaryLightText: #323232;
 $highlight: #008f45;
@@ -17,8 +19,8 @@ $highlightHover: #01ae54;
 $gradientText1: #52ff00;
 $gradientText2: #1a94f5;
 $buttonBG: #ffffff28;
-$star: #F4BE28;
-$enrollBtn: #583CEA;
+$star: #f4be28;
+$enrollBtn: #583cea;
 $enrollBtnDark: #a357ff;
 
 //themes---------------------------------
@@ -35,6 +37,9 @@ $enrollBtnDark: #a357ff;
   .nav-bg {
     background: $lightNav;
   }
+  .sec-background {
+    background: #f8f8f8;
+  }
 }
 
 .dark {
@@ -46,6 +51,9 @@ $enrollBtnDark: #a357ff;
   }
   .background {
     background: linear-gradient(#000a11, #002641);
+  }
+  .sec-background {
+    background: #002641;
   }
   .nav-bg {
     background: $darkNav;
@@ -75,8 +83,8 @@ $hind: "Hind Siliguri", sans-serif;
   font-family: $hind;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
 a {
@@ -94,3 +102,4 @@ button {
 @import "./Components_style/navbar";
 @import "./Pages_style/home_style/homepage";
 @import "./Pages_style/home_style/header";
+@import "./Pages_style/home_style/journey";

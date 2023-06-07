@@ -29,7 +29,7 @@ const Header = () => {
           <h2 className="primary-text">শিখবেন আপনি সহজ ভাবে</h2>
           <h1 className="primary-text">
             শেখাবো আমরা <br />
-            <span> গল্পবলে</span>
+            <span className="textGradient"> গল্পবলে</span>
           </h1>
           <img src={circle} alt="" className="circle" />
         </motion.div>
@@ -101,7 +101,7 @@ const Header = () => {
         />
         <motion.div
           whileInView={{ y: [50, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.7, delay: 2 }}
+          transition={{ duration: 0.7 }}
           className="content"
         >
           <div className="illustrations">
@@ -129,7 +129,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <h2 className="price secondary-text">
+            <h2 className="price primary-text">
               কোর্স ফি <span>6500</span> টাকা মাত্র
             </h2>
             <div className="btn-group">

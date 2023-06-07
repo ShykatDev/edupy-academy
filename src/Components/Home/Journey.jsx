@@ -92,7 +92,9 @@ const Journey = () => {
         className="right-details"
       >
         <img src={path} alt="" className="path" />
-        <h1 className="primary-text">এক নজরে আমাদের সাথে তোমার জার্নি</h1>
+        <h1 className="primary-text">
+          এক নজরে আমাদের সাথে <span className="textGradient">তোমার জার্নি</span>
+        </h1>
         <p className="secondary-text">
           যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যাও তোমার পছন্দের সেকশনে
         </p>

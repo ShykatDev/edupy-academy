@@ -12,7 +12,6 @@
     left: 0;
     z-index: 99;
     backdrop-filter: blur(7px);
-    // box-shadow: 0px 1px 20px rgba(33, 149, 243, 0.105);
 
     .logo {
       width: 5%;
@@ -64,6 +63,7 @@
 
       .d-link {
         position: relative;
+
         ul {
           width: auto;
           height: auto;
@@ -73,6 +73,7 @@
           padding-top: 1rem;
           border-bottom-left-radius: 0.3rem;
           border-bottom-right-radius: 0.3rem;
+          // box-shadow: 0px 1px 20px rgba(0, 15, 27, 0.461);
 
           li {
             list-style: none;
@@ -102,6 +103,7 @@
         &:hover {
           ul {
             display: block;
+            backdrop-filter: blur(7px);
           }
         }
       }

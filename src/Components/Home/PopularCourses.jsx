@@ -21,21 +21,24 @@ const PopularCourses = () => {
 
   return (
     <div id="popularCourses" className="sec-background">
-        
       {popup && <CoursePopup setPopup={setPopup} />}
 
-      <div className="back">
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.7, delay: 1.2 }}
+        className="back"
+      >
         <div className="grad1"></div>
         <div className="grad2"></div>
         <div className="grad3"></div>
-      </div>
+      </motion.div>
       <div className="front">
         <motion.h1
           whileInView={{ y: [-50, 0], opacity: [0, 1] }}
           transition={{ duration: 0.7 }}
           className="primary-text"
         >
-          পপুলার কোর্স সমূহ
+          পপুলার <span className="textGradient"> কোর্স </span>সমূহ
         </motion.h1>
         <motion.p
           whileInView={{ y: [-20, 0], opacity: [0, 1] }}

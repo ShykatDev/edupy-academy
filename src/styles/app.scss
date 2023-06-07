@@ -4,9 +4,9 @@
 
 //Colors---------------------------------
 $dark1: #000a11;
-$dark2: #002641;
+$dark2: #001422;
 $dark3: #001523;
-$darkBanner: #002f51;
+$darkBanner: #002c49c3;
 $blueGradient: #147fd67b;
 $darkNav: #06060644;
 $lightNav: #ffffff3a;
@@ -40,6 +40,11 @@ $enrollBtnDark: #a357ff;
   .sec-background {
     background: #f8f8f8;
   }
+  .textGradient {
+    background: -webkit-linear-gradient(-45deg, #47e100, #0365b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .dark {
@@ -50,13 +55,18 @@ $enrollBtnDark: #a357ff;
     color: $secondaryDarkText;
   }
   .background {
-    background: linear-gradient(#000a11, #002641);
+    background: linear-gradient(#000a11, #001422);
   }
   .sec-background {
-    background: #002641;
+    background: #001422;
   }
   .nav-bg {
     background: $darkNav;
+  }
+  .textGradient {
+    background: -webkit-linear-gradient(-45deg, #51ff00, #028dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -104,3 +114,5 @@ button {
 @import "./Pages_style/home_style/header";
 @import "./Pages_style/home_style/journey";
 @import "./Pages_style/home_style/popularCourses";
+@import "./Pages_style/home_style/category";
+@import "./Pages_style/home_style/support";

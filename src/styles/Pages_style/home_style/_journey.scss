@@ -1,7 +1,7 @@
 #journey {
   width: 100%;
   height: auto;
-  padding: 0 10rem 5rem 10rem;
+  padding: 5rem 10rem 5rem 10rem;
   @include flexStyles(space-between, center);
 
   .left-slider {
@@ -22,7 +22,7 @@
         height: 21.5vh;
         @include flexStyles(center, center);
         flex-direction: column;
-        background: $darkNav;
+        background: #005ba522;
 
         img {
           width: 20%;
@@ -31,7 +31,7 @@
       }
       .card-item:nth-child(1) {
         width: 11rem;
-        background: $dark3;
+        background: $darkBanner;
 
         h3 {
           color: $gradientText2;
@@ -80,7 +80,7 @@
       }
       .card-item:nth-child(4) {
         width: 11rem;
-        background: $dark3;
+        background: $darkBanner;
 
         h3 {
           color: $gradientText2;

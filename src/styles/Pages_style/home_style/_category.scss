@@ -1,0 +1,89 @@
+#courseCategory {
+  @include basicStyle(100vh, 5rem, 10rem);
+  @include flexStyles(space-between, center);
+  position: relative;
+
+  .left-col {
+    width: 40%;
+    height: 100%;
+    @include flexStyles(start, start);
+    flex-direction: column;
+    position: relative;
+    padding-top: 5rem;
+
+    .gradient1 {
+      width: 35rem;
+      height: 35rem;
+      border-radius: 50%;
+      position: absolute;
+      filter: blur(200px);
+      background: rgba(0, 255, 229, 0.221);
+      bottom: 0%;
+      right: -60%;
+    }
+
+    img {
+      width: 100%;
+      position: absolute;
+      bottom: -15%;
+      left: -10%;
+      opacity: 0;
+    }
+    h1 {
+      font-size: 3rem;
+      width: 90%;
+      opacity: 0;
+    }
+    p {
+      width: 60%;
+      opacity: 0;
+    }
+  }
+
+  .right-col {
+    width: 53%;
+    height: 100%;
+    position: relative;
+    @include flexStyles(center, center);
+
+    .category-grid {
+      width: 100%;
+      height: 50vh;
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1rem;
+
+      .category-item {
+        width: 100%;
+        height: 100%;
+        background: #002c4989;
+        transition: all 0.3s;
+        @include flexStyles(center, center);
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        border: 1px solid $blueGradient;
+
+        img {
+          width: 18%;
+          margin-bottom: 1.5rem;
+        }
+
+        h2,
+        small {
+          text-align: center;
+        }
+        h2 {
+          margin-bottom: 0.5rem;
+          color: $gradientText2;
+        }
+
+        &:hover {
+          background: #003a60d4;
+        }
+      }
+    }
+  }
+}

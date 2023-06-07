@@ -37,3 +37,12 @@ export { default as checked } from "./checked.png";
 
 export { default as play } from "./play.png";
 
+export { default as binbag } from "./binbag.png";
+export { default as development } from "./development.png";
+export { default as creativity } from "./cretivity.png";
+export { default as kids } from "./kids.png";
+export { default as extra } from "./extra.png";
+export { default as self } from "./abilities.png";
+
+export { default as laptop } from "./laptop.png";
+

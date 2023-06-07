@@ -45,4 +45,5 @@ export { default as extra } from "./extra.png";
 export { default as self } from "./abilities.png";
 
 export { default as laptop } from "./laptop.png";
+export { default as boss } from "./boss.png";
 

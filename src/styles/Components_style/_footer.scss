@@ -1,0 +1,94 @@
+#footer {
+  @include basicStyle(60vh, 0rem, 0rem);
+
+  .content {
+    @include basicStyle(100%, 0rem, 0rem);
+    @include flexStyles(space-between, center);
+    flex-direction: column;
+
+    .top {
+      width: 100%;
+      height: 70%;
+      padding: 5rem 10rem;
+      @include flexStyles(space-between, center);
+
+      .logo-area {
+        width: 23%;
+        height: 100%;
+        @include flexStyles(start, start);
+        flex-direction: column;
+
+        img {
+          width: 25%;
+        }
+
+        .socials {
+          width: 50%;
+          height: auto;
+          @include flexStyles(space-between, center);
+          margin-top: 2rem;
+
+          .ico {
+            transition: 0.2s;
+
+            &:hover {
+              color: $gradientText2;
+            }
+          }
+        }
+      }
+
+      .company,
+      .social-media,
+      .others {
+        width: 20%;
+        height: 100%;
+        @include flexStyles(start, start);
+        flex-direction: column;
+
+        .title {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          color: $gradientText2;
+        }
+
+        .footer-link {
+          margin: 0.3rem;
+          transition: all 0.2s;
+
+          &:hover {
+            color: $gradientText2;
+          }
+        }
+      }
+      .social-media {
+        span {
+          width: 100%;
+          @include flexStyles(start, center);
+          margin: 0.3rem;
+
+          img {
+            width: 7%;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .middle {
+      width: 100%;
+      height: 15%;
+      padding: 0 10rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      height: 15%;
+      @include flexStyles(center, center);
+    }
+  }
+}

@@ -25,40 +25,46 @@ const CoursePopup = ({ setPopup }) => {
 
         <div className="details">
           <div className="left-col">
-            <h2>Course Name</h2>
-            <small>Mentor Name</small>
-            <p>Description</p>
+            <h2 className="primary-text">Python Tutorial For Beginners</h2>
+            <small className="star">Code with Harry</small>
+            <p>
+              Python is a computer programming language often used to build
+              websites and software, automate tasks, and conduct data analysis.
+              Python is a general-purpose language, meaning it can be used to
+              create a variety of different programs and isn't specialized for
+              any specific problems.
+            </p>
           </div>
           <div className="right-col">
             <ul>
-              <li>
+              <li className="primary-text">
                 <img src="" alt="" />
-                <p>Level</p>
+                <p>Level: </p>
                 <p>Beginner</p>
               </li>
-              <li>
+              <li className="primary-text">
                 <img src="" alt="" />
                 <p> 16 Lessons (2 hour 36 min)</p>
               </li>
-              <li>
+              <li className="primary-text">
                 <img src="" alt="" />
                 <p>89 Students Enrolled</p>
               </li>
-              <li>
+              <li className="primary-text">
                 <img src="" alt="" />
 
                 <p>90% Posetive Reviews</p>
               </li>
-              <li>
+              <li className="primary-text">
                 <img src="" alt="" />
                 <p>Audio Bangla</p>
               </li>
-              <li>
+              <li className="primary-text">
                 <img src="" alt="" />
                 <p>Online and at your own pace</p>
               </li>
             </ul>
-            <button>
+            <button className="hbtn">
               <Link to="/">এনরল করো</Link>
             </button>
           </div>

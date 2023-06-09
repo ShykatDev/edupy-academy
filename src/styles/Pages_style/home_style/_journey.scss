@@ -1,7 +1,7 @@
 #journey {
   width: 100%;
   height: auto;
-  padding: 5rem 10rem 5rem 10rem;
+  padding: 10rem;
   @include flexStyles(space-between, center);
 
   .left-slider {
@@ -22,7 +22,6 @@
         height: 21.5vh;
         @include flexStyles(center, center);
         flex-direction: column;
-        background: #005ba522;
 
         img {
           width: 20%;
@@ -31,14 +30,12 @@
       }
       .card-item:nth-child(1) {
         width: 11rem;
-        background: $darkBanner;
 
         h3 {
           color: $gradientText2;
         }
         span {
           padding: 0.5rem 0.8rem;
-          background: $primaryDarkText;
           border-radius: 50%;
           margin-bottom: 1rem;
         }
@@ -51,13 +48,11 @@
       .card-item:nth-child(2) {
         width: 22rem;
         grid-column: 2/4;
-        background: $blueGradient;
 
         small {
           width: 70%;
           text-align: center;
           font-size: 1rem;
-          color: $primaryDarkText;
         }
         img {
           width: 12%;
@@ -66,13 +61,11 @@
       .card-item:nth-child(5) {
         width: 100%;
         grid-column: 2/4;
-        background: $blueGradient;
 
         small {
           width: 70%;
           text-align: center;
           font-size: 1rem;
-          color: $primaryDarkText;
         }
         img {
           width: 12%;
@@ -80,14 +73,12 @@
       }
       .card-item:nth-child(4) {
         width: 11rem;
-        background: $darkBanner;
 
         h3 {
           color: $gradientText2;
         }
         span {
           padding: 0.5rem 0.8rem;
-          background: $primaryDarkText;
           border-radius: 50%;
           margin-bottom: 1rem;
         }
@@ -147,7 +138,6 @@
       .linkBtn:first-child {
         button {
           color: #fff;
-          background: $highlight;
           &:hover {
             background: $highlightHover;
           }
@@ -155,11 +145,8 @@
       }
       .linkBtn:last-child {
         button {
-          color: $secondaryDarkText;
-          background: $buttonBG;
-
           &:hover {
-            background: #ffffff46;
+            background: #bcbcbc52;
             color: #fff;
           }
         }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import CourseCard from "../Cards/CourseCard";
-import { course1, course2, course3, course4 } from "../../assets";
+import { course1, course2, course3, course4, course5 } from "../../assets";
 import { motion } from "framer-motion";
 import CoursePopup from "./CoursePopup";
 
@@ -105,7 +105,7 @@ const PopularCourses = () => {
             <div>
               <CourseCard
                 setPopup={setPopup}
-                banner={course2}
+                banner={course5}
                 title="ক্রিয়াটিভ video editing"
                 mentor="Tanmay Dash"
                 price="700"

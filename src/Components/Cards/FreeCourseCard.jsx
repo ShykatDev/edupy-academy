@@ -2,19 +2,10 @@ import React, { useState } from "react";
 import { aboutus, cart, checked, play } from "../../assets";
 import { Link } from "react-router-dom";
 
-const CourseCard = ({
-  banner,
-  title,
-  mentor,
-  price,
-  desc,
-  nos,
-  bestSeller,
-  setPopup,
-}) => {
+const FreeCourseCard = ({ banner, title, mentor, desc, nos, bestSeller }) => {
   return (
     <div>
-      <div id="courseCard" className="p-course">
+      <div id="freeCourseCard" className="p-course">
         <div className="courseBanner">
           {bestSeller && (
             <div className="bestSeller">
@@ -22,12 +13,11 @@ const CourseCard = ({
             </div>
           )}
           <img src={banner} alt="" />
-          <div className="popupbtn" onClick={() => setPopup(true)}>
-            <img src={play} alt="" />
-          </div>
         </div>
         <div className="course-details">
-          <h2 className="primary-text">{title}</h2>
+          <Link to="/">
+            <h2 className="primary-text">{title}</h2>
+          </Link>
           <small>
             A course by <span className="star">{mentor}</span>
           </small>
@@ -39,7 +29,7 @@ const CourseCard = ({
           <div className="btn-group">
             <div className="left-btn sbtn">
               <img src={checked} alt="" />
-              <p className="primary-text">{price} tk</p>
+              <p className="primary-text">Free</p>
             </div>
             <div className="right-btn hbtn">
               <Link to="/">
@@ -54,4 +44,4 @@ const CourseCard = ({
   );
 };
 
-export default CourseCard;
+export default FreeCourseCard;

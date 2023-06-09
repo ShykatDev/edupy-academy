@@ -1,153 +1,103 @@
-#popularCourses {
-  width: 100%;
-  height: 100vh;
+#seminar {
+  @include basicStyle(170vh, 5rem, 10rem);
+  @include flexStyles(space-between, center);
+  flex-direction: column;
   position: relative;
 
-  #coursePopup {
-    width: 100vw;
-    height: 100vh;
-    background: rgba(5, 5, 5, 0.436);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    z-index: 10;
-    top: 0%;
-    left: 0%;
+  .gradient1 {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(200px);
+    background: rgba(255, 0, 247, 0.221);
+    top: 30%;
+    right: 0;
+  }
+
+  .upcomingSeminar {
+    opacity: 0;
+    width: 100%;
+    height: 55vh;
+    @include flexStyles(space-between, center);
+    border: 1px solid $bannerBorder;
+    padding: 0 3rem;
     border-radius: 0.5rem;
-    box-shadow: 3px 7px 21px rgba(0, 0, 0, 0.34);
-    @include flexStyles(center, center);
 
-    .content {
-      width: 40%;
+    .banner-col {
+      width: 50%;
       height: 80%;
-      border: 1px solid $blueGradient;
-      border-radius: 0.5rem;
-      padding: 3rem 1.5rem 1.5rem 1.5rem;
-      position: relative;
-
-      .closePopup {
-        position: absolute;
-        right: 1.3rem;
-        top: 1rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-      }
-
-      iframe {
+      img {
         width: 100%;
-        height: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.3rem;
+      }
+    }
+    .info-col {
+      width: 45%;
+      height: 80%;
+      @include flexStyles(center, start);
+      flex-direction: column;
+      small {
+        padding: 0.2rem 1rem;
+        background: $lightNav;
+        margin-bottom: 2rem;
         border-radius: 0.3rem;
       }
 
-      .bestSeller {
-        padding: 0.1rem 0.5rem;
-        background: $star;
-        border-radius: 0.2rem;
-      }
-
-      .details {
-        width: 100%;
+      .linkBtn {
+        width: 25%;
         height: auto;
-        @include flexStyles(space-between, start);
-        margin-top: 1rem;
-
-        .left-col {
-          width: 58%;
-          height: 28vh;
+        margin-top: 2rem;
+        button {
+          width: 100%;
+          height: 40px;
+          @include flexStyles(center, center);
+          background: $highlight;
           color: white;
-
-          
-          p{
-            color: $secondaryDarkText;
-            font-size: 0.8rem;
-          }
-        }
-        .right-col {
-          width: 38%;
-          height: 28vh;
-          ul {
-            li {
-              list-style: none;
-              @include flexStyles(start, start);
-              margin-bottom: 0.5rem;
-            }
+          transition: 0.3s;
+          img {
+            width: 10%;
+            margin-right: 0.5rem;
           }
 
-          button {
-            width: 100px;
-            height: 40px;
-            transition: 0.3s;
-            a {
-              color: white;
-            }
-
-            &:hover {
-              background: $highlightHover;
-            }
+          &:hover {
+            background: $highlightHover;
           }
         }
       }
     }
   }
 
-  .back {
+  .freeCourses {
     width: 100%;
-    height: 50%;
+    height: 90vh;
     position: relative;
-    overflow: hidden;
-    opacity: 0;
 
-    .grad1,
-    .grad2,
-    .grad3 {
-      width: 30rem;
-      height: 30rem;
-      border-radius: 50%;
-      position: absolute;
-      filter: blur(200px);
+    .top-row {
+      margin-top: 5rem;
+      width: 100%;
+      height: auto;
+
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+        opacity: 0;
+      }
+      p {
+        text-align: center;
+        opacity: 0;
+        margin-top: 1rem;
+      }
     }
 
-    .grad1 {
-      top: 0;
-      left: 0;
-      background: rgba(0, 108, 126, 0.349);
-    }
-    .grad2 {
-      top: 10%;
-      left: 40%;
-      background: rgba(9, 255, 0, 0.329);
-    }
-    .grad3 {
-      bottom: 0;
-      right: 0;
-      background: rgba(170, 0, 255, 0.418);
-    }
-  }
-
-  .front {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    padding: 5rem 10rem;
-    top: 0;
-    z-index: 2;
-
-    h1 {
-      opacity: 0;
-      text-align: center;
-      font-size: 3rem;
+    .bottom-row {
+      width: 100%;
+      height: auto;
       margin-top: 3rem;
-    }
-    .sec-subTitle {
-      opacity: 0;
-      text-align: center;
-      margin: 1rem 0 3rem 0;
-    }
 
-    .slider {
-      opacity: 0;
-      position: relative;
-
-      #courseCard {
+      #freeCourseCard {
         width: 95%;
         height: 55vh;
         overflow: hidden;

@@ -6,6 +6,7 @@
 $dark1: #000a11;
 $dark2: #001422;
 $dark3: #001523;
+$dark4: #001c2fb1;
 $darkBanner: #002c49c3;
 $blueGradient: #147fd67b;
 $darkNav: #06060644;
@@ -19,7 +20,7 @@ $highlightHover: #01ae54;
 $gradientText1: #52ff00;
 $gradientText2: #1a94f5;
 $buttonBG: #ffffff28;
-$star: #f4be28;
+$star: #ffbb00;
 $enrollBtn: #583cea;
 $enrollBtnDark: #a357ff;
 
@@ -28,8 +29,15 @@ $enrollBtnDark: #a357ff;
   .primary-text {
     color: $dark2;
   }
+  .primary-bg {
+    background: $dark2;
+    color: #fff;
+  }
   .secondary-text {
     color: $secondaryLightText;
+  }
+  .s-bg {
+    background: #ccccccb7;
   }
   .background {
     background: #fff;
@@ -45,14 +53,56 @@ $enrollBtnDark: #a357ff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .footer-bg {
+    background: #ffffff;
+  }
+
+  .hbtn {
+    background: #00bd29;
+  }
+
+  .sbtn {
+    background: #1e1e1e28;
+  }
+  .bannerBg {
+    background: #fdfef9;
+  }
+  .jc1 {
+    background: #ffffff;
+  }
+  .jc2 {
+    background: #14d6721b;
+  }
+  .jc3 {
+    background: #00a5760a;
+  }
+
+  .p-course {
+    background: #f0f0f076;
+    border: 1px solid #dddddd;
+  }
+  .star {
+    color: #ffa200;
+  }
+
+  .gitem {
+    background: #ffffff89;
+  }
 }
 
 .dark {
   .primary-text {
     color: $primaryDarkText;
   }
+  .primary-bg {
+    background: $primaryDarkText;
+    color: $dark3;
+  }
   .secondary-text {
     color: $secondaryDarkText;
+  }
+  .s-bg {
+    background: #cccccc30;
   }
   .background {
     background: linear-gradient(#000a11, #001422);
@@ -67,6 +117,41 @@ $enrollBtnDark: #a357ff;
     background: -webkit-linear-gradient(-45deg, #51ff00, #028dff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .footer-bg {
+    background: #001d30;
+    border-top: 1px solid #cccccc44;
+  }
+  .hbtn {
+    background: $highlight;
+  }
+
+  .sbtn {
+    background: $buttonBG;
+  }
+  .bannerBg {
+    background: #001019;
+  }
+  .jc1 {
+    background: $darkBanner;
+  }
+  .jc2 {
+    background: $blueGradient;
+  }
+  .jc3 {
+    background: #005ba522;
+  }
+
+  .p-course {
+    background: $blueGradient;
+    border: 1px solid $blueGradient;
+  }
+  .star {
+    color: $star;
+  }
+
+  .gitem {
+    background: #002c4989;
   }
 }
 
@@ -110,9 +195,16 @@ button {
 }
 
 @import "./Components_style/navbar";
+@import "./Components_style/footer";
+@import "./Components_style/construction";
+
 @import "./Pages_style/home_style/homepage";
 @import "./Pages_style/home_style/header";
 @import "./Pages_style/home_style/journey";
 @import "./Pages_style/home_style/popularCourses";
 @import "./Pages_style/home_style/category";
 @import "./Pages_style/home_style/support";
+@import "./Pages_style/home_style/seminar";
+@import "./Pages_style/home_style/faq";
+@import "./Pages_style/home_style/socialSupport";
+@import "./Pages_style/home_style/team";

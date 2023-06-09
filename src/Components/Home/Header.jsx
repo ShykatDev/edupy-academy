@@ -45,16 +45,16 @@ const Header = () => {
 
           <div className="btn-group">
             <Link to="/batch" className="linkBtn">
-              <button>
+              <button className="hbtn">
                 <img src={peoples} alt="" className="ico" />
                 <p> নতুন ব্যাচ </p>
               </button>
             </Link>
 
             <Link to="/batch" className="linkBtn">
-              <button>
+              <button className="sbtn">
                 <img src={seminar} alt="" className="ico" />
-                <p>ফ্রি সেমিনার </p>
+                <p className="secondary-text">ফ্রি সেমিনার </p>
               </button>
             </Link>
           </div>
@@ -76,13 +76,13 @@ const Header = () => {
               <BsStarFill className="star" />
               <BsStarFill className="star" />
             </div>
-            <small>100+ review</small>
+            <small className="primary-text">100+ review</small>
           </div>
         </div>
         <div className="text-review">
           <div className="bubble">
-            <p className="secondary-text">
-              🏆 This is the best online platform
+            <p className="">
+              🏆 <span>This is the best online platform</span>
             </p>
           </div>
           <div className="user">
@@ -102,7 +102,7 @@ const Header = () => {
         <motion.div
           whileInView={{ y: [50, 0], opacity: [0, 1] }}
           transition={{ duration: 0.7 }}
-          className="content"
+          className="content bannerBg"
         >
           <div className="illustrations">
             <img src={boy} alt="" className="boy" />
@@ -110,7 +110,7 @@ const Header = () => {
           </div>
           <div className="details">
             <p className="banner-title">Basic Python</p>
-            <h1>
+            <h1 className="primary-text">
               পরবর্তী ব্যাচের <span>সময় সূচি</span>
             </h1>
             <div className="timing">
@@ -134,9 +134,9 @@ const Header = () => {
             </h2>
             <div className="btn-group">
               <Link to="/batch" className="linkBtn">
-                <button>
+                <button className="sbtn">
                   <img src={seminar} alt="" className="ico" />
-                  <p>ফ্রি সেমিনার </p>
+                  <p className="secondary-text">ফ্রি সেমিনার </p>
                 </button>
               </Link>
               <Link to="/batch" className="linkBtn">

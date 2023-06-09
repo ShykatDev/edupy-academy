@@ -21,9 +21,7 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NavLink, Link } from "react-router-dom";
 
-const Navbar = () => {
-  const [darkTheme, setDarkTheme] = useState(true);
-
+const Navbar = ({ setDarkTheme, darkTheme }) => {
   const themeChange = () => {
     setDarkTheme(!darkTheme);
   };
@@ -37,59 +35,59 @@ const Navbar = () => {
         <ul className="menu">
           <NavLink to="/" className="link">
             <img src={home} alt="" className="ico" />
-            <p>হোম</p>
+            <p className="secondary-text">হোম</p>
           </NavLink>
 
           <NavLink to="/about-us" className="link">
             <img src={aboutus} alt="" className="ico" />
-            <p>আমাদের বিস্তারিত</p>
+            <p className="secondary-text">আমাদের বিস্তারিত</p>
           </NavLink>
 
-          <NavLink to="/about-us" className="link d-link">
+          <NavLink to="/course" className="link d-link">
             <img src={courses} alt="" className="ico" />
-            <p>কোর্স সমূহ</p>
+            <p className="secondary-text">কোর্স সমূহ</p>
             <BsFillCaretDownFill className="downArrow" />
             <ul className="nav-bg">
               <li>
                 {" "}
-                <Link className="menuLink secondary-text" to="/about-us">
+                <Link className="menuLink secondary-text" to="/under-10">
                   <img src={under10} alt="" />
-                  <p>অনূর্ধ্ব 10</p>
+                  <p className="secondary-text">অনূর্ধ্ব 10</p>
                   <BsFillCaretRightFill className="rightArrow" />
                 </Link>
               </li>{" "}
               <li>
-                <Link className="menuLink secondary-text" to="/storie">
+                <Link className="menuLink secondary-text" to="/ssc-hsc">
                   <img src={ssc} alt="" />
 
-                  <p>এসএসসি/এইচএসসি</p>
+                  <p className="secondary-text">এসএসসি/এইচএসসি</p>
                   <BsFillCaretRightFill className="rightArrow" />
                 </Link>
               </li>
               <li>
                 <Link
                   className="menuLink secondary-text"
-                  to="/impact-initiatives"
+                  to="/engineering"
                 >
                   <img src={eng} alt="" />
-                  <p>ইঞ্জিনিয়ারিং</p>
+                  <p className="secondary-text">ইঞ্জিনিয়ারিং</p>
                   <BsFillCaretRightFill className="rightArrow" />
                 </Link>
               </li>
               <li>
                 <Link
                   className="menuLink secondary-text"
-                  to="/research-innovation"
+                  to="/career"
                 >
                   <img src={career} alt="" />
-                  <p>ক্যারিয়ার</p>
+                  <p className="secondary-text">ক্যারিয়ার</p>
                   <BsFillCaretRightFill className="rightArrow" />
                 </Link>
               </li>
               <li>
                 <Link
                   className="menuLink secondary-text"
-                  to="/research-innovation"
+                  to="/all-courses"
                 >
                   <img src={all} alt="" />
                   <p className="all-course">সকল কোর্স</p>
@@ -101,13 +99,13 @@ const Navbar = () => {
         </ul>
         <div className="navButtons">
           <Link to="/login" className="linkBtn">
-            <button>
+            <button className="sbtn">
               <img src={login} alt="" className="ico" />
-              <p>লগইন/রেজিস্টার</p>
+              <p className="secondary-text">লগইন/রেজিস্টার</p>
             </button>
           </Link>
           <Link to="/batch" className="linkBtn">
-            <button>
+            <button className="hbtn">
               <img src={peoples} alt="" className="ico" />
               <p>ব্যাচ 01 </p>
             </button>

@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     z-index: 99;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(17px);
 
     .logo {
       width: 5%;
@@ -35,7 +35,6 @@
 
         p {
           margin: 0.3rem 0.5rem 0rem 0.5rem;
-          color: $secondaryDarkText;
           transition: all 0.3s;
         }
 
@@ -49,15 +48,19 @@
           margin-top: 0.3rem;
         }
 
-        &:hover .downArrow,
+        &:hover .downArrow {
+          color: $gradientText2;
+        }
+
         &:hover p {
-          color: $primaryDarkText;
+          color: #898989;
         }
       }
 
       .link.active {
         p {
-          color: $primaryDarkText;
+          color: $gradientText2;
+          font-weight: 600;
         }
       }
 
@@ -73,7 +76,7 @@
           padding-top: 1rem;
           border-bottom-left-radius: 0.3rem;
           border-bottom-right-radius: 0.3rem;
-          // box-shadow: 0px 1px 20px rgba(0, 15, 27, 0.461);
+          box-shadow: 6px 6px 10px rgba(0,0,0,0.3);
 
           li {
             list-style: none;
@@ -121,7 +124,6 @@
         button {
           width: 100%;
           height: 100%;
-          background: $highlight;
 
           @include flexStyles(center, center);
           img {
@@ -138,11 +140,8 @@
 
       .linkBtn:first-child {
         button {
-          color: $secondaryDarkText;
-          background: $buttonBG;
-
           &:hover {
-            background: #ffffff46;
+            background: #bcbcbc52;
             color: #fff;
           }
         }

@@ -78,8 +78,6 @@
         z-index: 1;
       }
 
-      
-
       .circle {
         position: absolute;
         bottom: 20%;
@@ -129,7 +127,6 @@
         .linkBtn:first-child {
           button {
             color: #fff;
-            background: $highlight;
             &:hover {
               background: $highlightHover;
             }
@@ -137,11 +134,8 @@
         }
         .linkBtn:last-child {
           button {
-            color: $secondaryDarkText;
-            background: $buttonBG;
-
             &:hover {
-              background: #ffffff46;
+              background: #bcbcbc52;
               color: #fff;
             }
           }
@@ -179,13 +173,13 @@
             margin-right: 0.3rem;
           }
           .star:last-child {
-            color: #ffecb6;
+            color: #795a05;
           }
         }
         small {
           margin-left: 0.7rem;
           font-weight: 500;
-          color: #ffecb6;
+          // color: #ffecb6;
         }
       }
     }
@@ -208,6 +202,14 @@
         left: 0;
         @include flexStyles(start, center);
         padding-left: 0.7rem;
+
+        p {
+          margin-top: -1%;
+          font-weight: 300;
+          span {
+            color: rgba(203, 203, 203, 0.797);
+          }
+        }
       }
 
       .user {
@@ -234,13 +236,13 @@
       position: absolute;
       left: 38%;
       top: -66%;
+      z-index: 1;
     }
 
     .content {
       opacity: 0;
       width: 100%;
       height: 100%;
-      background: $dark3;
       border: 1px solid $bannerBorder;
       z-index: 2;
       position: absolute;
@@ -278,13 +280,12 @@
 
         .banner-title {
           padding: 0.7rem 1.4rem;
-          background: #6060604e;
+          background: #4d59ff1e;
           border-radius: 0.5rem;
-          color: $gradientText1;
+          color: $gradientText2;
         }
         h1 {
           font-size: 3rem;
-          color: $primaryDarkText;
           span {
             color: $enrollBtnDark;
           }
@@ -377,11 +378,8 @@
           }
           .linkBtn:first-child {
             button {
-              color: $secondaryDarkText;
-              background: $buttonBG;
-
               &:hover {
-                background: #ffffff46;
+                background: #bcbcbc52;
                 color: #fff;
               }
             }

@@ -13,24 +13,24 @@ const JourneyCard = ({
 }) => {
   return (
     <div id="journeyCard">
-      <div className="card-item">
-        <span>{topNum}</span>
+      <div className="card-item jc1">
+        <span className="primary-bg">{topNum}</span>
         <h3 className="">{topText}</h3>
       </div>
-      <div className="card-item">
+      <div className="card-item jc2">
         <img src={topIco} alt="" />
-        <small className="">{topSum}</small>
+        <small className="primary-text">{topSum}</small>
       </div>
-      <div className="card-item"></div>
-      <div className="card-item">
-        <span>{bottomNum}</span>
+      <div className="card-item jc3"></div>
+      <div className="card-item jc1">
+        <span className="primary-bg">{bottomNum}</span>
         <h3 className="">{bottomText}</h3>
       </div>
-      <div className="card-item">
+      <div className="card-item jc2">
         <img src={bottomIco} alt="" />
-        <small className="">{bottomSum}</small>
+        <small className="primary-text">{bottomSum}</small>
       </div>
-      <div className="card-item"></div>
+      <div className="card-item jc3"></div>
     </div>
   );
 };

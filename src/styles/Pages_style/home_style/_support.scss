@@ -47,7 +47,6 @@
     .line {
       width: 96%;
       height: 2px;
-      background: $lightNav;
       position: absolute;
       left: 2%;
       top: 30%;
@@ -63,7 +62,6 @@
   }
 
   .supportText {
-    background: $dark3;
     padding: 2rem 3rem;
     border-radius: 0.3rem;
     color: $gradientText2;

@@ -44,7 +44,7 @@ const CourseCategory = () => {
             whileInView={{ opacity: [0, 1], x: [-20, 0] }}
             transition={{ duration: 0.7, delay: 0.9 }}
           >
-            <Link to="/" className="category-item">
+            <Link to="/" className="category-item gitem">
               <img src={kids} alt="" />
               <h2>কিড জোন</h2>
               <small className="secondary-text">
@@ -57,7 +57,7 @@ const CourseCategory = () => {
             whileInView={{ opacity: [0, 1], x: [-20, 0] }}
             transition={{ duration: 0.7, delay: 1.1 }}
           >
-            <Link to="/" className="category-item">
+            <Link to="/" className="category-item gitem">
               <img src={creativity} alt="" />
               <h2>ক্রিয়েটিভিটি</h2>
               <small className="secondary-text">
@@ -70,7 +70,7 @@ const CourseCategory = () => {
             whileInView={{ opacity: [0, 1], x: [-20, 0] }}
             transition={{ duration: 0.7, delay: 1.3 }}
           >
-            <Link to="/" className="category-item">
+            <Link to="/" className="category-item gitem">
               <img src={development} alt="" />
               <h2>ডেভেলপমেন্ট</h2>
               <small className="secondary-text">
@@ -83,7 +83,7 @@ const CourseCategory = () => {
             whileInView={{ opacity: [0, 1], x: [-20, 0] }}
             transition={{ duration: 0.7, delay: 1.5 }}
           >
-            <Link to="/" className="category-item">
+            <Link to="/" className="category-item gitem">
               <img src={self} alt="" />
               <h2>সেলফ গ্রোথ</h2>
               <small className="secondary-text">
@@ -96,7 +96,7 @@ const CourseCategory = () => {
             whileInView={{ opacity: [0, 1], x: [-20, 0] }}
             transition={{ duration: 0.7, delay: 1.7 }}
           >
-            <Link to="/" className="category-item">
+            <Link to="/" className="category-item gitem">
               <img src={ssc} alt="" />
               <h2>একাডেমিক</h2>
               <small className="secondary-text">
@@ -110,7 +110,7 @@ const CourseCategory = () => {
             whileInView={{ opacity: [0, 1], x: [-20, 0] }}
             transition={{ duration: 0.7, delay: 1.9 }}
           >
-            <Link to="/" className="category-item">
+            <Link to="/" className="category-item gitem">
               <img src={extra} alt="" />
               <h2>এক্সট্রা এক্টিভিটিস</h2>
               <small className="secondary-text">

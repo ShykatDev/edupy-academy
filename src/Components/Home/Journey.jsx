@@ -100,16 +100,16 @@ const Journey = () => {
         </p>
         <div className="btn-group">
           <Link to="/batch" className="linkBtn">
-            <button>
+            <button className="hbtn">
               <img src={peoples} alt="" className="ico" />
               <p> এখনই শুরু করো </p>
             </button>
           </Link>
 
           <Link to="/batch" className="linkBtn">
-            <button>
+            <button className="sbtn">
               <img src={seminar} alt="" className="ico" />
-              <p>ফ্রি সেমিনার </p>
+              <p className="secondary-text">ফ্রি সেমিনার </p>
             </button>
           </Link>
         </div>

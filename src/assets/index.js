@@ -32,6 +32,10 @@ export { default as course1 } from "./course1.png";
 export { default as course2 } from "./course2.png";
 export { default as course3 } from "./course3.png";
 export { default as course4 } from "./course4.png";
+export { default as course5 } from "./course5.png";
+export { default as course6 } from "./course6.png";
+export { default as course7 } from "./course7.png";
+export { default as course8 } from "./course8.png";
 export { default as cart } from "./order.png";
 export { default as checked } from "./checked.png";
 
@@ -45,5 +49,17 @@ export { default as extra } from "./extra.png";
 export { default as self } from "./abilities.png";
 
 export { default as laptop } from "./laptop.png";
-export { default as boss } from "./boss.png";
 
+export { default as seminarBanner } from "./seminarBanner.png";
+
+export { default as socialSupport } from "./socialSupport.png";
+export { default as discord } from "./discord.png";
+
+export { default as phone } from "./phone.png";
+export { default as envelop } from "./envelope.png";
+export { default as map } from "./map.png";
+
+export { default as payment } from "./payment.png";
+export { default as rocket } from "./rocket.png";
+
+export { default as working } from "./working.gif";

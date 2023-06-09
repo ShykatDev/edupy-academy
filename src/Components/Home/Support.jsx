@@ -97,7 +97,7 @@ const Support = () => {
             <p>Step 5</p>
           </div>
         </div>
-        <div className="line"></div>
+        <div className="line s-bg"></div>
       </motion.div>
 
       <motion.h1
@@ -113,7 +113,7 @@ const Support = () => {
         <motion.p
           whileInView={{ opacity: [0, 1], y: [-10, 0] }}
           transition={{ duration: 0.7 }}
-          className="supportText"
+          className="supportText nav-bg"
         >
           {supports[0]}
         </motion.p>
@@ -122,7 +122,7 @@ const Support = () => {
         <motion.p
           whileInView={{ opacity: [0, 1], y: [-10, 0] }}
           transition={{ duration: 0.7 }}
-          className="supportText"
+          className="supportText nav-bg"
         >
           {supports[1]}
         </motion.p>
@@ -131,7 +131,7 @@ const Support = () => {
         <motion.p
           whileInView={{ opacity: [0, 1], y: [-10, 0] }}
           transition={{ duration: 0.7 }}
-          className="supportText"
+          className="supportText nav-bg"
         >
           {supports[2]}
         </motion.p>
@@ -140,7 +140,7 @@ const Support = () => {
         <motion.p
           whileInView={{ opacity: [0, 1], y: [-10, 0] }}
           transition={{ duration: 0.7 }}
-          className="supportText"
+          className="supportText nav-bg"
         >
           {supports[3]}
         </motion.p>
@@ -149,7 +149,7 @@ const Support = () => {
         <motion.p
           whileInView={{ opacity: [0, 1], y: [-10, 0] }}
           transition={{ duration: 0.7 }}
-          className="supportText"
+          className="supportText nav-bg"
         >
           {supports[4]}
         </motion.p>

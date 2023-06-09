@@ -1,0 +1,33 @@
+#constructions {
+  @include basicStyle(80vh, 0rem, 0rem);
+
+  .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    @include flexStyles(space-between, center);
+    flex-direction: column;
+
+    .navback {
+      width: 100%;
+      height: 10vh;
+    }
+
+    .details {
+      @include flexStyles(center, center);
+      flex-direction: column;
+      padding: 2rem;
+      height: 70vh;
+
+      h2{
+        margin-bottom: 0rem;
+        color: #131313;
+      }
+
+      img{
+        width: 60%;
+      }
+    }
+  }
+}

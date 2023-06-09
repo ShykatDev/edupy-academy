@@ -26,6 +26,9 @@ $enrollBtnDark: #a357ff;
 
 //themes---------------------------------
 .light {
+  .mobile-nav {
+    background: #fff;
+  }
   .primary-text {
     color: $dark2;
   }
@@ -91,6 +94,9 @@ $enrollBtnDark: #a357ff;
 }
 
 .dark {
+  .mobile-nav {
+    background: $dark3;
+  }
   .primary-text {
     color: $primaryDarkText;
   }
@@ -208,3 +214,5 @@ button {
 @import "./Pages_style/home_style/faq";
 @import "./Pages_style/home_style/socialSupport";
 @import "./Pages_style/home_style/team";
+
+@import "./responsive";

@@ -1,12 +1,17 @@
 import React from "react";
 import { all, checked, rocket } from "../../assets";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Faq = () => {
   return (
     <div id="FAQ" className="sec-background">
-      <div className="left-col">
-        <img src={rocket} alt="" className="rocket"/>
+      <motion.div
+        whileInView={{ x: [-50, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.7 }}
+        className="left-col"
+      >
+        <img src={rocket} alt="" className="rocket" />
         <h1 className="primary-text">
           কেন <span className="textGradient"> edupy academy</span> থেকেই শুরু
           করবা?
@@ -21,8 +26,12 @@ const Faq = () => {
             <p>এখনই শুরু করো</p>
           </button>
         </Link>
-      </div>
-      <div className="ans-col">
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.7, delay: 0.3 }}
+        className="ans-col"
+      >
         <div className="row">
           <h3>
             <img src={checked} alt=""></img> ইন্ডাস্ট্রি এক্সপার্টদের কন্টেন্ট
@@ -95,7 +104,7 @@ const Faq = () => {
             থেকে শিখতে পারবেন আপনি।
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

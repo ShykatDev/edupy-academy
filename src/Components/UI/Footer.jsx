@@ -57,7 +57,10 @@ const Footer = ({ darkTheme }) => {
             <Link to="/upcoming-batch" className="footer-link secondary-text">
               আপকামিং লাইভ ব্যাচ
             </Link>
-            <Link to="/free-live-classes" className="footer-link secondary-text">
+            <Link
+              to="/free-live-classes"
+              className="footer-link secondary-text"
+            >
               ফ্রী লাইভ ক্লাস
             </Link>
             <Link to="/live-workshop" className="footer-link secondary-text">
@@ -88,9 +91,7 @@ const Footer = ({ darkTheme }) => {
           </div>
         </div>
 
-        <div className="middle">
-          <img src={payment} alt="" />
-        </div>
+        <div className="middle"></div>
 
         <div className="bottom nav-bg">
           <small className="secondary-text">

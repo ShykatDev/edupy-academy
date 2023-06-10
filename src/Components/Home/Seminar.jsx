@@ -22,10 +22,33 @@ const Seminar = () => {
     autoplaySpeed: 5000,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div id="seminar" className="sec-background">
-        <div className="gradient1"></div>
+      <div className="gradient1"></div>
       <motion.div
         whileInView={{ y: [50, 0], opacity: [0, 1] }}
         transition={{ duration: 0.7, delay: 0 }}

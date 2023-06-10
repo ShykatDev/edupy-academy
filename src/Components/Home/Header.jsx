@@ -26,7 +26,7 @@ const Header = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="left-col"
         >
-          <h2 className="primary-text">শিখবেন আপনি সহজ ভাবে</h2>
+          <h2 className="primary-text">শিখবে তুমি সহজ ভাবে</h2>
           <h1 className="primary-text">
             শেখাবো আমরা <br />
             <span className="textGradient"> গল্পবলে</span>

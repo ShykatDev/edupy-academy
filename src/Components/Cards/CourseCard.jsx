@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { aboutus, cart, checked, play } from "../../assets";
+import { aboutus, checked, play } from "../../assets";
 import { Link } from "react-router-dom";
+import { BsCart2 } from "react-icons/bs";
 
 const CourseCard = ({
   banner,
@@ -43,7 +44,7 @@ const CourseCard = ({
             </div>
             <div className="right-btn hbtn">
               <Link to="/">
-                <img src={cart} alt="" />
+                <BsCart2 className="cart" />
                 <p>এনরল করো</p>
               </Link>
             </div>

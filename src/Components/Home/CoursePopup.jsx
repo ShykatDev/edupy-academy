@@ -1,6 +1,7 @@
 import React from "react";
 import { BsFillXCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { BsCart2 } from "react-icons/bs";
 
 const CoursePopup = ({ setPopup }) => {
   return (
@@ -65,6 +66,7 @@ const CoursePopup = ({ setPopup }) => {
               </li>
             </ul>
             <button className="hbtn">
+              <BsCart2 className="cart" />
               <Link to="/">এনরল করো</Link>
             </button>
           </div>

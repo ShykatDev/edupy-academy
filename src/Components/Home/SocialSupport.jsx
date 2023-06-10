@@ -1,16 +1,25 @@
 import React from "react";
 import { discord, phone, socialSupport } from "../../assets";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const SocialSupport = () => {
   return (
     <div id="socialSupport" className="sec-background">
       <div className="left-col">
-        <h1 className="primary-text">
+        <motion.h1
+          whileInView={{ opacity: [0, 1], x: [-50, 0] }}
+          transition={{ duration: 0.7 }}
+          className="primary-text"
+        >
           সার্বক্ষণিক সহায়তার জন্য থাকছে{" "}
           <span className="textGradient">ডিসকোর্ড</span> সাপোর্ট চ্যানেল
-        </h1>
-        <p className="secondary-text">
+        </motion.h1>
+        <motion.p
+          whileInView={{ opacity: [0, 1], x: [-50, 0] }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="secondary-text"
+        >
           প্রতিটি কোর্সের জন্য আমরা একটি প্রাইভেট ডিসকোর্ড সাপোর্ট চ্যানেল তৈরী
           করেছি যেখানে কোর্স ইন্সট্রাক্টর সহ আরো 4-5 জন কোর্স মোডারেটর সরাসরি
           তোমাদের বিভিন্ন প্রশ্নের উত্তর দিবে। আমরা অঙ্গীকার করছি সর্বোচ্চ ২৪
@@ -18,9 +27,13 @@ const SocialSupport = () => {
           তার চেয়েও কম সময়ে তোমরা উত্তর পেয়ে যাবে। এছাড়া প্রতি সপ্তাহে আলোচিত
           মডিউলের উপর লাইভ সেশন থাকবে যেখানে তোমরা সরাসরি প্রশ্ন করে উত্তর পেতে
           পারবে।
-        </p>
+        </motion.p>
 
-        <div className="btn-group">
+        <motion.div
+          whileInView={{ opacity: [0, 1], y: [50, 0] }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+          className="btn-group"
+        >
           <Link to="/batch" className="linkBtn">
             <button className="sbtn">
               <img src={discord} alt="" className="ico" />
@@ -33,12 +46,17 @@ const SocialSupport = () => {
               <p className="secondary-text">সাপোর্ট সেন্টার</p>
             </button>
           </Link>
-        </div>
+        </motion.div>
       </div>
       <div className="right-col">
         <div className="gradient1"></div>
         <div className="gradient2"></div>
-        <img src={socialSupport} alt="" />
+        <motion.img
+          whileInView={{ opacity: [0, 1], x: [20, 0] }}
+          transition={{ duration: 0.7, delay:0.7 }}
+          src={socialSupport}
+          alt=""
+        />
       </div>
     </div>
   );

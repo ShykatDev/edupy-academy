@@ -20,7 +20,7 @@
     .mobile_menu {
       width: 100vw;
       min-height: 10vh;
-      padding: 1rem 3rem;
+      padding: 0rem 3rem;
       position: fixed;
       z-index: 999;
       top: 0;
@@ -45,7 +45,7 @@
         height: 90vh;
         position: absolute;
         padding: 3rem;
-        top: 11.5vh;
+        top: 10vh;
         left: 0;
         @include flexStyles(start, center);
         flex-direction: column;
@@ -187,18 +187,40 @@
   }
 
   #header {
+    overflow-x: hidden !important;
+
     width: 100vw;
-    height: auto;
-    padding: 3rem 3rem;
+    height: 200vh;
+    padding: 5rem 3rem 3rem 3rem;
 
     .gradient1,
     .gradient2 {
-      width: 15rem;
-      height: 15rem;
+      width: 20rem;
+      height: 20rem;
+    }
+
+    @keyframes g1 {
+      50% {
+        top: 5%;
+        left: 0%;
+      }
+      100% {
+        top: 65%;
+        left: 5%;
+      }
+    }
+    @keyframes g2 {
+      50% {
+        bottom: 5%;
+        right: 0%;
+      }
+      100% {
+        bottom: 55%;
+        right: 10%;
+      }
     }
 
     .details {
-      margin-top: 10vh;
       width: 100%;
       height: auto;
       @include flexStyles(center, center);
@@ -227,8 +249,8 @@
         }
 
         .circle {
-          left: -2%;
-          bottom: 15%;
+          left: 0%;
+          bottom: 24%;
           width: 100%;
         }
       }
@@ -237,16 +259,15 @@
         width: 100%;
         height: auto;
         @include flexStyles(center, center);
+        position: relative;
         right: 0;
-        top: 55vh;
-
         p {
-          width: 80%;
+          width: 100%;
           text-align: center;
         }
 
         .btn-group {
-          width: 80%;
+          width: 100%;
 
           .linkBtn {
             width: 47%;
@@ -262,7 +283,7 @@
     }
 
     .review-section {
-      margin-top: 15rem;
+      margin-top: 3rem;
       height: 10vh;
       @include flexStyles(start, center);
 
@@ -278,20 +299,20 @@
     }
 
     .banner {
-      height: 80vh;
+      height: 100vh;
       .student {
-        top: -25%;
+        top: -20%;
         width: 60%;
         left: 50%;
       }
 
       .content {
         flex-direction: column-reverse;
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
 
         .details {
           width: 100%;
-          height: 60%;
+          height: 63%;
           margin-top: 0;
           @include flexStyles(space-between, center);
 
@@ -308,11 +329,11 @@
             width: 100%;
             flex-direction: column;
             .start {
-              margin-bottom: 0.5rem;
+              margin-bottom: 1rem;
             }
             .time {
               h2 {
-                font-size: 1rem;
+                font-size: 1.2rem;
               }
             }
           }
@@ -321,15 +342,25 @@
             width: 100%;
             text-align: center;
             margin: 0;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.126);
+            border-radius: 0.3rem;
           }
 
           .btn-group {
             width: 100%;
             margin-top: 2rem;
+            flex-direction: column-reverse;
 
             .linkBtn {
+              margin-bottom: 1rem;
+              width: 70%;
+
+              .cash {
+                display: none;
+              }
               button {
+                height: 50px;
                 p {
                   font-size: 0.8rem;
                   margin: 0;
@@ -341,7 +372,7 @@
 
         .illustrations {
           width: 100%;
-          height: 40%;
+          height: 35%;
 
           .boy {
             width: 106%;
@@ -358,6 +389,8 @@
   }
 
   #journey {
+    overflow-x: hidden !important;
+
     padding: 3rem;
     flex-direction: column-reverse;
 
@@ -440,7 +473,7 @@
         width: 100%;
 
         .linkBtn {
-          width: 50%;
+          width: 70%;
           margin-bottom: 1rem;
         }
       }
@@ -448,8 +481,10 @@
   }
 
   #popularCourses {
+    overflow-x: hidden !important;
+
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
 
     .back {
       height: 40%;
@@ -467,7 +502,7 @@
 
       .slider {
         #courseCard {
-          width: 98%;
+          width: 100%;
           height: 55vh;
 
           .course-details {
@@ -495,6 +530,9 @@
     }
 
     #coursePopup {
+      width: 100vw;
+      height: 100vh;
+      top: 0%;
       .content {
         width: 90%;
         height: 70%;
@@ -532,6 +570,10 @@
                 }
               }
             }
+            button {
+              width: 130px;
+              margin-top: 1rem;
+            }
           }
         }
       }
@@ -539,6 +581,8 @@
   }
 
   #courseCategory {
+    overflow-x: hidden !important;
+
     width: 100vw;
     height: auto;
     padding: 3rem;
@@ -573,17 +617,17 @@
       .category-grid {
         margin: 0 3rem;
         height: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         gap: 1rem;
 
         .category-item {
           padding: 1rem;
-          width: 40vw;
+          width: 100%;
           height: 20vh;
 
           img {
-            width: 15%;
+            width: 10%;
             margin-bottom: 1rem;
           }
 
@@ -599,6 +643,8 @@
   }
 
   #support {
+    overflow-x: hidden !important;
+
     padding: 0rem 3rem 3rem 3rem;
 
     .switchBar {
@@ -616,20 +662,292 @@
         }
       }
 
-      .line{
+      .line {
         width: 93%;
         top: 35%;
         left: 4%;
       }
     }
 
-    h1{
-        font-size: 2rem;
-        width: 100%;
-        text-align: center;
+    h1 {
+      font-size: 2rem;
+      width: 100%;
+      text-align: center;
     }
-    .supportText{
+    .supportText {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  #seminar {
+    overflow-x: hidden !important;
+
+    height: auto;
+    padding: 3rem;
+
+    .gradient1 {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    .upcomingSeminar {
+      width: 100%;
+      height: 70vh;
+      flex-direction: column;
+      padding: 2rem 1rem;
+
+      .banner-col {
+        width: 100%;
+        height: 30%;
+      }
+      .info-col {
+        width: 100%;
+        height: 65%;
+        @include flexStyles(space-between, start);
+        small {
+          margin-top: 2rem;
+        }
+        h1 {
+          font-size: 1.3rem;
+        }
+        p {
+          font-size: 0.9rem;
+          margin-top: 1rem;
+        }
+        .linkBtn {
+          width: 100%;
+          button {
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .freeCourses {
+      .top-row {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .bottom-row {
+        #freeCourseCard {
+          width: 100%;
+          height: 55vh;
+
+          .course-details {
+            padding: 1rem;
+            h2 {
+              font-size: 1.3rem;
+              height: auto;
+            }
+
+            small {
+              margin-top: 0.5rem;
+            }
+
+            .desc {
+              margin-top: 0.5rem;
+              width: 100%;
+              height: 30%;
+            }
+            .enrollNum {
+              margin-top: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #FAQ {
+    overflow-x: hidden !important;
+
+    height: auto;
+    padding: 3rem 3rem 5rem 3rem;
+    flex-direction: column;
+
+    .left-col {
+      width: 100%;
+      height: auto;
+      @include flexStyles(center, center);
+
+      .rocket {
+        width: 15%;
+      }
+      h1 {
+        font-size: 2rem;
         text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+      }
+      .linkBtn {
+        width: 70%;
+        button {
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .ans-col {
+      width: 100%;
+      height: 50vh;
+      margin-top: 3rem;
+
+      .row {
+        h3 {
+          font-size: 1rem;
+          img {
+            width: 5%;
+          }
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  #socialSupport {
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+    height: 110vh;
+    padding: 10rem 3rem 3rem 3rem;
+    flex-direction: column;
+
+    .left-col {
+      width: 100%;
+      height: 50%;
+
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .btn-group {
+        width: 100%;
+        flex-direction: column;
+
+        .linkBtn {
+          width: 70%;
+          margin-bottom: 1rem;
+          button {
+            img {
+              margin-right: 0.5rem;
+            }
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .right-col {
+      width: 100%;
+      height: 30%;
+      img {
+        width: 110%;
+        position: relative;
+      }
+
+      .gradient1,
+      .gradient2 {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+
+  #footer {
+    overflow-x: hidden !important;
+
+    height: 90vh;
+
+    .content {
+      height: 100%;
+
+      .top {
+        width: 100%;
+        padding: 2rem 3rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+
+        .logo-area {
+          margin-bottom: 1rem;
+          grid-column: 1/-1;
+          width: 100%;
+          @include flexStyles(center, center);
+
+          img {
+            width: 15%;
+            margin-bottom: 1rem;
+          }
+          small {
+            text-align: center;
+            font-size: 0.6rem;
+          }
+        }
+        .company {
+          grid-column: 1/3;
+          width: 100%;
+        }
+        .others {
+          grid-column: 3/-1;
+          width: 100%;
+        }
+        .social-media {
+          grid-column: 1/-1;
+          width: 100%;
+
+          span {
+            margin: 0.1rem;
+            font-size: 0.8rem;
+            img {
+              width: 5%;
+            }
+          }
+        }
+
+        .company,
+        .social-media,
+        .others {
+          .title {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+          }
+
+          .footer-link {
+            margin: 0.1rem;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .middle {
+        padding: 0 0rem;
+        height: 10%;
+        background: url("../assets/mobilePayment.png");
+        background-position: center;
+        background-size: cover;
+      }
+      .bottom {
+        height: 10%;
+      }
     }
   }
 }

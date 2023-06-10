@@ -54,8 +54,8 @@
           width: 58%;
           height: 28vh;
           color: white;
-          
-          p{
+
+          p {
             color: $secondaryDarkText;
             font-size: 0.8rem;
           }
@@ -75,6 +75,13 @@
             width: 100px;
             height: 40px;
             transition: 0.3s;
+            @include flexStyles(center, center);
+
+            .cart{
+              color: white;
+              margin-right: 0.5rem;
+            }
+
             a {
               color: white;
             }
@@ -272,8 +279,8 @@
                 @include flexStyles(center, center);
                 padding: 0.5rem;
 
-                img {
-                  width: 15%;
+                .cart{
+                  color: #fff;
                   margin-right: 0.5rem;
                 }
                 p {

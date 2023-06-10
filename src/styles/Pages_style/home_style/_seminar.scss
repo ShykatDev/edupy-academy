@@ -223,9 +223,9 @@
                 @include flexStyles(center, center);
                 padding: 0.5rem;
 
-                img {
-                  width: 15%;
+                .cart{
                   margin-right: 0.5rem;
+                  color: #fff;
                 }
                 p {
                   font-weight: 600;

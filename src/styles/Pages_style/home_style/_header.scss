@@ -80,8 +80,9 @@
 
       .circle {
         position: absolute;
-        bottom: 20%;
+        bottom: 22%;
         left: -7%;
+        width: 50%;
       }
     }
 
@@ -149,12 +150,13 @@
     width: 100%;
     height: 10vh;
     margin-bottom: 5rem;
-    @include flexStyles(space-between, center);
+    @include flexStyles(end, center);
 
     .star-review {
       width: auto;
       height: 100%;
       @include flexStyles(start, center);
+      display: none;
 
       h1 {
         height: 50%;
@@ -286,6 +288,7 @@
         }
         h1 {
           font-size: 3rem;
+          text-align: end;
           span {
             color: $enrollBtnDark;
           }

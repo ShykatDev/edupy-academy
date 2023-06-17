@@ -1,4 +1,327 @@
 @media only screen and (min-width: 1020px) and (max-width: 1400px) {
+  #navbar {
+    .desktop_menu {
+      @include basicStyle(10vh, 0, 5rem);
+
+      .menu {
+        height: 100%;
+        width: 50%;
+      }
+    }
+  }
+
+  #header {
+    .details {
+      .left-col {
+        .circle {
+          bottom: 17%;
+          width: 60%;
+        }
+      }
+      .right-col {
+        .btn-group {
+          width: 60%;
+        }
+      }
+    }
+    .review-section {
+      .text-review {
+        width: 30%;
+
+        .bubble {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .banner {
+      height: 55vh;
+      .student {
+        top: -58%;
+      }
+      .content {
+        padding: 2rem 5rem 2rem 2rem;
+
+        .details {
+          .banner-title {
+            padding: 0.5rem 1.2rem;
+          }
+          h1 {
+            font-size: 2rem;
+          }
+          .timing {
+            width: 100%;
+
+            .start,
+            .end {
+              .time {
+                h2 {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+
+          .price {
+            font-size: 1.5rem;
+            margin: 1rem 4rem 0 0;
+          }
+          .btn-group {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  #journey {
+    padding: 10rem 5rem;
+
+    .left-slider {
+      width: 51%;
+      height: 50vh;
+
+      #journeyCard {
+        .card-item {
+          height: 23.8vh;
+        }
+      }
+    }
+    .right-details {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  #popularCourses {
+    .front {
+      padding: 5rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .slider {
+        #courseCard {
+          height: 60vh;
+
+          .course-details {
+            padding: 1rem;
+            h2 {
+              font-size: 1.2rem;
+            }
+            .desc {
+              font-size: 0.7rem;
+            }
+
+            .enrollNum {
+              p {
+                font-size: 0.9rem;
+              }
+            }
+            .btn-group {
+              .right-btn {
+                height: 100%;
+                a {
+                  padding: 0;
+                  p {
+                    font-size: 0.9rem;
+                    margin-top: 1%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #coursePopup {
+      .content {
+        iframe {
+          height: 45%;
+        }
+
+        .details {
+          height: 55%;
+          .left-col {
+            height: 100%;
+
+            h2 {
+              font-size: 1rem;
+            }
+            p {
+              font-size: 0.5rem;
+            }
+          }
+
+          .right-col {
+            height: 100%;
+            ul {
+              li {
+                font-size: 0.6rem;
+              }
+            }
+            button {
+              width: 120px;
+              height: 35px;
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #courseCategory {
+    @include basicStyle(100vh, 5rem, 5rem);
+
+    .left-col {
+      padding-top: 4rem;
+      img {
+        width: 80%;
+        left: -20%;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    .right-col {
+      width: 55%;
+
+      .category-grid {
+        margin-top: 7rem;
+        height: 70vh;
+
+        .category-item {
+          height: 100%;
+
+          h2 {
+            font-size: 1.2rem;
+          }
+          small {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  #support {
+    @include basicStyle(70vh, 5rem, 5rem);
+
+    .switchBar {
+      .switches {
+        top: 10%;
+      }
+      .line {
+        width: 94%;
+        height: 2px;
+        left: 3%;
+        margin-top: -15px;
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .supportText {
+      margin-top: 2rem;
+    }
+  }
+
+  #seminar {
+    @include basicStyle(180vh, 5rem, 5rem);
+
+    .upcomingSeminar {
+      height: 60vh;
+
+      .info-col {
+        h1 {
+          font-size: 1.5rem;
+        }
+        small {
+          font-size: 0.7rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        .linkBtn {
+          width: 30%;
+        }
+      }
+    }
+
+    .freeCourses {
+      .top-row {
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+
+      .bottom-row {
+        #freeCourseCard {
+          height: 60vh;
+
+          .course-details {
+            padding: 1rem;
+            h2 {
+              font-size: 1.2rem;
+            }
+            .desc {
+              font-size: 0.7rem;
+            }
+
+            .enrollNum {
+              p {
+                font-size: 0.9rem;
+              }
+            }
+            .btn-group {
+              .right-btn {
+                height: 100%;
+                a {
+                  padding: 0;
+                  p {
+                    font-size: 0.9rem;
+                    margin-top: 1%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #FAQ {
+    @include basicStyle(80vh, 5rem, 5rem);
+
+    .left-col {
+      @include flexStyles(start, start);
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .linkBtn {
+        width: 30%;
+      }
+    }
+  }
+
+  #socialSupport {
+    @include basicStyle(90vh, 5rem, 5rem);
+    .left-col {
+      h1 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 767px) {
 }

@@ -59,7 +59,7 @@
         width: 100%;
         height: 100%;
         transition: all 0.3s;
-        @include flexStyles(center, center);
+        @include flexStyles(space-between, center);
         flex-direction: column;
         padding: 2rem;
         border-radius: 0.5rem;

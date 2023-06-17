@@ -8,6 +8,10 @@
     @include flexStyles(center, start);
     flex-direction: column;
 
+    h1 {
+      margin-bottom: 1rem;
+    }
+
     .btn-group {
       @include flexStyles(space-between, center);
       width: 65%;

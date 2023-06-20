@@ -63,3 +63,17 @@ export { default as payment } from "./payment.png";
 export { default as rocket } from "./rocket.png";
 
 export { default as working } from "./working.gif";
+
+export { default as calendar } from "./calendar.png";
+export { default as topic } from "./checklist.png";
+export { default as place } from "./place.png";
+
+//seminar-pics-------------------------------
+
+export { default as s1p1 } from "./seminar1/pic1.jpg";
+export { default as s1p2 } from "./seminar1/pic2.jpg";
+export { default as s1p3 } from "./seminar1/pic3.jpg";
+export { default as s1p4 } from "./seminar1/pic4.jpg";
+
+//team
+// export { default as team5 } from "./team5.jpg";

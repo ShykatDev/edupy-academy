@@ -99,6 +99,7 @@
         width: 40%;
         text-align: right;
       }
+
       .btn-group {
         @include flexStyles(space-between, center);
         width: 50%;
@@ -286,11 +287,24 @@
           border-radius: 0.5rem;
           color: $gradientText2;
         }
+
         h1 {
           font-size: 3rem;
           text-align: end;
           span {
             color: $enrollBtnDark;
+          }
+        }
+
+        h2 {
+          width: 70%;
+        }
+
+        .seminarPlace {
+          @include flexStyles(end, center);
+          img {
+            width: 3%;
+            margin-right: 0.5rem;
           }
         }
 

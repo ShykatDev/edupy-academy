@@ -1,3 +1,4 @@
+@import "node_modules/react-modal-video/scss/modal-video.scss";
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;600;700&display=swap");
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
@@ -200,6 +201,22 @@ button {
   transition: all 0.3s;
 }
 
+.slick-dots li button:before {
+  color: $gradientText2;
+  margin-top: 2rem;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $star;
+}
+
+.slick-prev:before {
+  color: $gradientText2;
+}
+.slick-next:before {
+  color: $gradientText2;
+}
+
 @import "./Components_style/navbar";
 @import "./Components_style/footer";
 @import "./Components_style/construction";
@@ -208,6 +225,7 @@ button {
 @import "./Pages_style/home_style/header";
 @import "./Pages_style/home_style/journey";
 @import "./Pages_style/home_style/popularCourses";
+@import "./Pages_style/home_style/ourSeminars";
 @import "./Pages_style/home_style/category";
 @import "./Pages_style/home_style/support";
 @import "./Pages_style/home_style/seminar";

@@ -104,39 +104,6 @@ const Seminar = () => {
           <Slider {...settings}>
             <div>
               <FreeCourseCard
-                banner={course6}
-                title="এডভান্স পাইথন প্রোগ্রামিং"
-                mentor="Mehedi Hasan"
-                price="2000"
-                desc="এই পাইথন কোর্সে প্রগ্রামিং কে অনেক সহজ করে বোঝানো হয়েছে এবং বেসিক থেকে এডভান্স সব টপিক কভার করা হয়েছে"
-                nos="67"
-                bestSeller={false}
-              />
-            </div>
-            <div>
-              <FreeCourseCard
-                banner={course7}
-                title="এডভান্স পাইথন প্রোগ্রামিং"
-                mentor="Mehedi Hasan"
-                price="2000"
-                desc="এই পাইথন কোর্সে প্রগ্রামিং কে অনেক সহজ করে বোঝানো হয়েছে এবং বেসিক থেকে এডভান্স সব টপিক কভার করা হয়েছে"
-                nos="67"
-                bestSeller={true}
-              />
-            </div>
-            <div>
-              <FreeCourseCard
-                banner={course8}
-                title="এডভান্স পাইথন প্রোগ্রামিং"
-                mentor="Mehedi Hasan"
-                price="2000"
-                desc="এই পাইথন কোর্সে প্রগ্রামিং কে অনেক সহজ করে বোঝানো হয়েছে এবং বেসিক থেকে এডভান্স সব টপিক কভার করা হয়েছে"
-                nos="67"
-                bestSeller={false}
-              />
-            </div>
-            <div>
-              <FreeCourseCard
                 banner={course5}
                 title="এডভান্স পাইথন প্রোগ্রামিং"
                 mentor="Mehedi Hasan"
@@ -146,6 +113,42 @@ const Seminar = () => {
                 bestSeller={false}
               />
             </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            {/* <div>
+              <FreeCourseCard
+                banner={course7}
+                title="এডভান্স পাইথন প্রোগ্রামিং"
+                mentor="Mehedi Hasan"
+                price="2000"
+                desc="এই পাইথন কোর্সে প্রগ্রামিং কে অনেক সহজ করে বোঝানো হয়েছে এবং বেসিক থেকে এডভান্স সব টপিক কভার করা হয়েছে"
+                nos="67"
+                bestSeller={true}
+              />
+            </div> */}
+            {/* <div>
+              <FreeCourseCard
+                banner={course8}
+                title="এডভান্স পাইথন প্রোগ্রামিং"
+                mentor="Mehedi Hasan"
+                price="2000"
+                desc="এই পাইথন কোর্সে প্রগ্রামিং কে অনেক সহজ করে বোঝানো হয়েছে এবং বেসিক থেকে এডভান্স সব টপিক কভার করা হয়েছে"
+                nos="67"
+                bestSeller={false}
+              />
+            </div> */}
+            {/* <div>
+              <FreeCourseCard
+                banner={course5}
+                title="এডভান্স পাইথন প্রোগ্রামিং"
+                mentor="Mehedi Hasan"
+                price="2000"
+                desc="এই পাইথন কোর্সে প্রগ্রামিং কে অনেক সহজ করে বোঝানো হয়েছে এবং বেসিক থেকে এডভান্স সব টপিক কভার করা হয়েছে"
+                nos="67"
+                bestSeller={false}
+              />
+            </div> */}
           </Slider>
           ;
         </motion.div>

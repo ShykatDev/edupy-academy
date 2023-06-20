@@ -7,6 +7,7 @@ import {
   girl,
   money,
   peoples,
+  place,
   seminar,
   start,
   student,
@@ -109,11 +110,25 @@ const Header = () => {
             <img src={girl} alt="" className="girl" />
           </div>
           <div className="details">
-            <p className="banner-title">Basic Python</p>
+            <p className="banner-title">25 June, 2023</p>
             <h1 className="primary-text">
-              পরবর্তী ব্যাচের <span>সময় সূচি</span>
+              পরবর্তী সেমিনারের <span>সময় সূচি</span>
             </h1>
-            <div className="timing">
+            <h2 className="textGradient" style={{ textAlign: "end" }}>
+              EMPOWERING JUNIORS WITH CODING SKILLS AND CYBER AWARENESS
+            </h2>
+            <p style={{ textAlign: "end" }} className="secondary-text">
+              আমাদের প্রাপ্তিশীল জুনিয়রদের জন্য সেমিনারটি একটি অনন্য সম্ভাবনা।
+              এই সেমিনারে আমরা উচ্চশিক্ষার মানদণ্ড অনুযায়ী কোডিং দক্ষতা এবং
+              সাইবার সচেতনতা উন্নত করতে প্রয়োজনীয় ধারণা প্রদান করব। এই সেমিনার
+              থেকে শিক্ষার্থীরা নিজেদের সম্পূর্ণ ক্ষমতা উন্নত করতে পারবেন এবং
+              স্বাধীনভাবে বিশ্বের ডিজিটাল জগতে দক্ষ হতে সক্ষম হবে
+            </p>
+            <div className="seminarPlace">
+              <img src={place} alt="" />
+              <p className="primary-text">শাহজাদপুর, সিরাজগঞ্জ</p>
+            </div>
+            {/* <div className="timing">
               <div className="start">
                 <img src={start} alt="" />
                 <div className="time">
@@ -146,7 +161,7 @@ const Header = () => {
                   <p>এখনি শুরু করো</p>
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>

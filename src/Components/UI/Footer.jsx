@@ -91,7 +91,7 @@ const Footer = ({ darkTheme }) => {
           </div>
         </div>
 
-        <div className="middle"></div>
+        {/* <div className="middle"></div> */}
 
         <div className="bottom nav-bg">
           <small className="secondary-text">

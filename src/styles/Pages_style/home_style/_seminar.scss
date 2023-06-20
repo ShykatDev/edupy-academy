@@ -193,9 +193,9 @@
           }
 
           .btn-group {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
             width: 100%;
-            height: 5vh;
+            height: 4.5vh;
             @include flexStyles(space-between, center);
 
             .left-btn {
@@ -214,6 +214,7 @@
             }
             .right-btn {
               width: 55%;
+              height: 100%;
               @include flexStyles(center, center);
               border-radius: 0.3rem;
               cursor: pointer;

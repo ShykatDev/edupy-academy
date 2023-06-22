@@ -51,6 +51,13 @@
           h1 {
             font-size: 2rem;
           }
+          h2{
+            font-size: 1.1rem;
+          }
+          p{
+            font-size: 0.7rem;
+          }
+
           .timing {
             width: 100%;
 
@@ -94,6 +101,11 @@
         font-size: 2.5rem;
       }
     }
+  }
+
+  #ourSeminars{
+    @include basicStyle(145vh, 5rem, 5rem);
+
   }
 
   #popularCourses {
@@ -321,6 +333,42 @@
         margin-bottom: 1rem;
       }
     }
+  }
+
+  #ourTeam {
+    @include basicStyle(auto, 3rem, 5rem);
+
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+
+    .team {
+      .team-member {
+        .details {
+          h2 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .team-member:nth-child(5) {
+        .details {
+          h2 {
+            font-size: 1.2rem;
+          }
+          small {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  #footer{
+    height: 60vh;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -631,7 +679,7 @@
 
       .content {
         flex-direction: column-reverse;
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
 
         .details {
           width: 100%;
@@ -646,6 +694,19 @@
 
           h1 {
             font-size: 1.5rem;
+          }
+
+          h2 {
+            width: 100%;
+            text-align: center !important;
+          }
+          .desc {
+            text-align: center !important;
+            font-size: 0.9rem;
+          }
+
+          .seminarPlace {
+            @include flexStyles(center, center);
           }
 
           .timing {
@@ -798,6 +859,45 @@
         .linkBtn {
           width: 70%;
           margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  #ourSeminars {
+    @include basicStyle(190vh, 3rem, 3rem);
+
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+
+    .seminars-slider {
+      .seminarCard {
+        display: flex;
+        flex-direction: column;
+
+        .card-item:nth-child(2) {
+          .date,
+          .title,
+          .place {
+            width: 100%;
+            @include flexStyles(start, start);
+
+            img {
+              width: 7%;
+              margin-right: 0.5rem;
+              margin-top: 0.3rem;
+            }
+          }
+
+          .place {
+            p {
+              text-align: left;
+            }
+          }
         }
       }
     }
@@ -1195,10 +1295,45 @@
     }
   }
 
+  #ourTeam {
+    @include basicStyle(auto, 3rem, 3rem);
+
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+
+    .team {
+      height: auto;
+      flex-direction: column;
+      gap: 1rem 0;
+
+      .team-member {
+        width: 100%;
+        height: 10vh;
+      }
+
+      .team-member:nth-child(5) {
+        .details {
+          small {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      .team-member.mem-active {
+        width: 100%;
+        height: 50vh;
+      }
+    }
+  }
+
   #footer {
     overflow-x: hidden !important;
 
-    height: 90vh;
+    height: 70vh;
 
     .content {
       height: 100%;

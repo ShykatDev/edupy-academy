@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/UI/Navbar";
 import Homepage from "./Pages/Homepage";
 import Footer from "./Components/UI/Footer";
-import FreeCourseCard from "./Components/Cards/FreeCourseCard";
+
 import Construction from "./Components/UI/Construction";
+import ScrollTop from "./Components/UI/ScrollTop";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -14,11 +15,10 @@ function App() {
     <div className="app">
       <Router>
         <Navbar setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
-
+        <ScrollTop />
         <Routes>
           <Route path="/" element={<Homepage darkTheme={darkTheme} />} />
-          <Route path="*" element={<Construction darkTheme={darkTheme}/>} />          
-
+          <Route path="*" element={<Construction darkTheme={darkTheme} />} />
         </Routes>
         <Footer darkTheme={darkTheme} />
       </Router>

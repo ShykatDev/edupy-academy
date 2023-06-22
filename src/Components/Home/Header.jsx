@@ -117,7 +117,7 @@ const Header = () => {
             <h2 className="textGradient" style={{ textAlign: "end" }}>
               EMPOWERING JUNIORS WITH CODING SKILLS AND CYBER AWARENESS
             </h2>
-            <p style={{ textAlign: "end" }} className="secondary-text">
+            <p style={{ textAlign: "end" }} className="secondary-text desc">
               আমাদের প্রাপ্তিশীল জুনিয়রদের জন্য সেমিনারটি একটি অনন্য সম্ভাবনা।
               এই সেমিনারে আমরা উচ্চশিক্ষার মানদণ্ড অনুযায়ী কোডিং দক্ষতা এবং
               সাইবার সচেতনতা উন্নত করতে প্রয়োজনীয় ধারণা প্রদান করব। এই সেমিনার

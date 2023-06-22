@@ -106,10 +106,10 @@ const Seminar = () => {
               <FreeCourseCard
                 banner={course5}
                 title="এডভান্স পাইথন প্রোগ্রামিং"
-                mentor="Mehedi Hasan"
+                mentor="Edupy Academy"
                 price="2000"
                 desc="এই পাইথন কোর্সে প্রগ্রামিং কে অনেক সহজ করে বোঝানো হয়েছে এবং বেসিক থেকে এডভান্স সব টপিক কভার করা হয়েছে"
-                nos="67"
+                nos="0"
                 bestSeller={false}
               />
             </div>

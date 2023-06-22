@@ -78,7 +78,7 @@ const Footer = ({ darkTheme }) => {
 
             <span className="secondary-text">
               <img src={phone} alt="" />
-              01315-851280
+              +880 1315851280
             </span>
             <span className="secondary-text">
               <img src={envelop} alt="" />

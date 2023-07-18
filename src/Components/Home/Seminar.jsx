@@ -15,7 +15,7 @@ import FreeCourseCard from "../Cards/FreeCourseCard";
 const Seminar = () => {
   const settings = {
     arrows: false,
-    dots: false,
+    dots: true,
     infinite: true,
     autoplay: true,
     speed: 1000,
@@ -58,7 +58,7 @@ const Seminar = () => {
           <img src={seminarBanner} alt="" />
         </div>
         <div className="info-col">
-          <small className="primary-text">Date: 01-07-2023</small>
+          <small className="primary-text">Upcoming...</small>
           <h1 className="primary-text">
             সঠিক দিকনির্দেশনা পেতে{" "}
             <span className="textGradient">ফ্রি অনলাইন সেমিনারে</span> অংশ নাও
@@ -150,7 +150,7 @@ const Seminar = () => {
               />
             </div> */}
           </Slider>
-          ;
+          
         </motion.div>
       </div>
     </div>

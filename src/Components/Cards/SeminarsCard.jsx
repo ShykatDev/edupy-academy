@@ -1,10 +1,15 @@
 import React from "react";
-import { calendar, place, s1p1, s1p2, s1p3, s1p4, topic } from "../../assets";
+import { calendar, place, topic } from "../../assets";
+import { motion } from "framer-motion";
 
-const SeminarsCard = ({ title, date, plc, vidSrc }) => {
+const SeminarsCard = ({ title, date, plc, vidSrc, sp1, sp2, sp3, sp4 }) => {
   return (
     <div className="seminarCard">
-      <div className="card-item gitem">
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.7, delay: 0 }}
+        className="card-item gitem"
+      >
         <div className="vid-cont">
           <iframe
             src={vidSrc}
@@ -14,8 +19,12 @@ const SeminarsCard = ({ title, date, plc, vidSrc }) => {
             allowfullscreen
           ></iframe>
         </div>
-      </div>
-      <div className="card-item gitem">
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 1], y: [-50, 0] }}
+        transition={{ duration: 0.7, delay: 0.3 }}
+        className="card-item gitem"
+      >
         <div className="date">
           <img src={calendar} alt="" />
           <small className="primary-text">{date}</small>
@@ -29,19 +38,35 @@ const SeminarsCard = ({ title, date, plc, vidSrc }) => {
           <img src={place} alt="" />
           <p className="secondary-text">{plc}</p>
         </div>
-      </div>
-      <div className="card-item gitem">
-        <img src={s1p1} alt="" />
-      </div>
-      <div className="card-item gitem">
-        <img src={s1p2} alt="" />
-      </div>
-      <div className="card-item gitem">
-        <img src={s1p3} alt="" />
-      </div>
-      <div className="card-item gitem">
-        <img src={s1p4} alt="" />
-      </div>
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.7, delay: 0.6 }}
+        className="card-item gitem"
+      >
+        <img src={sp1} alt="" />
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.7, delay: 0.6 }}
+        className="card-item gitem"
+      >
+        <img src={sp2} alt="" />
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.7, delay: 0.6 }}
+        className="card-item gitem"
+      >
+        <img src={sp3} alt="" />
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.7, delay: 0.6 }}
+        className="card-item gitem"
+      >
+        <img src={sp4} alt="" />
+      </motion.div>
     </div>
   );
 };

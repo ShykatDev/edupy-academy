@@ -110,23 +110,24 @@ const Header = () => {
             <img src={girl} alt="" className="girl" />
           </div>
           <div className="details">
-            <p className="banner-title">25 June, 2023</p>
+            <p className="banner-title">Successfully done!</p>
             <h1 className="primary-text">
-              পরবর্তী সেমিনারের <span>সময় সূচি</span>
+              সফলভাবে করা <span>ইভেন্ট</span>
             </h1>
             <h2 className="textGradient" style={{ textAlign: "end" }}>
-              EMPOWERING JUNIORS WITH CODING SKILLS AND CYBER AWARENESS
+              Divisional level cultural competition
             </h2>
             <p style={{ textAlign: "end" }} className="secondary-text desc">
-              আমাদের প্রাপ্তিশীল জুনিয়রদের জন্য সেমিনারটি একটি অনন্য সম্ভাবনা।
-              এই সেমিনারে আমরা উচ্চশিক্ষার মানদণ্ড অনুযায়ী কোডিং দক্ষতা এবং
-              সাইবার সচেতনতা উন্নত করতে প্রয়োজনীয় ধারণা প্রদান করব। এই সেমিনার
-              থেকে শিক্ষার্থীরা নিজেদের সম্পূর্ণ ক্ষমতা উন্নত করতে পারবেন এবং
-              স্বাধীনভাবে বিশ্বের ডিজিটাল জগতে দক্ষ হতে সক্ষম হবে
+              স্মার্ট বাংলাদেশ গড়ে তোলার জন্য সাংস্কৃতিক উন্নয়ন অত্যন্ত জরুরি
+              একটি বিষয় যার প্রয়োজনীয়তা অনুধাবন করেই মাননীয় প্রধানমন্ত্রী তৃণমূল
+              পর্যায়ে গিয়ে মেধাবীদের তুলে নিয়ে আসার আদেশ প্রদান করেছেন। সেই
+              আদেশকে সামনে রেখেই আমরা, Edupy পরিবার রাজশাহী বিভাগের মেধাবীদের
+              এগিয়ে নিয়ে এসে তাদের প্রশিক্ষিত করার প্রয়াস গ্রহণ করেছি, যা
+              সরকারের সহায়তায় একটি বড় রূপ ধারণ করতে পারে।
             </p>
             <div className="seminarPlace">
               <img src={place} alt="" />
-              <p className="primary-text">শাহজাদপুর, সিরাজগঞ্জ</p>
+              <p className="primary-text">রবীন্দ্র বিশ্ববিদ্যালয়, বাংলাদেশ</p>
             </div>
             {/* <div className="timing">
               <div className="start">

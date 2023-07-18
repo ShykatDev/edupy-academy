@@ -68,12 +68,23 @@ export { default as calendar } from "./calendar.png";
 export { default as topic } from "./checklist.png";
 export { default as place } from "./place.png";
 
-//seminar-pics-------------------------------
+//seminar-1-pics-------------------------------
 
 export { default as s1p1 } from "./seminar1/pic1.jpg";
 export { default as s1p2 } from "./seminar1/pic2.jpg";
 export { default as s1p3 } from "./seminar1/pic3.jpg";
 export { default as s1p4 } from "./seminar1/pic4.jpg";
 
-//team
-// export { default as team5 } from "./team5.jpg";
+//seminar-2-pics-------------------------------
+
+export { default as s2p1 } from "./seminar2/pic1.jpg";
+export { default as s2p2 } from "./seminar2/pic2.jpg";
+export { default as s2p3 } from "./seminar2/pic3.jpg";
+export { default as s2p4 } from "./seminar2/pic4.jpg";
+
+//seminar-3-pics-------------------------------
+
+export { default as s3p1 } from "./seminar3/pic1.jpg";
+export { default as s3p2 } from "./seminar3/pic2.jpg";
+export { default as s3p3 } from "./seminar3/pic3.jpg";
+export { default as s3p4 } from "./seminar3/pic4.jpg";

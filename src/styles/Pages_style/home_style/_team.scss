@@ -27,6 +27,7 @@
       overflow: hidden;
       position: relative;
       filter: grayscale(1) contrast(1.1);
+      opacity: 0;
 
       .details {
         width: 100%;
@@ -35,7 +36,6 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        background: #000000cf;
         display: none;
         opacity: 0;
         z-index: 2;
@@ -45,8 +45,9 @@
         }
         small {
           padding: 0.2rem 0.5rem;
-          background: $buttonBG;
+          background: #ffa200ce;
           border-radius: 0.3rem;
+          color: #000;
         }
 
         p {
@@ -62,37 +63,43 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+    // .team-member:nth-child(2) {
+    //   background: url("../../../assets/team/kamrul.jpg");
+    //   background-size: cover;
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    // }
     .team-member:nth-child(2) {
-      background: url("../../../assets/team/kamrul.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .team-member:nth-child(3) {
       background: url("../../../assets/team/oyaisul.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
-    .team-member:nth-child(4) {
+    .team-member:nth-child(3) {
       background: url("../../../assets/team/shykat.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
-    .team-member:nth-child(5) {
+    .team-member:nth-child(4) {
       background: url("../../../assets/team/munim.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+
+      .details {
+        small {
+          font-size: 0.8rem;
+        }
+      }
     }
-    .team-member:nth-child(6) {
-      background: url("../../../assets/team/deb.jpg");
+    .team-member:nth-child(5) {
+      background: url("../../../assets/team/sabbir.jpg");
       background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
     }
-    .team-member:nth-child(7) {
+    .team-member:nth-child(6) {
       background: url("../../../assets/team/tanha.jpg");
       background-size: cover;
       background-position: center;
@@ -102,7 +109,6 @@
     .team-member.mem-active {
       width: 30%;
       filter: grayscale(0) contrast(1.1);
-
 
       .details {
         display: block;

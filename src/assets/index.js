@@ -19,6 +19,7 @@ export { default as ssc } from "./college.png";
 export { default as eng } from "./code.png";
 export { default as career } from "./career-choice.png";
 export { default as all } from "./all.png";
+export { default as box } from "./box.png";
 
 export { default as demo } from "./demo.png";
 export { default as basic } from "./basic.png";
@@ -88,3 +89,6 @@ export { default as s3p1 } from "./seminar3/pic1.jpg";
 export { default as s3p2 } from "./seminar3/pic2.jpg";
 export { default as s3p3 } from "./seminar3/pic3.jpg";
 export { default as s3p4 } from "./seminar3/pic4.jpg";
+
+export { default as bn } from "./bangla.png";
+export { default as en } from "./english.png";

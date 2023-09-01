@@ -17,6 +17,7 @@ import {
   s3p3,
   s3p4,
 } from "../../assets";
+import { useTranslation } from "react-i18next";
 
 const OurSeminars = () => {
   const settings = {
@@ -53,6 +54,8 @@ const OurSeminars = () => {
       },
     ],
   };
+
+  const [t] = useTranslation('global');
   return (
     <div id="ourSeminars" className="sec-background">
       <div className="intro">
@@ -61,15 +64,14 @@ const OurSeminars = () => {
           transition={{ duration: 0.7, delay: 0 }}
           className="primary-text"
         >
-          আমাদের <span className="textGradient">সেমিনার</span> সমূহ
+          {t("seminar.title1")} <span className="textGradient">{t("seminar.title2")}</span> {t("seminar.title3")}
         </motion.h1>
         <motion.p
           whileInView={{ opacity: [0, 1], y: [-50, 0] }}
           transition={{ duration: 0.7, delay: 0.3 }}
           className="secondary-text"
         >
-          আমরা বাংলাদেশের বিভিন্ন ইউনিভার্সিটিতে ফ্রি সেমিনারের মাধ্যমে
-          শিক্ষার্থীদের মধ্যে মডার্ন টেকনোলজি সম্পর্কে ধারণা দিয়ে থাকি
+          {t("seminar.desc")}
         </motion.p>
       </div>
 
@@ -78,8 +80,8 @@ const OurSeminars = () => {
           <div>
             <SeminarsCard
               title="EMPOWERING JUNIORS WITH CODING SKILLS AND CYBER AWARENESS"
-              date="17 জুলাই, 2023"
-              plc="শাহজাদপুর ইব্রাহিম পাইলট গার্লস স্কুল, সিরাজগঞ্জ"
+              date={t("seminar.sem1.date")}
+              plc={t("seminar.sem1.place")}
               vidSrc="https://www.youtube.com/embed/ZArkRdSufDw"
               sp1={s3p1}
               sp2={s3p2}
@@ -90,8 +92,8 @@ const OurSeminars = () => {
           <div>
             <SeminarsCard
               title="EMPOWERING JUNIORS WITH CODING SKILLS AND CYBER AWARENESS"
-              date="25 জুন, 2023"
-              plc="রংধনু মডেল স্কুল, সিরাজগঞ্জ"
+              date={t("seminar.sem2.date")}
+              plc={t("seminar.sem2.place")}
               vidSrc="https://www.youtube.com/embed/xNQrm1Rivws"
               sp1={s2p1}
               sp2={s2p2}
@@ -102,8 +104,8 @@ const OurSeminars = () => {
           <div>
             <SeminarsCard
               title="CODING For All And Soft skill"
-              date="14 জুন, 2023"
-              plc="পাবনা বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়, পাবনা"
+              date={t("seminar.sem3.date")}
+              plc={t("seminar.sem3.place")}
               vidSrc="https://www.youtube.com/embed/CmEom-ooLmc"
               sp1={s1p1}
               sp2={s1p2}

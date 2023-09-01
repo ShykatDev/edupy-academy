@@ -13,17 +13,17 @@ const Faq = () => {
       >
         <img src={rocket} alt="" className="rocket" />
         <h1 className="primary-text">
-          কেন <span className="textGradient"> edupy academy</span> থেকেই শুরু
-          করবা?
+          কেন <span className="textGradient"> Edupy Academy</span> থেকেই শুরু
+          করবেন?
         </h1>
         <p className="secondary-text">
-          এক নজরে দেখে ফেলো আমরা তোমাকে কিভাবে প্রতিটা ধাপ পার করিয়ে দিবো
+          এক নজরে দেখে নিন আমরা আপনাকে কিভাবে প্রতিটা ধাপ পার করিয়ে দিবো
         </p>
 
         <Link to="/batch" className="linkBtn">
           <button className="hbtn">
             <img src={all} alt="" className="ico" />
-            <p>এখনই শুরু করো</p>
+            <p>এখনই শুরু করুন</p>
           </button>
         </Link>
       </motion.div>

@@ -10,8 +10,10 @@ import {
   ssc,
 } from "../../assets";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const CourseCategory = () => {
+  const [t] = useTranslation("global");
   return (
     <div id="courseCategory" className="sec-background">
       <div className="left-col">
@@ -21,15 +23,15 @@ const CourseCategory = () => {
           transition={{ duration: 0.7, delay: 0 }}
           className="primary-text"
         >
-          সবকিছু শেখার
-          <span className="textGradient"> এক এবং অন্যতম</span> জায়গা
+          {t("category.title1")}
+          <span className="textGradient"> {t("category.title2")}</span> {t("category.title3")}
         </motion.h1>
         <motion.p
           whileInView={{ opacity: [0, 1], x: [-50, 0] }}
           transition={{ duration: 0.7, delay: 0.3 }}
           className="secondary-text"
         >
-          যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যাও তোমার পছন্দের সেকশনে
+          {t("category.desc")}
         </motion.p>
         <motion.img
           whileInView={{ opacity: [0, 1], y: [50, 0] }}
@@ -46,9 +48,9 @@ const CourseCategory = () => {
           >
             <Link to="/" className="category-item gitem">
               <img src={kids} alt="" />
-              <h2>কিড জোন</h2>
+              <h2>{t("category.cat1.title")}</h2>
               <small className="secondary-text">
-                ৫ - ৯ ক্লাসের সকল কন্টেন্ট দেখতে এখানে যাও
+              {t("category.cat1.desc")}
               </small>
             </Link>
           </motion.div>
@@ -59,9 +61,9 @@ const CourseCategory = () => {
           >
             <Link to="/" className="category-item gitem">
               <img src={creativity} alt="" />
-              <h2>ক্রিয়েটিভিটি</h2>
+              <h2>{t("category.cat2.title")}</h2>
               <small className="secondary-text">
-                graphics, motion, illustrations সকল কন্টেন্ট দেখতে এখানে যাও
+              {t("category.cat2.desc")}
               </small>
             </Link>
           </motion.div>
@@ -72,9 +74,9 @@ const CourseCategory = () => {
           >
             <Link to="/" className="category-item gitem">
               <img src={development} alt="" />
-              <h2>ডেভেলপমেন্ট</h2>
+              <h2>{t("category.cat3.title")}</h2>
               <small className="secondary-text">
-                কোডিং রিলেটেড সকল কন্টেন্ট দেখতে এখানে যাও
+              {t("category.cat3.desc")}
               </small>
             </Link>
           </motion.div>
@@ -85,9 +87,9 @@ const CourseCategory = () => {
           >
             <Link to="/" className="category-item gitem">
               <img src={self} alt="" />
-              <h2>সেলফ গ্রোথ</h2>
+              <h2>{t("category.cat4.title")}</h2>
               <small className="secondary-text">
-                নিজেকে প্রফেশনাল করার সকল কন্টেন্ট দেখতে এখানে যাও
+              {t("category.cat4.desc")}
               </small>
             </Link>
           </motion.div>
@@ -98,10 +100,9 @@ const CourseCategory = () => {
           >
             <Link to="/" className="category-item gitem">
               <img src={ssc} alt="" />
-              <h2>একাডেমিক</h2>
+              <h2>{t("category.cat5.title")}</h2>
               <small className="secondary-text">
-                ভর্তি পরিক্ষা, চাকরির পরিক্ষা, ILTS, Higher Education সকল
-                কন্টেন্ট দেখতে এখানে যাও
+              {t("category.cat5.desc")}
               </small>
             </Link>
           </motion.div>
@@ -112,9 +113,9 @@ const CourseCategory = () => {
           >
             <Link to="/" className="category-item gitem">
               <img src={extra} alt="" />
-              <h2>এক্সট্রা এক্টিভিটিস</h2>
+              <h2>{t("category.cat6.title")}</h2>
               <small className="secondary-text">
-                এক্সট্রা অরডিনারি হওয়ার সকল কন্টেন্ট দেখতে এখানে যাও
+              {t("category.cat6.desc")}
               </small>
             </Link>
           </motion.div>

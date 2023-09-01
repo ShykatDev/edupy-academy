@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import JourneyCard from "../Cards/JourneyCard";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Journey = () => {
   const settings = {
@@ -50,6 +51,9 @@ const Journey = () => {
       },
     ],
   };
+
+  const [t] = useTranslation("global");
+
   return (
     <div id="journey" className="sec-background">
       <motion.div
@@ -62,10 +66,10 @@ const Journey = () => {
             <JourneyCard
               topIco={seminar}
               bottomIco={demo}
-              topText="ফ্রি সেমিনার"
-              bottomText="ডেমো ক্লাস"
-              topSum="ফ্রি সেমিনারের মাধ্যমে জানতে পারো কোর্স সম্পর্কে সকল তথ্য"
-              bottomSum="কোর্স শুরু করার আগে থাকছে ফ্রি তে ডেমো ক্লাস করার সুযোগ"
+              topText={t("journey.card1.title")}
+              bottomText={t("journey.card2.title")}
+              topSum={t("journey.card1.desc")}
+              bottomSum={t("journey.card2.desc")}
               topNum="01"
               bottomNum="02"
             />
@@ -74,10 +78,10 @@ const Journey = () => {
             <JourneyCard
               topIco={basic}
               bottomIco={advance}
-              topText="বেসিক ট্রেনিং"
-              bottomText="এডভান্স ট্রেনিং"
-              topSum="বেসিক ট্রেনিং দিয়ে শুরু হবে তোমার জার্নি"
-              bottomSum="আমরা শিখবো কোর্সের সকল এডভান্স বিষয় গুলো"
+              topText={t("journey.card3.title")}
+              bottomText={t("journey.card4.title")}
+              topSum={t("journey.card3.desc")}
+              bottomSum={t("journey.card4.desc")}
               topNum="03"
               bottomNum="04"
             />
@@ -86,10 +90,10 @@ const Journey = () => {
             <JourneyCard
               topIco={exam}
               bottomIco={lifeTime}
-              topText="এসেসমেন্ট"
-              bottomText="লাইফ টাইম এক্সেস"
-              topSum="কোর্স শেষে থাকছে নিজেকে যাচাই করার সুযোগ"
-              bottomSum="লাইফ টাইম এক্সেস থাকার কারণে কোর্স করতে পারবা যে কোন সময়"
+              topText={t("journey.card5.title")}
+              bottomText={t("journey.card6.title")}
+              topSum={t("journey.card5.desc")}
+              bottomSum={t("journey.card6.desc")}
               topNum="05"
               bottomNum="06"
             />
@@ -98,10 +102,10 @@ const Journey = () => {
             <JourneyCard
               topIco={job}
               bottomIco={work}
-              topText="জব প্লেসমেন্ট"
-              bottomText="ওয়ার্ক উইথ আস"
-              topSum="আমাদের টিম কাজ করবে তোমার জব প্লেসমেন্ট এর জন্য"
-              bottomSum="কোর্সের শেষে বাছাই করা স্টুডেন্টেরা পাবে আমাদের সাথে কাজ করার সুযোগ"
+              topText={t("journey.card7.title")}
+              bottomText={t("journey.card8.title")}
+              topSum={t("journey.card7.desc")}
+              bottomSum={t("journey.card8.desc")}
               topNum="07"
               bottomNum="08"
             />
@@ -116,23 +120,23 @@ const Journey = () => {
       >
         <img src={path} alt="" className="path" />
         <h1 className="primary-text">
-          এক নজরে আমাদের সাথে <span className="textGradient">তোমার জার্নি</span>
+        {t("journey.title")} <span className="textGradient">{t("journey.titleSpan")}</span>
         </h1>
         <p className="secondary-text">
-          যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যাও তোমার পছন্দের সেকশনে
+        {t("journey.desc")}
         </p>
         <div className="btn-group">
           <Link to="/batch" className="linkBtn">
             <button className="hbtn">
               <img src={peoples} alt="" className="ico" />
-              <p> এখনই শুরু করো </p>
+              <p>{t("journey.btn1")}</p>
             </button>
           </Link>
 
           <Link to="/batch" className="linkBtn">
             <button className="sbtn">
               <img src={seminar} alt="" className="ico" />
-              <p className="secondary-text">ফ্রি সেমিনার </p>
+              <p className="secondary-text">{t("journey.btn2")}</p>
             </button>
           </Link>
         </div>

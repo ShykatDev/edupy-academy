@@ -1,5 +1,5 @@
 #ourSeminars {
-  @include basicStyle(125vh, 5rem, 10rem);
+  @include basicStyle(auto, 5rem, 10rem);
   @include flexStyles(start, center);
   flex-direction: column;
 
@@ -13,7 +13,7 @@
 
   .seminars-slider {
     width: 90%;
-    height: 70vh;
+    height: auto;
     margin-top: 5rem;
 
     .seminarCard {

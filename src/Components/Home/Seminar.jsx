@@ -11,8 +11,11 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import FreeCourseCard from "../Cards/FreeCourseCard";
+import { useTranslation } from "react-i18next";
 
 const Seminar = () => {
+  const [t] = useTranslation("global");
+
   const settings = {
     arrows: false,
     dots: true,
@@ -60,19 +63,16 @@ const Seminar = () => {
         <div className="info-col">
           <small className="primary-text">Upcoming...</small>
           <h1 className="primary-text">
-            সঠিক দিকনির্দেশনা পেতে{" "}
-            <span className="textGradient">ফ্রি অনলাইন সেমিনারে</span> অংশ নাও
+            {t("onlineSeminar.title1")}{" "}
+            <span className="textGradient">{t("onlineSeminar.title2")}</span>{" "}
+            {t("onlineSeminar.title3")}
           </h1>
-          <p className="secondary-text">
-            সফল ক্যারিয়ার গড়ার সঠিক দিকনির্দেশনা পেতে আমাদের ফ্রি সেমিনারগুলোতে
-            অংশগ্রহণ করো। এসব সেমিনারে প্রশ্নোত্তরের মাধ্যমে তুমি কনফিউশন দূর
-            করতে পারবা
-          </p>
+          <p className="secondary-text">{t("onlineSeminar.desc")}</p>
 
           <Link to="/batch" className="linkBtn">
             <button>
               <img src={seminar} alt="" className="ico" />
-              <p>ফ্রি সেমিনার </p>
+              <p>{t("onlineSeminar.btn")}</p>
             </button>
           </Link>
         </div>
@@ -93,7 +93,7 @@ const Seminar = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="secondary-text sec-subTitle"
           >
-            যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যাও তোমার পছন্দের সেকশনে
+            যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যান আপনার পছন্দের সেকশনে
           </motion.p>
         </div>
         <motion.div
@@ -150,7 +150,6 @@ const Seminar = () => {
               />
             </div> */}
           </Slider>
-          
         </motion.div>
       </div>
     </div>

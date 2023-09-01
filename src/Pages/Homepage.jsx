@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/Home/Header";
 import Journey from "../Components/Home/Journey";
-import PopularCourses from "../Components/Home/PopularCourses";
+// import PopularCourses from "../Components/Home/PopularCourses";
 import CourseCategory from "../Components/Home/CourseCategory";
 import Support from "../Components/Home/Support";
 import Seminar from "../Components/Home/Seminar";
@@ -12,7 +12,7 @@ import OurTeam from "../Components/Home/OurTeam";
 
 const Homepage = ({ darkTheme }) => {
   return (
-    <div id="homepage" className={darkTheme ? "dark" : "light"}>
+    <div id="homepage" className={!darkTheme ? "dark" : "light"}>
       <Header />
       <Journey />
       {/* <PopularCourses /> */}

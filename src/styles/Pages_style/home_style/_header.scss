@@ -96,32 +96,36 @@
       right: 10rem;
 
       p {
-        width: 40%;
+        width: 60%;
         text-align: right;
       }
 
       .btn-group {
         @include flexStyles(space-between, center);
-        width: 50%;
+        width: 45%;
         height: auto;
         margin-top: 3rem;
 
         .linkBtn {
           width: 45%;
-          height: 100%;
+          height: 50px;
 
           button {
             width: 100%;
-            height: 50px;
+            height: 100%;
             @include flexStyles(center, center);
+
 
             img {
               width: 10%;
+              margin: 0;
             }
 
             p {
               font-size: 1rem;
-              margin-left: 0.5rem;
+              margin: 0;
+              width: auto;
+              margin-left: 1rem;
             }
           }
         }
@@ -232,6 +236,7 @@
     width: 100%;
     height: 50vh;
     position: relative;
+    margin-bottom: 5rem;
 
     .student {
       opacity: 0;
@@ -278,7 +283,7 @@
       .details {
         width: 50%;
         height: 100%;
-        @include flexStyles(space-between, end);
+        @include flexStyles(center, end);
         flex-direction: column;
 
         .banner-title {
@@ -305,6 +310,7 @@
 
         .seminarPlace {
           @include flexStyles(end, center);
+          margin-top: 2rem;
           img {
             width: 3%;
             margin-right: 0.5rem;

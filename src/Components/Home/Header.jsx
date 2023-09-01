@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 import {
   boy,
   circle,
-  end,
   girl,
-  money,
   peoples,
   place,
   seminar,
-  start,
   student,
   user,
 } from "../../assets";
 import { BsStarFill } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const [t] = useTranslation("global");
+
   return (
     <div id="header" className="background">
       <div className="gradient1"></div>
@@ -27,10 +27,10 @@ const Header = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="left-col"
         >
-          <h2 className="primary-text">শিখবে তুমি সহজ ভাবে</h2>
+          <h2 className="primary-text">{t("header.tagline1")}</h2>
           <h1 className="primary-text">
-            শেখাবো আমরা <br />
-            <span className="textGradient"> গল্পবলে</span>
+            {t("header.tagline2")} <br />
+            <span className="textGradient">{t("header.tagline3")}</span>
           </h1>
           <img src={circle} alt="" className="circle" />
         </motion.div>
@@ -39,23 +39,20 @@ const Header = () => {
           transition={{ duration: 0.7, delay: 1 }}
           className="right-col"
         >
-          <p className="secondary-text">
-            অনলাইন শিক্ষার জন্য একটি ওয়েবসাইট যা পাঠকের সাথে সংযোগ স্থাপন করে
-            এবং আধুনিক শিক্ষা সুবিধা সরবরাহ করে।
-          </p>
+          <p className="secondary-text">{t("header.message")}</p>
 
           <div className="btn-group">
             <Link to="/batch" className="linkBtn">
               <button className="hbtn">
                 <img src={peoples} alt="" className="ico" />
-                <p> নতুন ব্যাচ </p>
+                <p>{t("header.btn1")}</p>
               </button>
             </Link>
 
             <Link to="/batch" className="linkBtn">
               <button className="sbtn">
                 <img src={seminar} alt="" className="ico" />
-                <p className="secondary-text">ফ্রি সেমিনার </p>
+                <p className="secondary-text">{t("header.btn2")}</p>
               </button>
             </Link>
           </div>
@@ -110,24 +107,20 @@ const Header = () => {
             <img src={girl} alt="" className="girl" />
           </div>
           <div className="details">
-            <p className="banner-title">Successfully done!</p>
+            <p className="banner-title">Upcoming...</p>
             <h1 className="primary-text">
-              সফলভাবে করা <span>ইভেন্ট</span>
+              {t("upcoming.commingTag1")}
+              <span> {t("upcoming.commingTag2")}</span>
             </h1>
             <h2 className="textGradient" style={{ textAlign: "end" }}>
-              Divisional level cultural competition
+            {t("upcoming.eventName")}
             </h2>
             <p style={{ textAlign: "end" }} className="secondary-text desc">
-              স্মার্ট বাংলাদেশ গড়ে তোলার জন্য সাংস্কৃতিক উন্নয়ন অত্যন্ত জরুরি
-              একটি বিষয় যার প্রয়োজনীয়তা অনুধাবন করেই মাননীয় প্রধানমন্ত্রী তৃণমূল
-              পর্যায়ে গিয়ে মেধাবীদের তুলে নিয়ে আসার আদেশ প্রদান করেছেন। সেই
-              আদেশকে সামনে রেখেই আমরা, Edupy পরিবার রাজশাহী বিভাগের মেধাবীদের
-              এগিয়ে নিয়ে এসে তাদের প্রশিক্ষিত করার প্রয়াস গ্রহণ করেছি, যা
-              সরকারের সহায়তায় একটি বড় রূপ ধারণ করতে পারে।
+            {t("upcoming.eventDesc")}
             </p>
             <div className="seminarPlace">
               <img src={place} alt="" />
-              <p className="primary-text">রবীন্দ্র বিশ্ববিদ্যালয়, বাংলাদেশ</p>
+              <p className="primary-text">{t("upcoming.eventPlace")}</p>
             </div>
             {/* <div className="timing">
               <div className="start">

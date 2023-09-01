@@ -47,7 +47,7 @@
           padding: 0.2rem 0.5rem;
           background: #ffa200ce;
           border-radius: 0.3rem;
-          color: #000;
+          color: #ffffff;
         }
 
         p {
@@ -94,17 +94,16 @@
       }
     }
     .team-member:nth-child(5) {
-      background: url("../../../assets/team/sabbir.jpg");
-      background-size: cover;
+      background: url("../../../assets/team/tanha.jpg");      background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
     }
-    .team-member:nth-child(6) {
-      background: url("../../../assets/team/tanha.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+    // .team-member:nth-child(6) {
+    //   background: url("../../../assets/team/tanha.jpg");
+    //   background-size: cover;
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    // }
 
     .team-member.mem-active {
       width: 30%;

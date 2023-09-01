@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { boss, laptop } from "../../assets";
+import { useTranslation } from "react-i18next";
 
 const Support = () => {
   const [switc1, setSwitc1] = useState(true);
@@ -45,12 +46,14 @@ const Support = () => {
     setSwitc4(false);
   };
 
+  const [t] = useTranslation("global");
+
   const supports = [
-    "তোমার পছেন্দের কোর্সটি সেলেক্ট করো",
-    "পেমেন্ট অপশনে গিয়ে পেমেন্ট করো",
-    "প্রাইভেট ডিসকর্ড গ্রুপের মাধ্যমে পেয়ে যাবা সকল প্রশ্নের উত্তর খুবই অরগানাইজ ভাবে",
-    "উইকলি/মান্থলি থাকছে মেন্টরের সাথে লাইভ প্রব্লেম সল্ভিং এর সুবিধা",
-    "কোর্স শেষে আমাদের জব প্যানেল দিবে তোমাকে ultimate গাইডলাইন টু গেট ইউওর ড্রিম জব",
+    t("support.ans1"),
+    t("support.ans2"),
+    t("support.ans3"),
+    t("support.ans4"),
+    t("support.ans5"),
   ];
 
   return (
@@ -105,8 +108,9 @@ const Support = () => {
         transition={{ duration: 0.7 }}
         className="primary-text"
       >
-        কিভাবে তুমি আমাদের থেকে <span className="textGradient"> সাপোর্ট</span>{" "}
-        পাবে?
+        {t("support.title1")}{" "}
+        <span className="textGradient"> {t("support.title2")}</span>{" "}
+        {t("support.title3")}
       </motion.h1>
 
       {switc1 && (

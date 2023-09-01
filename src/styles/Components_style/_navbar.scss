@@ -14,7 +14,7 @@
     backdrop-filter: blur(17px);
 
     .logo {
-      width: 5%;
+      width: 8%;
 
       img {
         width: 100%;
@@ -22,7 +22,7 @@
     }
 
     .menu {
-      width: 40%;
+      width: 57%;
       @include flexStyles(space-between, center);
       position: relative;
 
@@ -39,7 +39,8 @@
         }
 
         img {
-          width: 10%;
+          width: 12%;
+          margin-top: 0.2rem;
         }
 
         .downArrow {
@@ -76,7 +77,8 @@
           padding-top: 1rem;
           border-bottom-left-radius: 0.3rem;
           border-bottom-right-radius: 0.3rem;
-          box-shadow: 6px 6px 10px rgba(0,0,0,0.3);
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.096);
+          z-index: 3;
 
           li {
             list-style: none;
@@ -113,12 +115,12 @@
     }
 
     .navButtons {
-      width: 25%;
+      width: 28%;
       height: 50%;
       @include flexStyles(space-between, center);
 
       .linkBtn {
-        width: 40%;
+        width: 10rem;
         height: 80%;
 
         button {
@@ -168,6 +170,13 @@
 
       .sun {
         color: rgb(247, 220, 69);
+      }
+
+      .lang {
+        width: 5%;
+        cursor: pointer;
+        transition: all 0.1s;
+        
       }
     }
   }

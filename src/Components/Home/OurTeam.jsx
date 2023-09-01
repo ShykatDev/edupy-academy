@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const OurTeam = () => {
   const teamDiv = useRef();
+  const [t, i18n] = useTranslation("global");
 
   const handleActive = (e) => {
     const childrens = Array.from(
@@ -30,22 +32,21 @@ const OurTeam = () => {
         transition={{ duration: 0.7, delay: 0 }}
         className="primary-text"
       >
-        আমাদের <span className="textGradient">দক্ষ টিম</span>, তোমাদের{" "}
-        <span className="textGradient">দক্ষ মেন্টর</span>
+        {t("team.title1")} <span className="textGradient">{t("team.title2")}</span>, {t("team.title3")}{" "}
+        <span className="textGradient">{t("team.title4")}</span>
       </motion.h1>
       <motion.p
         whileInView={{ opacity: [0, 1], y: [-50, 0] }}
         transition={{ duration: 0.7, delay: 0 }}
         className="secondary-text"
       >
-        আমাদের টিচার প্যানেলে যারা আছেন তারা বাংলাদেশের BUET এবং ইন্ডিয়ার LPU
-        থেকে গ্র্যাজুয়েটেড
+        {t("team.desc")}
       </motion.p>
 
       <div className="team" ref={teamDiv}>
         <motion.div
           whileInView={{ opacity: [0, 1], x: [-10, 0] }}
-          transition={{ duration: 0.7, delay:0 }}
+          transition={{ duration: 0.7, delay: 0 }}
           className={`team-member mem-active`}
           onClick={handleActive}
         >
@@ -130,7 +131,7 @@ const OurTeam = () => {
           </motion.div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           whileInView={{ opacity: [0, 1], x: [-10, 0] }}
           transition={{ duration: 0.7, delay: 1.5 }}
           className={`team-member`}
@@ -142,10 +143,12 @@ const OurTeam = () => {
             className="details team-bg"
           >
             <h2 className="primary-text">Md. Sabbir Hossain</h2>
-            <small className="star">BBA - Rabindra University, Bangladesh</small>
+            <small className="star">
+              BBA - Rabindra University, Bangladesh
+            </small>
             <p className="secondary-text">Chief Marketing Officer</p>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           whileInView={{ opacity: [0, 1], x: [-10, 0] }}
@@ -153,7 +156,7 @@ const OurTeam = () => {
           className={`team-member`}
           onClick={handleActive}
         >
-          <motion.div
+          <motion.div 
             whileInView={{ y: [20, 0], opacity: [0, 1] }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="details team-bg"

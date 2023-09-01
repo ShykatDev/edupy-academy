@@ -10,7 +10,7 @@ import {
 
 const Footer = ({ darkTheme }) => {
   return (
-    <div id="footer" className={darkTheme ? "dark" : "light"}>
+    <div id="footer" className={!darkTheme ? "dark" : "light"}>
       <div className="content footer-bg">
         <div className="top">
           <div className="logo-area">

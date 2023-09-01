@@ -35,7 +35,7 @@ const FreeCourseCard = ({ banner, title, mentor, desc, nos, bestSeller }) => {
             <div className="right-btn hbtn">
               <Link to="/">
                 <BsCart2 className="cart"/>
-                <p>এনরল করো</p>
+                <p>এনরল করুন</p>
               </Link>
             </div>
           </div>

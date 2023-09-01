@@ -1,0 +1,201 @@
+{
+  "navbar": {
+    "item1": "Home",
+    "item2": "About Us",
+    "item3": "Courses",
+    "item4": "Products",
+    "item5": "Marketplace",
+    "item6": "login/register",
+    "item7": "Batch 01",
+    "course1": "Under 10",
+    "course2": "SSC/HSC",
+    "course3": "Engineering",
+    "course4": "Career",
+    "course5": "All Course"
+  },
+  "header": {
+    "tagline1": "You will learn easily",
+    "tagline2": "We will teach the",
+    "tagline3": "STORY",
+    "message": "Edupy Academy is a platform where we create passion for learning, where every student can thrive through this experience, and shape a bright future for generations to come."
+  },
+
+  "upcoming": {
+    "commingTag1": "Our Upcoming",
+    "commingTag2": "Event",
+    "successTag1": "Our Successfull Event",
+    "successTag2": "Our Successfull Event",
+    "eventName": "Divisional level cultural competition",
+    "eventDesc": "Cultural development is a very important issue for building a smart Bangladesh, realizing the need, the Honorable Prime Minister has given an order to bring out talented people at the grass root level. Keeping that order in mind, we, the Edupy family have taken up the endeavor to bring forward and train the talented people of Rajshahi Division, which can take a major form with the help of the Government.",
+    "eventPlace": "Rabindra University, Bangladesh"
+  },
+  "journey": {
+    "title": "With us at a glance",
+    "titleSpan": "Your Journey",
+    "desc": "Go to the section of your choice to learn anything on any topic",
+    "btn1": "Enroll Now",
+    "btn2": "Free Seminar",
+    "card1": {
+      "title": "Free Seminar",
+      "desc": "You can know all the information about the course through the free seminar"
+    },
+    "card2": {
+      "title": "Demo Class",
+      "desc": "Before starting the course, there is an opportunity to do a demo class for free"
+    },
+    "card3": {
+      "title": "Basic Training",
+      "desc": "Your journey will begin with basic training"
+    },
+    "card4": {
+      "title": "Advance Training",
+      "desc": "You will learn all the advanced topics of the course"
+    },
+    "card5": {
+      "title": "Assignments",
+      "desc": "At the end of the course lesson there is an opportunity to check yourself"
+    },
+    "card6": {
+      "title": "Lifetime Access",
+      "desc": "You can take the course at any time due to having lifetime access"
+    },
+    "card7": {
+      "title": "Job Placement",
+      "desc": "Our team will work for your job placement"
+    },
+    "card8": {
+      "title": "Work with us",
+      "desc": "At the end of the course the selected students will get an opportunity to work with us"
+    }
+  },
+  "seminar": {
+    "title1": "Our",
+    "title2": "Seminars",
+    "title3": "",
+    "desc": "We impart ideas about modern technology to students through free seminars in various educational institutions of Bangladesh",
+    "sem1": {
+      "date": "17 July, 2023",
+      "place": "Shahjadpur Ibrahim Pilot Girls School, Sirajganj"
+    },
+    "sem2": {
+      "date": "25 June, 2023",
+      "place": "Rangdhonu Model School, Sirajganj"
+    },
+    "sem3": {
+      "date": "14 June, 2023",
+      "place": "Pabna Science and Technology, Pabna"
+    }
+  },
+  "category": {
+    "title1": "One and only place to",
+    "title2": "learn everything",
+    "title3": "",
+    "desc": "Go to the section of your choice to learn anything on any topic",
+    "cat1": {
+      "title": "Kid Zone",
+      "desc": "Go here to view all content for classes 5 - 9"
+    },
+    "cat2": {
+      "title": "Creativity",
+      "desc": "Go here to see Graphics, Motion, Illustrations content"
+    },
+    "cat3": {
+      "title": "Development",
+      "desc": "Go here to see all coding related content"
+    },
+    "cat4": {
+      "title": "Self Growth",
+      "desc": "Go here to see all the content on making yourself professional"
+    },
+    "cat5": {
+      "title": "Academic",
+      "desc": "Go here to see all the content of Entrance Test, Job Test, IELTS, Higher Education"
+    },
+    "cat6": {
+      "title": "Extra Activities",
+      "desc": "Go here to see all the content of Being Extraordinary"
+    }
+  },
+  "support": {
+    "title1": "How do you get",
+    "title2": "SUPPORT",
+    "title3": "from us ?",
+    "ans1": "Select the course of your choice",
+    "ans2": "Go to payment option and make payment",
+    "ans3": "All questions will be answered in a very organized manner through private discord groups",
+    "ans4": "Weekly/Monthly with Live Problem Solving facility with Mentor",
+    "ans5": "At the end of the course, our job panel will give you ultimate guidelines to get your dream job"
+  },
+  "onlineSeminar": {
+    "title1": "Participate free online seminars to get",
+    "title2": "proper guidance",
+    "title3": "",
+    "desc": "Attend our free seminars to get the right guidance to build a successful career. You can clear your confusion through question and answer in these seminars.",
+    "btn": "Free Seminar"
+  },
+  "freeCourses": {
+    "title1": "Free",
+    "title2": "Courses",
+    "title3": "",
+    "desc": "Go to the course of your choice to learn anything in any subject",
+    "course1": {
+      "title": "Advance Python Programming",
+      "desc": "This Python course makes programming very easy and covers all topics from basic to advanced.",
+      "btn": "Enroll"
+    }
+  },
+  "faq": {
+    "title1": "Why start from",
+    "title2": "Edupy Academy",
+    "title3": "?",
+    "desc": "Take a look at how we walk you through each step",
+    "btn": "Enroll Now",
+    "qna1": {
+      "ques": "Content from industry experts",
+      "ans": "Each of our content is created with direct support, guidance and feedback from the industry's top experts."
+    },
+    "qna2": {
+      "ques": "Direct support from mentors",
+      "ans": "If you have any problem while doing the course, you will get the solution from our experienced mentors only by contacting during the specified support hours."
+    },
+    "qna3": {
+      "ques": "Projects and Assignments",
+      "ans": "Market standard practical projects and assignments will be done, which you can add to your portfolio."
+    },
+    "qna4": {
+      "ques": "Freelancing support",
+      "ans": "If you want to do freelancing after the course, you will be given detailed guidelines and support."
+    },
+    "qna5": {
+      "ques": "Job and internship opportunities",
+      "ans": "Job candidate profiles of the best performers will be shared directly with our partner organizations."
+    },
+    "qna6": {
+      "ques": "Career and interview preparation",
+      "ans": "Get direct support for your CV, LinkedIn profile, GitHub profile and job interviews from us."
+    },
+    "qna7": {
+      "ques": "Verified Certificate",
+      "ans": "At the end of the course you will be graded on your performance. Accordingly you will get certificate."
+    },
+    "qna8": {
+      "ques": "Learning at your convenience",
+      "ans": "You can learn from our course learning materials at your own convenient time and pace."
+    }
+  },
+  "discordSupport": {
+    "title1": "There is a",
+    "title2": "Discord support channel",
+    "title3": "for round-the-clock support",
+    "desc": "For each course we have created a private Discord support channel where the course instructor along with 4-5 course moderators will directly answer your various questions. We promise to answer your questions within 24 hours maximum. But in most cases you will get the answer in less time than that. Besides, there will be live sessions every week where you can directly ask questions and get answers.",
+    "btn1": "Discord Channel",
+    "btn2": "Support Center"
+  },
+  "team": {
+    "title1": "Our",
+    "title2": "Skilled Team",
+    "title3": "Your",
+    "title4": "Skilled Mentor",
+    "desc": "Our teacher panel are graduates from universities in Bangladesh and outside Bangladesh"
+  }
+}

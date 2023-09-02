@@ -6,6 +6,7 @@ import {
   course8,
   seminar,
   seminarBanner,
+  web_mastery,
 } from "../../assets";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -35,13 +36,6 @@ const Seminar = () => {
       },
       {
         breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 575,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -85,15 +79,16 @@ const Seminar = () => {
             transition={{ duration: 0.7 }}
             className="primary-text"
           >
-            ফ্রি
-            <span className="textGradient"> কোর্স </span>সমূহ
+            {t("freeCourses.title1")}
+            <span className="textGradient"> {t("freeCourses.title2")} </span>
+            {t("freeCourses.title3")}
           </motion.h1>
           <motion.p
             whileInView={{ y: [-20, 0], opacity: [0, 1] }}
             transition={{ duration: 0.7, delay: 0.3 }}
             className="secondary-text sec-subTitle"
           >
-            যেকোনো বিষয়ে যেকোনো কিছু শিখতে চলে যান আপনার পছন্দের সেকশনে
+            {t("freeCourses.desc")}
           </motion.p>
         </div>
         <motion.div
@@ -105,15 +100,23 @@ const Seminar = () => {
             <div>
               <FreeCourseCard
                 banner={course5}
-                title="এডভান্স পাইথন প্রোগ্রামিং"
+                title={t("freeCourses.course1.title")}
                 mentor="Edupy Academy"
-                price="2000"
-                desc="এই পাইথন কোর্সে প্রগ্রামিং কে অনেক সহজ করে বোঝানো হয়েছে এবং বেসিক থেকে এডভান্স সব টপিক কভার করা হয়েছে"
+                desc={t("freeCourses.course1.desc")}
                 nos="0"
                 bestSeller={false}
               />
             </div>
-            <div></div>
+            <div>
+              <FreeCourseCard
+                banner={web_mastery}
+                title={t("freeCourses.course2.title")}
+                mentor="Edupy Academy"
+                desc={t("freeCourses.course2.desc")}
+                nos="0"
+                bestSeller={false}
+              />
+            </div>
             <div></div>
             <div></div>
             {/* <div>

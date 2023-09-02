@@ -7,8 +7,10 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Footer = ({ darkTheme }) => {
+  const [t] = useTranslation("global");
   return (
     <div id="footer" className={!darkTheme ? "dark" : "light"}>
       <div className="content footer-bg">
@@ -16,8 +18,7 @@ const Footer = ({ darkTheme }) => {
           <div className="logo-area">
             <img src={logo} alt="" />
             <small className="primary-text">
-              আমরা এখানে আমাদের দক্ষতা, কৌশল এবং শিক্ষাগত জ্ঞান ভাগ করে নিয়েছি
-              ভবিষ্যতের জন্য।
+              {t('footer.title')}
             </small>
 
             <div className="socials">
@@ -36,45 +37,45 @@ const Footer = ({ darkTheme }) => {
             </div>
           </div>
           <div className="company">
-            <p className="title">কোম্পানি</p>
+            <p className="title">{t('footer.heading1')}</p>
 
             <Link to="/about-us" className="footer-link secondary-text">
-              আমাদের সম্পর্কে
+            {t('footer.heading1option.option1')}
             </Link>
             <Link to="/refund" className="footer-link secondary-text">
-              রিফান্ড পলিসি
+            {t('footer.heading1option.option2')}
             </Link>
             <Link to="/privacy" className="footer-link secondary-text">
-              প্রাইভেসী পলিসি
+            {t('footer.heading1option.option3')}
             </Link>
             <Link to="/terms" className="footer-link secondary-text">
-              টার্মস এবং শর্তাবলী
+            {t('footer.heading1option.option4')}
             </Link>
           </div>
           <div className="others">
-            <p className="title">কুইক লিংক</p>
+            <p className="title">{t('footer.heading2')}</p>
 
             <Link to="/upcoming-batch" className="footer-link secondary-text">
-              আপকামিং লাইভ ব্যাচ
+            {t('footer.heading2option.option1')}
             </Link>
             <Link
               to="/free-live-classes"
               className="footer-link secondary-text"
             >
-              ফ্রী লাইভ ক্লাস
+              {t('footer.heading2option.option2')}
             </Link>
             <Link to="/live-workshop" className="footer-link secondary-text">
-              লাইভ ওয়ার্কশপ
+            {t('footer.heading2option.option3')}
             </Link>
             <Link to="/all-courses" className="footer-link secondary-text">
-              সকল কোর্স
+            {t('footer.heading2option.option4')}
             </Link>
             <Link to="/blogs" className="footer-link secondary-text">
-              ব্লগ
+            {t('footer.heading2option.option5')}
             </Link>
           </div>
           <div className="social-media">
-            <p className="title">যোগাযোগ</p>
+            <p className="title">{t('footer.heading3')}</p>
 
             <span className="secondary-text">
               <img src={phone} alt="" />
@@ -95,7 +96,7 @@ const Footer = ({ darkTheme }) => {
 
         <div className="bottom nav-bg">
           <small className="secondary-text">
-            স্বত্ব © ২০২৩ edupy academy কর্তৃক সর্বস্বত্ব সংরক্ষিত
+          {t('footer.copy')}
           </small>
         </div>
       </div>

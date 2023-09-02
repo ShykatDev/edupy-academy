@@ -29,6 +29,8 @@ export { default as lifeTime } from "./lifeTime.png";
 export { default as job } from "./job.png";
 export { default as work } from "./work.png";
 
+//courses-----------------------
+
 export { default as course1 } from "./course1.png";
 export { default as course2 } from "./course2.png";
 export { default as course3 } from "./course3.png";
@@ -37,6 +39,7 @@ export { default as course5 } from "./course5.jpg";
 export { default as course6 } from "./course6.png";
 export { default as course7 } from "./course7.png";
 export { default as course8 } from "./course8.png";
+export { default as web_mastery } from "./web_design_mastery.png";
 export { default as cart } from "./order.png";
 export { default as checked } from "./checked.png";
 

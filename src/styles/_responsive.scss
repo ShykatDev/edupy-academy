@@ -1131,7 +1131,7 @@
 
     .upcomingSeminar {
       width: 100%;
-      height: 70vh;
+      height: auto;
       flex-direction: column;
       padding: 2rem 1rem;
 
@@ -1185,7 +1185,7 @@
           .course-details {
             padding: 1rem;
             h2 {
-              font-size: 1.3rem;
+              font-size: 1rem;
               height: auto;
             }
 
@@ -1371,12 +1371,12 @@
           @include flexStyles(center, center);
 
           img {
-            width: 15%;
+            width: 35%;
             margin-bottom: 1rem;
           }
           small {
             text-align: center;
-            font-size: 0.6rem;
+            font-size: 0.8rem;
           }
         }
         .company {

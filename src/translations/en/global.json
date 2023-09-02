@@ -17,7 +17,9 @@
     "tagline1": "You will learn easily",
     "tagline2": "We will teach the",
     "tagline3": "STORY",
-    "message": "Edupy Academy is a platform where we create passion for learning, where every student can thrive through this experience, and shape a bright future for generations to come."
+    "message": "Edupy Academy is a platform where we create passion for learning, where every student can thrive through this experience, and shape a bright future for generations to come.",
+    "btn1": "New Batch",
+    "btn2": "Free Seminar"
   },
 
   "upcoming": {
@@ -142,6 +144,11 @@
       "title": "Advance Python Programming",
       "desc": "This Python course makes programming very easy and covers all topics from basic to advanced.",
       "btn": "Enroll"
+    },
+    "course2": {
+      "title": "Web Design Mastery",
+      "desc": "All topics from basic to advanced to become a skilled web designer are taught through projects",
+      "btn": "Enroll"
     }
   },
   "faq": {
@@ -197,5 +204,25 @@
     "title3": "Your",
     "title4": "Skilled Mentor",
     "desc": "Our teacher panel are graduates from universities in Bangladesh and outside Bangladesh"
+  },
+  "footer": {
+    "title": "We are here to share our skills, techniques and educational knowledge for the future.",
+    "heading1": "COMPANY",
+    "heading1option": {
+      "option1": "About Us",
+      "option2": "Refund Policy",
+      "option3": "Privacy Policy",
+      "option4": "Terms & Condition"
+    },
+    "heading2": "QUICK LINK",
+    "heading2option": {
+      "option1": "Upcomming Live Batch",
+      "option2": "Free Live Class",
+      "option3": "Live Workshop",
+      "option4": "All Courses",
+      "option5": "Blogs"
+    },
+    "heading3": "CONTACT",
+    "copy": "Copyright © 2023 by Edupy Academy All rights reserved"
   }
 }

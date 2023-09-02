@@ -39,11 +39,13 @@
       height: 80%;
       @include flexStyles(center, start);
       flex-direction: column;
+
       small {
         padding: 0.2rem 1rem;
         background: $lightNav;
         margin-bottom: 2rem;
         border-radius: 0.3rem;
+        background: #4d59ff1e;
       }
 
       .linkBtn {
@@ -54,7 +56,7 @@
           width: 100%;
           height: 40px;
           @include flexStyles(center, center);
-          background: $highlight;
+          background: #00bd29;
           color: white;
           transition: 0.3s;
           img {
@@ -99,7 +101,7 @@
 
       #freeCourseCard {
         width: 95%;
-        height: 55vh;
+        height: 52vh;
         overflow: hidden;
         border-radius: 0.5rem;
 
@@ -162,7 +164,8 @@
 
           h2 {
             width: 100%;
-            height: 20%;
+            height: auto;
+            font-size: 1.2rem;
           }
 
           small {
@@ -176,6 +179,7 @@
             font-size: 0.9rem;
             font-weight: 300;
             height: 30%;
+            margin-top: 1rem;
           }
 
           .enrollNum {

@@ -7,6 +7,7 @@ import Footer from "./Components/UI/Footer";
 
 import Construction from "./Components/UI/Construction";
 import ScrollTop from "./Components/UI/ScrollTop";
+import Marketplace from "./Components/MarketPlace/Marketplace";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -18,6 +19,10 @@ function App() {
         <ScrollTop />
         <Routes>
           <Route path="/" element={<Homepage darkTheme={darkTheme} />} />
+          <Route
+            path="/marketplace"
+            element={<Marketplace darkTheme={darkTheme} />}
+          />
           <Route path="*" element={<Construction darkTheme={darkTheme} />} />
         </Routes>
         <Footer darkTheme={darkTheme} />

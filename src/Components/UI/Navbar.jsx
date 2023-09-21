@@ -59,12 +59,12 @@ const Navbar = ({ setDarkTheme, darkTheme }) => {
             <p className="secondary-text">{t("navbar.item2")}</p>
           </NavLink>
 
-          <NavLink to="/about-us" className="link">
+          <NavLink to="/products" className="link">
             <img src={box} alt="" className="ico" />
             <p className="secondary-text">{t("navbar.item4")}</p>
           </NavLink>
 
-          <NavLink to="/about-us" className="link">
+          <NavLink to="/marketplace" className="link">
             <img src={job} alt="" className="ico" />
             <p className="secondary-text">{t("navbar.item5")}</p>
           </NavLink>

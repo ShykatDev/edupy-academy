@@ -1,7 +1,7 @@
 #journey {
   width: 100%;
   height: auto;
-  padding: 10rem;
+  padding: 5rem 10rem 10rem 10rem;
   @include flexStyles(space-between, center);
 
   .left-slider {

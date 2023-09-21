@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+#marketplace {
+  @include basicStyle(auto, 0, 0rem);
+
+  main {
+    width: 100%;
+    height: auto;
+
+    .firstSection {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      @include flexStyles(space-between, center);
+      padding: 0 10rem;
+
+      .banner {
+        width: 40%;
+        height: 80vh;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      header {
+        width: 50%;
+        height: 90vh;
+        @include flexStyles(center, flex-end);
+        flex-direction: column;
+
+        .topBox {
+          width: 15rem;
+          height: auto;
+          @include flexStyles(center, center);
+          padding: 0.7rem 0.2rem;
+          border-radius: 5rem;
+          gap: 1rem;
+          border: 1px solid #797979c6;
+
+          img {
+            width: 15%;
+          }
+
+          small {
+            font-size: 0.7rem;
+            width: 70%;
+          }
+        }
+
+        .heading {
+          font-size: 4rem;
+          width: 100%;
+          text-align: right;
+          line-height: 5rem;
+          margin-top: 2rem;
+
+          span {
+            font-family: "Satisfy", cursive;
+            padding: 0 1rem;
+          }
+        }
+
+        .subTitle {
+          width: 100%;
+          text-align: right;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          font-weight: 300;
+        }
+
+        .btn-group {
+          @include flexStyles(space-between, center);
+          width: 40%;
+          height: auto;
+          margin-top: 2.5rem;
+
+          .linkBtn {
+            width: 45%;
+            height: 100%;
+
+            button {
+              width: 100%;
+              height: 50px;
+              @include flexStyles(center, center);
+
+              img {
+                width: 10%;
+              }
+
+              p {
+                font-size: 1rem;
+                margin-left: 0.5rem;
+                margin-top: 0;
+              }
+            }
+          }
+
+          .linkBtn:first-child {
+            button {
+              color: #fff;
+              &:hover {
+                background: $highlightHover;
+              }
+            }
+          }
+          .linkBtn:last-child {
+            button {
+              &:hover {
+                background: #bcbcbc52;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .searchBar {
+        width: 100%;
+        height: 20vh;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @include flexStyles(center, center);
+
+        input {
+          width: 40rem;
+          height: 4rem;
+          border-top: 1px solid #000;
+          border-left: 1px solid #000;
+          border-bottom: 1px solid #000;
+          border-right: 1px solid transparent;
+          outline: none;
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          background: rgba(230, 230, 230, 0.466);
+          backdrop-filter: blur(15px);
+          padding-left: 2rem;
+          font-size: 1rem;
+          color: black;
+
+          &::placeholder {
+            font-size: 1rem;
+            font-weight: 300;
+            color: black;
+          }
+        }
+
+        button {
+          height: 4rem;
+          width: 4rem;
+          @include flexStyles(center, center);
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          background: $buttonBG;
+          border-top: 1px solid #000;
+          border-right: 1px solid #000;
+          border-bottom: 1px solid #000;
+          border-left: 1px solid transparent;
+
+          img {
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    .categories {
+      width: 100%;
+      @include basicStyle(auto, 5rem, 10rem);
+      padding-bottom: 10rem;
+
+      h1 {
+        margin-bottom: 2rem;
+      }
+
+      #popularCard {
+        position: relative;
+        width: 255px;
+        height: 350px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .details {
+          width: 100%;
+          height: 25%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 1rem;
+
+          h2 {
+            margin-top: -0.5rem;
+          }
+        }
+      }
+    }
+
+    .howWeWork {
+      @include flexStyles(space-between, start);
+      @include basicStyle(auto, 5rem, 10rem);
+      background: #f0e6cb;
+
+      .left {
+        width: 30%;
+
+        h1 {
+          font-size: 5rem;
+          line-height: 5rem;
+        }
+        p {
+          font-size: 1.3rem;
+          width: 70%;
+          margin-top: 1rem;
+        }
+        button {
+          margin-top: 3rem;
+          padding: 0.8rem 2rem;
+          border-radius: 0.5rem;
+          color: white;
+        }
+      }
+      .middle {
+        width: 28%;
+        height: 25rem;
+        object-fit: cover;
+      }
+
+      .right {
+        width: 30%;
+        @include flexStyles(start, flex-start);
+        flex-direction: column;
+
+        ul {
+          width: 100%;
+          @include flexStyles(start, flex-end);
+          flex-direction: column;
+
+          li {
+            @include flexStyles(flex-start, start);
+            margin: 0.5rem 0;
+            gap: 1rem;
+
+            img {
+              width: 4%;
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .startContent {
+      @include basicStyle(auto, 5rem, 10rem);
+      .title {
+        text-align: center;
+
+        p {
+          width: 40%;
+          margin: 0 auto;
+          font-weight: 300;
+        }
+      }
+
+      .sections {
+        @include flexStyles(space-between, start);
+        @include basicStyle(auto, 5rem, 20rem);
+
+        .client,
+        .talent {
+          width: 40%;
+
+          img {
+            width: 100%;
+            height: 16rem;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            font-weight: 300;
+            margin: 1rem 0;
+          }
+
+          .postBtn {
+            margin-top: 1rem;
+            padding: 0.5rem 1.2rem;
+            color: white;
+          }
+
+          .benefits {
+            li {
+              display: inline-block;
+              padding: 0.1rem 0rem;
+              list-style-type: circle;
+              border-radius: 0.2rem;
+              font-weight: 300;
+              @include flexStyles(start, center);
+
+              .ball {
+                width: 7px;
+                height: 7px;
+                background: $star;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

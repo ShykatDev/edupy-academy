@@ -28,6 +28,7 @@ export { default as exam } from "./exam.png";
 export { default as lifeTime } from "./lifeTime.png";
 export { default as job } from "./job.png";
 export { default as work } from "./work.png";
+export { default as search } from "./search.png";
 
 //courses-----------------------
 
@@ -95,3 +96,14 @@ export { default as s3p4 } from "./seminar3/pic4.jpg";
 
 export { default as bn } from "./bangla.png";
 export { default as en } from "./english.png";
+export { default as arrowr8 } from "./right-arrow.png";
+
+//marketplace-services
+export { default as cover } from "./marketplace_banner.png";
+export { default as cover2 } from "./marketplace_banner_2.jpg";
+export { default as animated } from "./popularServices/animated-explainer.webp";
+export { default as data_entry } from "./popularServices/data-entry.webp";
+export { default as illustration } from "./popularServices/illustration.webp";
+export { default as logo_design } from "./popularServices/logo-design.webp";
+export { default as social } from "./popularServices/social.webp";
+export { default as wordpress } from "./popularServices/wordpress.webp";

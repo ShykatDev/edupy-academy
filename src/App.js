@@ -8,6 +8,7 @@ import Footer from "./Components/UI/Footer";
 import Construction from "./Components/UI/Construction";
 import ScrollTop from "./Components/UI/ScrollTop";
 import Marketplace from "./Components/MarketPlace/Marketplace";
+import SingleAnimatedCategory from "./Components/MarketPlace/SingleAnimatedCategory";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -22,6 +23,10 @@ function App() {
           <Route
             path="/marketplace"
             element={<Marketplace darkTheme={darkTheme} />}
+          />
+          <Route
+            path="//marketplace/animated"
+            element={<SingleAnimatedCategory darkTheme={darkTheme} />}
           />
           <Route path="*" element={<Construction darkTheme={darkTheme} />} />
         </Routes>

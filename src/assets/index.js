@@ -107,3 +107,10 @@ export { default as illustration } from "./popularServices/illustration.webp";
 export { default as logo_design } from "./popularServices/logo-design.webp";
 export { default as social } from "./popularServices/social.webp";
 export { default as wordpress } from "./popularServices/wordpress.webp";
+
+//marketplace-category-services
+export { default as mainLogoVideo } from "./categoryService/clapperboard.png";
+export { default as shorts } from "./categoryService/video-player.png";
+export { default as cinematic } from "./categoryService/editing.png";
+export { default as infographic } from "./categoryService/multimedia.png";
+export { default as client } from "./client.webp";

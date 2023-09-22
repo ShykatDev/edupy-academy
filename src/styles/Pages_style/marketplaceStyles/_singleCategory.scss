@@ -1,0 +1,241 @@
+#singleCategory {
+  @include basicStyle(auto, 0rem, 0rem);
+
+  main {
+    padding: 10rem 10rem 5rem 10rem;
+
+    .topContent {
+      width: 100%;
+      height: auto;
+      @include flexStyles(space-between, start);
+
+      .details {
+        width: 70%;
+        height: auto;
+
+        .titleLogo {
+          width: 5%;
+          //   margin-bottom: 1rem;
+        }
+
+        p {
+          margin-bottom: 5rem;
+        }
+
+        .services {
+          @include flexStyles(start, start);
+          gap: 1rem;
+
+          .item {
+            width: 15rem;
+            height: 9rem;
+            padding: 1.5rem;
+            border: 1px solid #8b8b8b38;
+            border-radius: 1rem;
+            img {
+              width: 3rem;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      .count {
+        li {
+          list-style: disc;
+          @include flexStyles(start, center);
+
+          p {
+            span {
+              font-weight: 600;
+              font-size: large;
+            }
+          }
+          .ball {
+            width: 5px;
+            height: 5px;
+            margin-right: 0.5rem;
+            border-radius: 50%;
+            background: $gradientText2;
+          }
+
+          .sball {
+            background: $gradientText1;
+          }
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      margin: 3rem 0;
+      background: #8b8b8b38;
+    }
+
+    .postedJobs {
+      .bar {
+        @include flexStyles(space-between, start);
+        margin-bottom: 2rem;
+        p {
+          span {
+            font-size: large;
+            font-weight: 600;
+          }
+        }
+
+        .postLine {
+          .postJob {
+            text-decoration: underline;
+            font-size: large;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .jobs {
+        width: 100%;
+        height: auto;
+
+        .jobsCard {
+          @include flexStyles(start, start);
+          flex-wrap: wrap;
+          gap: 3rem 2rem;
+
+          #jobCard {
+            width: 23.4%;
+            height: auto;
+            border-radius: 0.5rem;
+            overflow: hidden;
+
+            .jobBanner {
+              width: 100%;
+              height: 15rem;
+              object-fit: cover;
+              border-radius: 0.5rem;
+            }
+
+            .clientDetails {
+              width: 100%;
+              height: auto;
+              @include flexStyles(space-between, center);
+              padding: 0.5rem 1rem;
+
+              .userInfo {
+                @include flexStyles(start, center);
+                img {
+                  width: 10%;
+                  margin-right: 0.5rem;
+                }
+                .desc {
+                  font-weight: 600;
+                  font-size: large;
+                }
+
+                .price{
+                    font-weight: 600;
+                    font-size: large;
+                }
+              }
+
+              .postDate {
+                color: $star;
+              }
+            }
+
+            .jobDetails {
+              padding: 1rem;
+
+              p {
+                font-weight: 300;
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+
+        .pagination {
+          width: 100%;
+          height: auto;
+          margin-top: 3rem;
+          @include flexStyles(end, center);
+
+          .pageList {
+            button {
+              border: 1px solid #ccc;
+              width: 2rem;
+              height: 2rem;
+              margin-left: 0.5rem;
+            }
+            button.activePage {
+              background: $gradientText2;
+              color: white;
+              border: 1px solid $gradientText2;
+            }
+          }
+        }
+      }
+    }
+
+    .commonFAQs{
+        width: 100%;
+        height: auto;
+        h2,p{
+            text-align: center;
+        }
+    }
+
+    .otherCategories {
+      width: 100%;
+      @include basicStyle(auto, 5rem, 0rem);
+      padding-bottom: 10rem;
+
+      .title {
+        width: 100%;
+        @include flexStyles(space-between, center);
+        margin-bottom: 2rem;
+
+        .allCategory {
+          text-decoration: underline;
+          transition: 0.3s;
+
+          &:hover {
+            color: $gradientText2;
+          }
+        }
+      }
+
+      #popularCard {
+        position: relative;
+        width: 255px;
+        height: 350px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .details {
+          width: 100%;
+          height: 23%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 1rem;
+
+          h2 {
+            margin-top: -0.2rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

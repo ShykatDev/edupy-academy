@@ -13,11 +13,8 @@ import {
   cover,
   checked,
   cover2,
-  course1,
-  course5,
   course3,
   course2,
-  arrowr8,
 } from "../../assets";
 import Slider from "react-slick";
 import PopularServicesCard from "./PopularServicesCard";

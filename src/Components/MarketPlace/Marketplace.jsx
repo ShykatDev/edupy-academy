@@ -60,7 +60,8 @@ const Marketplace = ({ darkTheme }) => {
     <div id="marketplace" className={!darkTheme ? "dark" : "light"}>
       <main className="background">
         <div className="firstSection">
-          <h1>Note: Add Gradient</h1>
+          <div className="gradient1"></div>
+          <div className="gradient2"></div>
           <div className="banner">
             <img src={cover} alt="" />
           </div>
@@ -94,7 +95,7 @@ const Marketplace = ({ darkTheme }) => {
               <Link to="/batch" className="linkBtn">
                 <button className="sbtn">
                   <img src={login} alt="" className="ico" />
-                  <p className="secondary-text">Join</p>
+                  <p className="secondary-text">Sign up</p>
                 </button>
               </Link>
             </div>
@@ -114,7 +115,15 @@ const Marketplace = ({ darkTheme }) => {
         </div>
 
         <div className="categories">
-          <h1 className="primary-text">Popular Services</h1>
+          <div className="title">
+            <h1 className="primary-text">Popular Services</h1>
+            <Link
+              to="/marketplace/categories"
+              className="allCategory primary-text"
+            >
+              View All
+            </Link>
+          </div>
 
           <Slider {...settings}>
             <div>
@@ -166,6 +175,79 @@ const Marketplace = ({ darkTheme }) => {
               />
             </div>
           </Slider>
+        </div>
+
+        <div className="startContent">
+          <div className="gradient1"></div>
+          <div className="gradient2"></div>
+
+          <div className="title">
+            <h1 className="primary-text">
+              It all starts <span className="textGradient">with a click</span>
+            </h1>
+            <p className="secondary-text">
+              Whether you're brand new or on brand two (or three!), we've got a
+              solution that'll suit your business and elevate your branding.
+            </p>
+          </div>
+
+          <div className="sections">
+            <div className="client">
+              <img src={course3} alt="" className="topBanner" />
+              <h2 className="primary-text">For Client</h2>
+              <p className="secondary-text">
+                Work with the largest network of independent professionals and
+                get things done—from quick turnarounds to big transformations.
+              </p>
+              <ul className="benefits">
+                <li className="">
+                  <div className="ball"></div>
+                  <small className="primary-text">
+                    Post a job and hire a pro
+                  </small>
+                </li>
+                <li className="">
+                  <div className="ball"></div>
+                  <small className="primary-text">
+                    Access expert talent to fill your skill gaps
+                  </small>
+                </li>
+              </ul>
+
+              <button className="postBtn hbtn">Post Job</button>
+            </div>
+
+            <div className="talent">
+              <img src={course2} alt="" className="topBanner" />
+              <h2 className="primary-text">For Talent</h2>
+              <p className="secondary-text">
+                Meet clients you’re excited to work with and take your career or
+                business to new heights.
+              </p>
+              <ul className="benefits">
+                <li className="">
+                  <div className="ball"></div>
+                  <small className="primary-text">
+                    Find opportunities for every stage of your freelance career
+                  </small>
+                </li>
+                <li className="">
+                  <div className="ball"></div>
+                  <small className="primary-text">
+                    Explore different ways to earn
+                  </small>
+                </li>
+                <li className="">
+                  <div className="ball"></div>
+                  <small className="primary-text">
+                    Control when, where, and how you work
+                  </small>
+                </li>
+              </ul>
+
+              <button className="postBtn hbtn">Find Job</button>
+            </div>
+          </div>
         </div>
 
         <div className="howWeWork">
@@ -228,68 +310,18 @@ const Marketplace = ({ darkTheme }) => {
           </div>
         </div>
 
-        <div className="startContent">
-          <div className="title">
-            <h1 className="primary-text">
-              It all starts with a <span className="textGradient">click</span>
-            </h1>
-            <p className="secondary-text">
-              Whether you're brand new or on brand two (or three!), we've got a
-              solution that'll suit your business and elevate your branding.
-            </p>
-          </div>
-
-          <div className="sections">
-            <div className="client">
-              <img src={course3} alt="" className="topBanner" />
-              <h2 className="primary-text">For Client</h2>
-              <p className="secondary-text">
-                Work with the largest network of independent professionals and
-                get things done—from quick turnarounds to big transformations.
-              </p>
-              <ul className="benefits">
-                <li className="">
-                  <div className="ball"></div>
-                  <small className="primary-text">
-                    Post a job and hire a pro
-                  </small>
-                </li>
-              </ul>
-
-              <button className="postBtn hbtn">Post Job</button>
-            </div>
-
-            <div className="talent">
-              <img src={course2} alt="" className="topBanner" />
-              <h2 className="primary-text">For Talent</h2>
-              <p className="secondary-text">
-                Meet clients you’re excited to work with and take your career or
-                business to new heights.
-              </p>
-              <ul className="benefits">
-                <li className="">
-                  <div className="ball"></div>
-                  <small className="primary-text">
-                    Find opportunities for every stage of your freelance career
-                  </small>
-                </li>
-                <li className="">
-                  <div className="ball"></div>
-                  <small className="primary-text">
-                    Explore different ways to earn
-                  </small>
-                </li>
-                <li className="">
-                  <div className="ball"></div>
-                  <small className="primary-text">
-                    Control when, where, and how you work
-                  </small>
-                </li>
-              </ul>
-
-              <button className="postBtn hbtn">Find Job</button>
-            </div>
-          </div>
+        <div className="animated-texts jc2">
+          <ul>
+            <li className="secondary-text">Edupy Academy</li>
+            <li className="secondary-text">First Freelancing Website in Bangladesh</li>
+            <li className="secondary-text">Trusted Platform for freelancers</li>
+            <li className="secondary-text">Beginner Freiendly</li>
+            <li className="secondary-text">No cost to join</li>
+            <li className="secondary-text">Explore different ways to earn</li>
+            <li className="secondary-text">Access expert talent to fill your skill gaps</li>
+            <li className="secondary-text">Get quality work done quickly</li>
+            <li className="secondary-text">Find the right service for every price point</li>
+          </ul>
         </div>
       </main>
     </div>

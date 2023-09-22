@@ -117,14 +117,14 @@ const Navbar = ({ setDarkTheme, darkTheme }) => {
         <div className="navButtons">
           <Link to="/login" className="linkBtn">
             <button className="sbtn">
-              <img src={login} alt="" className="ico" />
-              <p className="secondary-text">{t("navbar.item6")}</p>
+              <img src={peoples} alt="" className="ico" />
+              <p className="secondary-text">{t("navbar.item7")}</p>
             </button>
           </Link>
           <Link to="/batch" className="linkBtn">
             <button className="hbtn">
-              <img src={peoples} alt="" className="ico" />
-              <p>{t("navbar.item7")}</p>
+              <img src={login} alt="" className="ico" />
+              <p>{t("navbar.item6")}</p>
             </button>
           </Link>
           {!darkTheme ? (

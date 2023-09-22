@@ -14,9 +14,59 @@
       @include flexStyles(space-between, center);
       padding: 0 10rem;
 
+      .gradient1,
+      .gradient2 {
+        width: 35rem;
+        height: 35rem;
+        border-radius: 50%;
+        position: absolute;
+        filter: blur(200px);
+      }
+
+      .gradient1 {
+        background: rgba(0, 255, 229, 0.221);
+        top: 0%;
+        left: 0;
+        animation: g1 15s ease-in-out infinite;
+        animation-direction: alternate;
+        animation-delay: 1.5s;
+      }
+
+      @keyframes g1 {
+        50% {
+          top: 5%;
+          left: 50%;
+        }
+        100% {
+          top: 25%;
+          left: 80%;
+        }
+      }
+
+      .gradient2 {
+        background: rgba(123, 0, 255, 0.413);
+        right: 0;
+        bottom: -10%;
+        animation: g2 15s ease-in-out infinite;
+        animation-direction: alternate;
+        animation-delay: 2s;
+      }
+
+      @keyframes g2 {
+        50% {
+          bottom: 5%;
+          right: 50%;
+        }
+        100% {
+          bottom: 35%;
+          right: 80%;
+        }
+      }
+
       .banner {
         width: 40%;
         height: 80vh;
+        z-index: 1;
 
         img {
           width: 100%;
@@ -30,6 +80,7 @@
         height: 90vh;
         @include flexStyles(center, flex-end);
         flex-direction: column;
+        z-index: 1;
 
         .topBox {
           width: 15rem;
@@ -124,6 +175,7 @@
         left: 0;
         bottom: 0;
         @include flexStyles(center, center);
+        z-index: 1;
 
         input {
           width: 40rem;
@@ -172,8 +224,19 @@
       @include basicStyle(auto, 5rem, 10rem);
       padding-bottom: 10rem;
 
-      h1 {
+      .title {
+        width: 100%;
+        @include flexStyles(space-between, center);
         margin-bottom: 2rem;
+
+        .allCategory {
+          text-decoration: underline;
+          transition: 0.3s;
+
+          &:hover {
+            color: $gradientText2;
+          }
+        }
       }
 
       #popularCard {
@@ -192,14 +255,15 @@
 
         .details {
           width: 100%;
-          height: 25%;
+          height: 23%;
           position: absolute;
           left: 0;
           bottom: 0;
           padding: 1rem;
 
           h2 {
-            margin-top: -0.5rem;
+            margin-top: -0.2rem;
+            font-size: 1.2rem;
           }
         }
       }
@@ -261,6 +325,30 @@
 
     .startContent {
       @include basicStyle(auto, 5rem, 10rem);
+      position: relative;
+
+      .gradient1 {
+        width: 40rem;
+        height: 40rem;
+        border-radius: 50%;
+        position: absolute;
+        filter: blur(200px);
+        background: rgba(0, 255, 229, 0.221);
+        top: 10%;
+        left: -10%;
+      }
+
+      .gradient2 {
+        width: 40rem;
+        height: 40rem;
+        border-radius: 50%;
+        position: absolute;
+        filter: blur(200px);
+        background: rgba(0, 89, 255, 0.221);
+        bottom: 0%;
+        right: -10%;
+      }
+
       .title {
         text-align: center;
 
@@ -274,6 +362,7 @@
       .sections {
         @include flexStyles(space-between, start);
         @include basicStyle(auto, 5rem, 20rem);
+        z-index: 1;
 
         .client,
         .talent {
@@ -296,6 +385,7 @@
             margin-top: 1rem;
             padding: 0.5rem 1.2rem;
             color: white;
+            width: 100%;
           }
 
           .benefits {
@@ -316,6 +406,45 @@
               }
             }
           }
+        }
+      }
+    }
+
+    .animated-texts {
+      width: max-content;
+      height: 7vh;
+      // background: $dark1;
+
+      ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        animation: rightToLeft 10s infinite linear;
+        animation-delay: 2s;
+
+        li {
+          white-space: nowrap;
+          padding: 0 1.5rem;
+          list-style: none;
+          font-weight: 400;
+
+          &::before {
+            content: "\2022";
+            color: $star;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
+
+      @keyframes rightToLeft {
+        from {
+          transform: translateX(0%);
+        }
+        to {
+          transform: translateX(-15%);
         }
       }
     }

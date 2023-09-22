@@ -13,8 +13,8 @@ import {
   cover,
   checked,
   cover2,
-  course3,
-  course2,
+  forClient,
+  forTalent,
 } from "../../assets";
 import Slider from "react-slick";
 import PopularServicesCard from "./PopularServicesCard";
@@ -190,7 +190,7 @@ const Marketplace = ({ darkTheme }) => {
 
           <div className="sections">
             <div className="client">
-              <img src={course3} alt="" className="topBanner" />
+              <img src={forClient} alt="" className="topBanner" />
               <h2 className="primary-text">For Client</h2>
               <p className="secondary-text">
                 Work with the largest network of independent professionals and
@@ -215,7 +215,7 @@ const Marketplace = ({ darkTheme }) => {
             </div>
 
             <div className="talent">
-              <img src={course2} alt="" className="topBanner" />
+              <img src={forTalent} alt="" className="topBanner" />
               <h2 className="primary-text">For Talent</h2>
               <p className="secondary-text">
                 Meet clients you’re excited to work with and take your career or

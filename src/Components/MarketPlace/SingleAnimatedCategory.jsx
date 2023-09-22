@@ -11,11 +11,13 @@ import {
   cinematic,
   infographic,
   mainLogoVideo,
+  downArrow,
 } from "../../assets";
 import PopularServicesCard from "./PopularServicesCard";
 import JobCard from "./JobCard";
 import { Link } from "react-router-dom";
 import Pagination from "../UI/Pagination";
+import QuesAns from "./QuesAns";
 
 const SingleAnimatedCategory = ({ darkTheme }) => {
   const settings = {
@@ -54,6 +56,7 @@ const SingleAnimatedCategory = ({ darkTheme }) => {
   const jobsPerPage = 20;
   const [currentPage, setCurrentPage] = useState(1);
   const [totalData, setTotalData] = useState([]);
+  const [faqActive, setFaqActive] = useState(false);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
@@ -153,17 +156,24 @@ const SingleAnimatedCategory = ({ darkTheme }) => {
           <h2 className="primary-text">
             Frequently Asked <span className="textGradient">Questions</span>
           </h2>
-          <p className="secondary-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, incidunt!</p>
+          <p className="secondary-text subTitle">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi,
+            incidunt!
+          </p>
 
           <div className="faqs">
-            
+            <QuesAns active={true} />
+            <QuesAns active={false}/>
+            <QuesAns active={false}/>
+            <QuesAns active={false}/>
           </div>
-          
         </div>
 
         <div className="otherCategories">
           <div className="title">
-            <h2 className="primary-text">Other <span className="textGradient">Services</span></h2>
+            <h2 className="primary-text">
+              Other <span className="textGradient">Services</span>
+            </h2>
 
             <Link
               to="/marketplace/categories"

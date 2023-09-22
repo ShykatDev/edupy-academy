@@ -20,6 +20,8 @@ export { default as eng } from "./code.png";
 export { default as career } from "./career-choice.png";
 export { default as all } from "./all.png";
 export { default as box } from "./box.png";
+export { default as downArrow } from "./down-arrow.png";
+export { default as downArrowWhite } from "./down-arrow-white.png";
 
 export { default as demo } from "./demo.png";
 export { default as basic } from "./basic.png";
@@ -101,6 +103,8 @@ export { default as arrowr8 } from "./right-arrow.png";
 //marketplace-services
 export { default as cover } from "./marketplace_banner.png";
 export { default as cover2 } from "./marketplace_banner_2.jpg";
+export { default as forClient } from "./logo-contest.jpg";
+export { default as forTalent } from "./logomaker.jpg";
 export { default as animated } from "./popularServices/animated-explainer.webp";
 export { default as data_entry } from "./popularServices/data-entry.webp";
 export { default as illustration } from "./popularServices/illustration.webp";

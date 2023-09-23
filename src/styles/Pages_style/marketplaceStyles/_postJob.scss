@@ -1,0 +1,322 @@
+#postJob {
+  @include basicStyle(auto, 0rem, 0rem);
+
+  main {
+    @include basicStyle(auto, 10rem, 10rem);
+
+    .grettings {
+      height: auto;
+      @include flexStyles(space-between, start);
+
+      small {
+        width: 15%;
+        span {
+          font-size: large;
+          font-weight: 600;
+          color: $gradientText2;
+        }
+      }
+
+      .note {
+        width: 75%;
+
+        .top {
+          @include flexStyles(space-between, center);
+          padding-left: 1rem;
+          border-radius: 0.3rem;
+          margin-bottom: 1rem;
+          height: 2.5rem;
+
+          .nt {
+            font-weight: 300;
+          }
+
+          .t_c {
+            height: 100%;
+            padding: 0rem 1rem;
+            cursor: pointer;
+            border-radius: 0.2rem;
+            font-size: small;
+            @include flexStyles(center, center);
+          }
+
+          .t_c.underline {
+            text-decoration: underline;
+          }
+        }
+
+        .terms {
+          ul {
+            padding-left: 1rem;
+            li {
+              padding-left: 1rem;
+              list-style: decimal;
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
+      height: auto;
+      position: relative;
+      @include flexStyles(space-between, start);
+      margin-top: 3rem;
+
+      .staticDetails {
+        width: 15%;
+        height: auto;
+        border-right: 1px solid $borderColor;
+        padding-right: 1rem;
+
+        .categories {
+          margin-top: 1rem;
+          padding: 1rem 0;
+          .lists {
+            @include flexStyles(start, start);
+            flex-direction: column;
+            margin-top: 0.5rem;
+
+            .list {
+              margin-bottom: 0.3rem;
+              position: relative;
+              padding-left: 1rem;
+              cursor: pointer;
+
+              &::after {
+                content: "-";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0%, -50%);
+              }
+            }
+          }
+        }
+
+        .job-details {
+          margin-top: 1rem;
+        }
+      }
+
+      .postFormArea {
+        width: 75%;
+        height: auto;
+
+        .titleBar {
+          @include flexStyles(space-between, start);
+          margin-bottom: 1rem;
+
+          .allCategory {
+            text-decoration: underline;
+            font-size: small;
+            cursor: pointer;
+          }
+        }
+
+        .formArea {
+          form {
+            .form-content {
+              @include flexStyles(space-between, start);
+              gap: 2rem;
+              margin-bottom: 2rem;
+
+              .left-area,
+              .right-area {
+                width: 50%;
+                min-height: 20rem;
+
+                .inp-grp {
+                  @include flexStyles(start, start);
+                  flex-direction: column;
+                  margin-bottom: 1rem;
+
+                  label {
+                    margin-bottom: 0.3rem;
+                    color: $gradientText2;
+
+                    span {
+                      color: red;
+                    }
+                  }
+
+                  input,
+                  select {
+                    width: 100%;
+                    outline: none;
+                    border: 1px solid $borderColor;
+                    height: 2.5rem;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.3rem;
+                    transition: 0.3s;
+
+                    &:focus {
+                      border: 1px solid $gradientText2;
+                    }
+
+                    &::placeholder {
+                      color: $borderColor;
+                    }
+                  }
+                }
+              }
+
+              .right-area {
+                textarea {
+                  width: 100%;
+                  min-height: 24.2rem;
+                  outline: none;
+                  border: 1px solid $borderColor;
+                  padding: 0.5rem 1rem;
+                  border-radius: 0.3rem;
+                  resize: vertical;
+                  &::placeholder {
+                    color: $borderColor;
+                  }
+                }
+              }
+            }
+
+            .bottomRow {
+              .agree {
+                @include flexStyles(start, center);
+
+                input {
+                  margin-right: 0.5rem;
+                }
+
+                span {
+                  text-decoration: underline;
+                  cursor: pointer;
+                }
+              }
+
+              button {
+                margin-top: 1rem;
+                padding: 0.5rem 1.2rem;
+
+                p {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .line {
+      margin-top: 5rem;
+      width: 75%;
+      margin-left: 25%;
+      height: 1px;
+      background: $borderColor;
+    }
+
+    .all-jobs {
+      @include basicStyle(auto, 0rem, 0rem);
+      width: 75%;
+      margin-left: 25%;
+      padding-top: 5rem;
+
+      .bar {
+        margin-bottom: 2rem;
+        p {
+          span {
+            font-size: large;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .jobs {
+        width: 100%;
+        height: auto;
+
+        .jobsCard {
+          @include flexStyles(start, start);
+          flex-wrap: wrap;
+          gap: 3rem 2rem;
+
+          #jobCard {
+            width: 31.4%;
+            height: auto;
+            border-radius: 0.5rem;
+            transition: all 0.3s;
+            overflow: hidden;
+            cursor: pointer;
+
+            .jobBanner {
+              width: 100%;
+              height: 15rem;
+              object-fit: cover;
+              border-radius: 0.5rem;
+            }
+
+            .clientDetails {
+              width: 100%;
+              height: auto;
+              @include flexStyles(space-between, center);
+              padding: 0.5rem 1rem;
+
+              .userInfo {
+                @include flexStyles(start, center);
+                img {
+                  width: 10%;
+                  margin-right: 0.5rem;
+                }
+                .desc {
+                  font-weight: 600;
+                  font-size: large;
+                }
+
+                .price {
+                  font-weight: 600;
+                  font-size: large;
+                }
+              }
+
+              .postDate {
+                color: $star;
+              }
+            }
+
+            .jobDetails {
+              padding: 1rem;
+
+              p {
+                font-weight: 300;
+                margin-bottom: 1rem;
+              }
+            }
+            &:hover {
+              transform: translateY(-10px);
+            }
+          }
+        }
+
+        .pagination {
+          width: 100%;
+          height: auto;
+          margin-top: 3rem;
+          @include flexStyles(end, center);
+
+          .pageList {
+            button {
+              border: 1px solid #ccc;
+              width: 2rem;
+              height: 2rem;
+              margin-left: 0.5rem;
+            }
+            button.activePage {
+              background: $gradientText2;
+              color: white;
+              border: 1px solid $gradientText2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

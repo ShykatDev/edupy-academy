@@ -30,7 +30,7 @@
             width: 15rem;
             height: 9rem;
             padding: 1.5rem;
-            border: 1px solid #8b8b8b38;
+            border: 1px solid $borderColor;
             border-radius: 1rem;
             img {
               width: 3rem;
@@ -73,7 +73,7 @@
       width: 100%;
       height: 1px;
       margin: 3rem 0;
-      background: #8b8b8b38;
+      background: $borderColor;
     }
 
     .postedJobs {
@@ -110,6 +110,8 @@
             height: auto;
             border-radius: 0.5rem;
             overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s;
 
             .jobBanner {
               width: 100%;
@@ -153,6 +155,9 @@
                 font-weight: 300;
                 margin-bottom: 1rem;
               }
+            }
+            &:hover {
+              transform: translateY(-10px);
             }
           }
         }

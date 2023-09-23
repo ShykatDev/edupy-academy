@@ -24,6 +24,7 @@ $buttonBG: #ffffff28;
 $star: #ffbb00;
 $enrollBtn: #583cea;
 $enrollBtnDark: #a357ff;
+$borderColor: #8b8b8b38;
 
 //themes---------------------------------
 .light {
@@ -248,5 +249,6 @@ button {
 //marketplace styles
 @import "./Pages_style/marketplaceStyles/marketplace";
 @import "./Pages_style/marketplaceStyles/singleCategory";
+@import "./Pages_style/marketplaceStyles/postJob";
 
 @import "./responsive";

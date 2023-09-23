@@ -11,7 +11,6 @@ import {
   cinematic,
   infographic,
   mainLogoVideo,
-  downArrow,
 } from "../../assets";
 import PopularServicesCard from "./PopularServicesCard";
 import JobCard from "./JobCard";
@@ -56,7 +55,6 @@ const SingleAnimatedCategory = ({ darkTheme }) => {
   const jobsPerPage = 20;
   const [currentPage, setCurrentPage] = useState(1);
   const [totalData, setTotalData] = useState([]);
-  const [faqActive, setFaqActive] = useState(false);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
@@ -103,13 +101,13 @@ const SingleAnimatedCategory = ({ darkTheme }) => {
             <li className="secondary-text">
               <div className="ball"></div>
               <p>
-                Total Freelancers: <span className="textGradient">30</span>
+                Total Talents: <span className="textGradient">30</span>
               </p>
             </li>
             <li className="secondary-text">
               <div className="ball sball"></div>
               <p>
-                Active Freelancers on this job:
+                Active Talents on this job:
                 <span className="textGradient"> 10</span>
               </p>
             </li>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   login,
   bn,
@@ -53,6 +53,8 @@ const Marketplace = ({ darkTheme }) => {
       },
     ],
   };
+
+  const navigate = useNavigate();
   return (
     <div id="marketplace" className={!darkTheme ? "dark" : "light"}>
       <main className="background">
@@ -211,7 +213,12 @@ const Marketplace = ({ darkTheme }) => {
                 </li>
               </ul>
 
-              <button className="postBtn hbtn">Post Job</button>
+              <button
+                className="postBtn hbtn"
+                onClick={() => navigate("/post-job")}
+              >
+                Post Job
+              </button>
             </div>
 
             <div className="talent">
@@ -242,7 +249,12 @@ const Marketplace = ({ darkTheme }) => {
                 </li>
               </ul>
 
-              <button className="postBtn hbtn">Find Job</button>
+              <button
+                className="postBtn hbtn"
+                onClick={() => navigate("/find-job")}
+              >
+                Find Job
+              </button>
             </div>
           </div>
         </div>
@@ -310,14 +322,20 @@ const Marketplace = ({ darkTheme }) => {
         <div className="animated-texts jc2">
           <ul>
             <li className="secondary-text">Edupy Academy</li>
-            <li className="secondary-text">First Freelancing Website in Bangladesh</li>
+            <li className="secondary-text">
+              First Freelancing Website in Bangladesh
+            </li>
             <li className="secondary-text">Trusted Platform for freelancers</li>
             <li className="secondary-text">Beginner Freiendly</li>
             <li className="secondary-text">No cost to join</li>
             <li className="secondary-text">Explore different ways to earn</li>
-            <li className="secondary-text">Access expert talent to fill your skill gaps</li>
+            <li className="secondary-text">
+              Access expert talent to fill your skill gaps
+            </li>
             <li className="secondary-text">Get quality work done quickly</li>
-            <li className="secondary-text">Find the right service for every price point</li>
+            <li className="secondary-text">
+              Find the right service for every price point
+            </li>
           </ul>
         </div>
       </main>

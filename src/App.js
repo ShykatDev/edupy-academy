@@ -10,6 +10,7 @@ import ScrollTop from "./Components/UI/ScrollTop";
 import Marketplace from "./Components/MarketPlace/Marketplace";
 import SingleAnimatedCategory from "./Components/MarketPlace/SingleAnimatedCategory";
 import PostJob from "./Components/MarketPlace/PostJob";
+import SingleJob from "./Components/MarketPlace/SingleJob";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -27,14 +28,17 @@ function App() {
             path="/marketplace"
             element={<Marketplace darkTheme={darkTheme} />}
           />
+          <Route path="/post-job" element={<PostJob darkTheme={darkTheme} />} />
           <Route
-            path="/post-job"
-            element={<PostJob darkTheme={darkTheme} />}
-          />
-          <Route
-            path="//marketplace/animated"
+            path="/marketplace/animated"
             element={<SingleAnimatedCategory darkTheme={darkTheme} />}
           />
+          <Route
+            path="/single-job"
+            element={<SingleJob darkTheme={darkTheme} />}
+          />
+
+          {/* MarketPlace----------------------x----------------- */}
 
           <Route path="*" element={<Construction darkTheme={darkTheme} />} />
         </Routes>

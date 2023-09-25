@@ -22,6 +22,7 @@ export { default as all } from "./all.png";
 export { default as box } from "./box.png";
 export { default as downArrow } from "./down-arrow.png";
 export { default as downArrowWhite } from "./down-arrow-white.png";
+export { default as profile } from "./profileAvatar.png";
 
 export { default as demo } from "./demo.png";
 export { default as basic } from "./basic.png";

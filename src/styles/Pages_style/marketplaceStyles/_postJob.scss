@@ -246,12 +246,15 @@
             transition: all 0.3s;
             overflow: hidden;
             cursor: pointer;
+            border: 1px solid $borderColor;
+
 
             .jobBanner {
               width: 100%;
               height: 15rem;
               object-fit: cover;
-              border-radius: 0.5rem;
+              border-top-right-radius: 0.5rem;
+              border-top-left-radius: 0.5rem;
             }
 
             .clientDetails {
@@ -262,6 +265,7 @@
 
               .userInfo {
                 @include flexStyles(start, center);
+                width: 60%;
                 img {
                   width: 10%;
                   margin-right: 0.5rem;
@@ -288,6 +292,43 @@
               p {
                 font-weight: 300;
                 margin-bottom: 1rem;
+              }
+
+              .tags {
+                width: 100%;
+                @include flexStyles(start, start);
+                gap: 1rem;
+                margin-bottom: 1rem;
+
+                .tag {
+                  padding: 0.2rem 0.5rem;
+                  background: $borderColor;
+                  border-radius: 0.3rem;
+                }
+              }
+
+              .client-job {
+                width: 100%;
+                @include flexStyles(start, center);
+                margin-bottom: 2rem;
+                gap: 1rem;
+
+                .checkJob {
+                  width: 35%;
+                  @include flexStyles(start, center);
+                  img {
+                    width: 12%;
+                    margin-right: 0.5rem;
+                  }
+                }
+                .checkPrice {
+                  width: 50%;
+                  @include flexStyles(start, center);
+                  img {
+                    width: 6%;
+                    margin-right: 0.5rem;
+                  }
+                }
               }
             }
             &:hover {

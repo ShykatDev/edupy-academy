@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import Pagination from "../UI/Pagination";
@@ -12,39 +11,7 @@ const PostJob = ({ darkTheme }) => {
   const [jobCategory, setJobCategory] = useState(false);
   const [selectColor, setSelectColor] = useState(false);
 
-  const settings = {
-    arrows: false,
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 5000,
-    slidesToShow: 3,
-    slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  
   const jobsPerPage = 12;
   const [currentPage, setCurrentPage] = useState(1);
   const [totalData, setTotalData] = useState([]);
@@ -233,14 +200,14 @@ const PostJob = ({ darkTheme }) => {
                     </div>
                     <div className="inp-grp">
                       <label htmlFor="">
-                        Short Description <span>*</span>
+                        Tags <span>*</span>
                       </label>
                       <input
                         type="text"
                         name=""
                         id=""
                         className="jc1 secondary-text"
-                        placeholder="A short description of the job"
+                        placeholder="Website, Graphic, Editing"
                         required
                       />
                     </div>

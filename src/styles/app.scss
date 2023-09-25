@@ -15,7 +15,7 @@ $lightNav: #ffffff3a;
 $primaryDarkText: #f3f3f3;
 $bannerBorder: #cccccc67;
 $secondaryDarkText: #aeaeae;
-$secondaryLightText: #323232;
+$secondaryLightText: #8e8e8e;
 $highlight: #008f45;
 $highlightHover: #01ae54;
 $gradientText1: #52ff00;
@@ -250,5 +250,8 @@ button {
 @import "./Pages_style/marketplaceStyles/marketplace";
 @import "./Pages_style/marketplaceStyles/singleCategory";
 @import "./Pages_style/marketplaceStyles/postJob";
+@import "./Pages_style/marketplaceStyles/singleJob";
+@import "./Pages_style/marketplaceStyles/clientProfile";
+@import "./Pages_style/marketplaceStyles/talentProfile";
 
 @import "./responsive";

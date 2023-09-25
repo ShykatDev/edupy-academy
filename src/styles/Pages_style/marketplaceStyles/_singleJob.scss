@@ -1,82 +1,150 @@
-#singleCategory {
+#singleJob {
   @include basicStyle(auto, 0rem, 0rem);
 
   main {
-    padding: 10rem 10rem 5rem 10rem;
+    @include basicStyle(auto, 10rem, 10rem);
 
-    .topContent {
+    .title {
+      margin-bottom: 3rem;
+    }
+
+    .content {
       width: 100%;
       height: auto;
-      @include flexStyles(space-between, start);
+      @include flexStyles(start, start);
+      border: 1px solid $borderColor;
+      padding: 1rem;
+      gap: 1rem;
+      border-radius: 0.3rem;
 
-      .details {
-        width: 70%;
-        height: auto;
-
-        .titleLogo {
-          width: 5%;
-          //   margin-bottom: 1rem;
+      .apply-area {
+        width: 25%;
+        img {
+          width: 100%;
+          border-radius: 0.3rem;
+          margin-bottom: 1rem;
         }
 
-        p {
-          margin-bottom: 5rem;
+        .line {
+          width: 100%;
+          height: 1px;
+          background: $borderColor;
+          margin: 1rem 0;
         }
 
-        .services {
-          @include flexStyles(start, start);
-          gap: 1rem;
-
-          .item {
-            width: 15rem;
-            height: 9rem;
-            padding: 1.5rem;
-            border: 1px solid $borderColor;
-            border-radius: 1rem;
-            img {
-              width: 3rem;
-              margin-bottom: 1rem;
-            }
-            p {
-              font-size: 1rem;
-            }
-          }
+        button {
+          width: 100%;
+          padding: 0.5rem 0;
+          color: white;
+          margin-top: 1rem;
         }
       }
 
-      .count {
-        li {
-          list-style: disc;
-          @include flexStyles(start, center);
+      .details-area {
+        width: 50%;
+        border-left: 1px solid $borderColor;
+        border-right: 1px solid $borderColor;
+        padding: 0 1rem;
 
+        .line {
+          width: 100%;
+          height: 1px;
+          background: $borderColor;
+          margin: 2rem 0;
+        }
+
+        .jobCategory {
+          padding: 0.2rem 0.5rem;
+          background: $gradientText2;
+          color: white;
+          border-radius: 0.3rem;
+        }
+        h1 {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          line-height: 2.5rem;
+        }
+
+        .description {
+          font-weight: 300;
+        }
+
+        .budget {
           p {
+            font-size: 1.3rem;
+
             span {
+              font-size: 1.5rem;
               font-weight: 600;
-              font-size: large;
             }
           }
-          .ball {
-            width: 5px;
-            height: 5px;
-            margin-right: 0.5rem;
-            border-radius: 50%;
-            background: $gradientText2;
-          }
+        }
 
-          .sball {
-            background: $gradientText1;
+        .skills {
+          width: 100%;
+          height: auto;
+
+          .skill-items {
+            width: 100%;
+            @include flexStyles(start, start);
+            gap: 1rem;
+            margin-top: 1rem;
+
+            .skill {
+              padding: 0.2rem 0.5rem;
+              background: $borderColor;
+              border-radius: 0.3rem;
+              font-size: small;
+            }
+          }
+        }
+      }
+
+      .client-area {
+        width: 25%;
+
+        .line {
+          width: 100%;
+          height: 1px;
+          background: $borderColor;
+          margin: 1rem 0;
+        }
+
+        .user {
+          width: 100%;
+          height: auto;
+          @include flexStyles(start, center);
+          gap: 0.5rem;
+          margin-top: 1rem;
+
+          img {
+            width: 7%;
+          }
+        }
+
+        .checkPrice {
+          width: 100%;
+          height: auto;
+          @include flexStyles(start, center);
+          gap: 0.5rem;
+          margin-bottom: 1rem;
+          img {
+            width: 5%;
+          }
+        }
+
+        .det {
+          font-weight: 300;
+
+          span {
+            font-weight: 400;
           }
         }
       }
     }
 
-    .line {
-      width: 100%;
-      height: 1px;
-      margin: 3rem 0;
-      background: $borderColor;
-    }
-
-    .postedJobs {
+    .relatedJobs {
+      margin-top: 5rem;
       .bar {
         @include flexStyles(space-between, start);
         margin-bottom: 2rem;
@@ -223,98 +291,6 @@
               color: white;
               border: 1px solid $gradientText2;
             }
-          }
-        }
-      }
-    }
-
-    .commonFAQs {
-      width: 50%;
-      height: auto;
-      margin: 0 auto;
-
-      h2,
-      .subTitle {
-        text-align: center;
-      }
-
-      .faqs {
-        width: 80%;
-        height: auto;
-        @include flexStyles(center, center);
-        flex-direction: column;
-        margin: 0 auto;
-        margin-top: 3rem;
-        gap: 0 5%;
-
-        .faq {
-          width: 100%;
-          margin-bottom: 1rem;
-
-          .ques {
-            @include flexStyles(space-between, center);
-            padding: 1rem;
-            border-radius: 0.3rem;
-            cursor: pointer;
-
-            img {
-              width: 4%;
-            }
-          }
-
-          .ans {
-            padding: 1rem;
-            font-size: 0.8rem;
-          }
-        }
-      }
-    }
-
-    .otherCategories {
-      width: 100%;
-      @include basicStyle(auto, 5rem, 0rem);
-      padding-bottom: 10rem;
-
-      .title {
-        width: 100%;
-        @include flexStyles(space-between, center);
-        margin-bottom: 2rem;
-
-        .allCategory {
-          text-decoration: underline;
-          transition: 0.3s;
-
-          &:hover {
-            color: $gradientText2;
-          }
-        }
-      }
-
-      #popularCard {
-        position: relative;
-        width: 255px;
-        height: 350px;
-        border-radius: 0.5rem;
-        overflow: hidden;
-        cursor: pointer;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        .details {
-          width: 100%;
-          height: 23%;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          padding: 1rem;
-
-          h2 {
-            margin-top: -0.2rem;
-            font-size: 1.2rem;
           }
         }
       }

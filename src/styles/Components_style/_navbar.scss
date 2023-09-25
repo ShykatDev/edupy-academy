@@ -157,6 +157,71 @@
         }
       }
 
+      .profile {
+        width: 10rem;
+        height: 80%;
+        position: relative;
+
+        .visible {
+          width: 100%;
+          height: 100%;
+          @include flexStyles(center, center);
+          gap: 0.5rem;
+          cursor: pointer;
+          border: 1px solid $borderColor;
+          border-radius: 0.3rem;
+
+          img {
+            width: 15%;
+          }
+        }
+
+        .visible.visibleBrdr{
+          // border-bottom: none;
+          border-top-left-radius: 0.3rem;
+          border-top-right-radius: 0.3rem;
+          border-bottom-left-radius: none;
+          border-bottom-right-radius: none;
+        }
+
+        .profileOverview{
+          height: auto;
+          width: 100%;
+          position: absolute;
+          @include flexStyles(center, start);
+          flex-direction: column;
+          padding: 1rem 0.5rem;
+          right: 0;
+          border-bottom-left-radius: 0.3rem;
+          border-bottom-right-radius: 0.3rem;
+          border: 1px solid $borderColor;
+          border-top: none;
+          opacity: 0;
+
+          .line{
+            width: 100%;
+            height: 1px;
+            background: $borderColor;
+            margin: 0.5rem 0;
+          }
+
+          .activity{
+            cursor: pointer;
+          }
+
+          .info{
+            font-weight: 300;
+          }
+
+          .logout{
+            width: 100%;
+            padding: 0.3rem 0;
+            color: white;
+            background: rgb(253, 46, 46);
+          }
+        }
+      }
+
       .sun,
       .moon {
         cursor: pointer;
@@ -176,7 +241,6 @@
         width: 5%;
         cursor: pointer;
         transition: all 0.1s;
-        
       }
     }
   }

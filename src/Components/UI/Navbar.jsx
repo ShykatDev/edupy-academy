@@ -15,6 +15,7 @@ import {
   bn,
   job,
   box,
+  profile,
 } from "../../assets";
 import {
   BsFillCaretDownFill,
@@ -34,6 +35,8 @@ const Navbar = ({ setDarkTheme, darkTheme }) => {
   };
 
   const [mobileActive, setMobileActive] = useState(false);
+  const [loggedin, setLoggedin] = useState(false);
+  const [profileView, setProfileView] = useState(false);
   const [langEN, setLangEN] = useState(false);
   const [t, i18n] = useTranslation("global");
 
@@ -121,12 +124,70 @@ const Navbar = ({ setDarkTheme, darkTheme }) => {
               <p className="secondary-text">{t("navbar.item7")}</p>
             </button>
           </Link>
-          <Link to="/batch" className="linkBtn">
-            <button className="hbtn">
-              <img src={login} alt="" className="ico" />
-              <p>{t("navbar.item6")}</p>
-            </button>
-          </Link>
+
+          {!loggedin && (
+            <Link
+              to="/"
+              className="linkBtn"
+              onClick={() => setLoggedin(!loggedin)}
+            >
+              <button className="hbtn">
+                <img src={login} alt="" className="ico" />
+                <p>{t("navbar.item6")}</p>
+              </button>
+            </Link>
+          )}
+
+          {loggedin && (
+            <div className="profile">
+              <div
+                className={
+                  loggedin ? "visible visibleBrdr drop-bg" : "visible drop-bg"
+                }
+                onClick={() => setProfileView(!profileView)}
+              >
+                <img src={profile} alt="" />
+                <small className="primary-text">Shykat Raha</small>
+              </div>
+
+              {profileView && (
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  className="profileOverview drop-bg"
+                >
+                  <Link to="/profile" className="activity secondary-text">
+                    <p>Profile</p>
+                  </Link>
+                  <div className="line"></div>
+                  <small className="info secondary-text">
+                    Joined: <span className="primary-text">12/04/2023</span>
+                  </small>
+                  <small className="info secondary-text">
+                    Location: <span className="primary-text">Bangladesh</span>
+                  </small>
+                  <small className="info secondary-text">
+                    Payment: <span className="primary-text">BDT</span>
+                  </small>
+                  <small className="info secondary-text">
+                    Earning: <span className="primary-text">৳ 00</span>
+                  </small>
+
+                  <div className="line"></div>
+
+                  <button
+                    className="logout"
+                    onClick={() => {
+                      setLoggedin(false);
+                      setProfileView(false);
+                    }}
+                  >
+                    logout
+                  </button>
+                </motion.div>
+              )}
+            </div>
+          )}
+
           {!darkTheme ? (
             <BsSun className="sun" onClick={themeChange} />
           ) : (

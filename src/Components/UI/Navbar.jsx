@@ -155,7 +155,11 @@ const Navbar = ({ setDarkTheme, darkTheme }) => {
                   whileInView={{ opacity: [0, 1] }}
                   className="profileOverview drop-bg"
                 >
-                  <Link to="/profile" className="activity secondary-text">
+                  <Link
+                    to="/profile"
+                    className="activity secondary-text"
+                    onClick={() => setProfileView(false)}
+                  >
                     <p>Profile</p>
                   </Link>
                   <div className="line"></div>

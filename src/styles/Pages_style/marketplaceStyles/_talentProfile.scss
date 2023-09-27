@@ -1,0 +1,306 @@
+#talentProfile {
+  @include basicStyle(auto, 0rem, 0rem);
+
+  main {
+    width: 100%;
+    padding: 10rem;
+    position: relative;
+    @include flexStyles(space-between, start);
+
+    .left {
+      width: 20rem;
+      height: auto;
+      //   border-right: 1px solid $borderColor;
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background: $borderColor;
+        margin: 2rem 0;
+      }
+
+      .profilePic {
+        width: 100%;
+        height: 15rem;
+        border-radius: 0.3rem;
+        margin-bottom: 2rem;
+
+        img {
+          box-shadow: 3px 8px 20px rgba(0, 0, 0, 0.2);
+          width: 75%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+
+      .activity {
+        @include flexStyles(start, start);
+        flex-direction: column;
+        padding-right: 1rem;
+
+        .earning {
+          color: $gradientText2;
+        }
+      }
+
+      .skills {
+        @include flexStyles(start, start);
+        gap: 0.5rem 0.5rem;
+        flex-wrap: wrap;
+
+        .skill {
+          padding: 0.2rem 0.6rem;
+          background: $borderColor;
+          border-radius: 0.2rem;
+        }
+      }
+
+      .tests {
+        width: 100%;
+        padding-right: 1rem;
+        .test {
+          width: 100%;
+          @include flexStyles(space-between, center);
+          margin-bottom: 1rem;
+
+          .testDetails {
+            @include flexStyles(start, center);
+
+            img {
+              width: 0.9rem;
+              margin-right: 0.5rem;
+            }
+          }
+          .level {
+            @include flexStyles(center, center);
+            height: 1.7rem;
+            background: $borderColor;
+            padding: 0rem 0.6rem;
+            border-radius: 0.2rem;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 75%;
+      height: auto;
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background: $borderColor;
+        margin: 2rem 0;
+      }
+
+      .userDetails {
+        width: 100%;
+        height: 15rem;
+        // border-bottom: 1px solid $borderColor;
+
+        .bar {
+          width: 100%;
+          margin-bottom: 0.5rem;
+          @include flexStyles(space-between, center);
+
+          .top-line {
+            @include flexStyles(start, center);
+            gap: 2rem;
+
+            .location {
+              @include flexStyles(start, center);
+              gap: 0.5rem;
+              img {
+                width: 3%;
+              }
+            }
+          }
+
+          .editProfile {
+            @include flexStyles(center, center);
+            padding: 0.3rem 1.2rem;
+            background: none;
+            transition: all 0.3s;
+            border: 1px solid $borderColor;
+
+            .editBtn {
+              font-size: 1rem;
+              margin-right: 0.5rem;
+            }
+            small {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .tag {
+          padding: 0.2rem 0.6rem;
+          background: $gradientText2;
+          color: white;
+          border-radius: 0.2rem;
+        }
+        .bio {
+          margin-top: 1rem;
+          font-weight: 300;
+        }
+      }
+
+      .content-btns {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        height: auto;
+        @include flexStyles(start, center);
+        gap: 2rem;
+        border-bottom: 1px solid $borderColor;
+
+        button {
+          width: auto;
+          @include flexStyles(start, center);
+          padding: 0.3rem 0rem;
+          background: none;
+          font-size: 1rem;
+          border-radius: 0;
+          transition: all 0.3s;
+
+          img {
+            width: 1rem;
+            margin-right: 0.5rem;
+          }
+        }
+
+        button.active {
+          border-bottom: 1px solid $gradientText2;
+        }
+      }
+
+      .timeline-content {
+        width: 100%;
+        height: auto;
+
+        .barTitle{
+            color: $gradientText2;
+        }
+
+        .jobs {
+          width: 100%;
+          height: auto;
+          margin-top: 1rem;
+
+          .jobsCard {
+            @include flexStyles(start, start);
+            flex-wrap: wrap;
+            gap: 3rem 2rem;
+
+            #winJob {
+              width: 22.5%;
+              height: auto;
+              gap: 2rem;
+              border-radius: 0.3rem;
+              border: 1px solid $borderColor;
+
+              img {
+                width: 100%;
+                height: 10rem;
+                border-top-left-radius: 0.3rem;
+                border-top-right-radius: 0.3rem;
+                object-fit: cover;
+              }
+
+              .jobDetails {
+                padding: 1rem;
+                .category {
+                  padding: 0.2rem 0.6rem;
+                  background: $borderColor;
+                  border-radius: 0.2rem;
+                  font-size: small;
+                }
+                h3 {
+                  font-weight: 500;
+                  margin: 1rem 0 0rem 0;
+                  font-size: small;
+                }
+                h2 {
+                  color: $gradientText2;
+                  font-size: 1.2rem;
+                  text-align: end;
+                }
+              }
+            }
+          }
+
+          .pagination {
+            width: 100%;
+            height: auto;
+            margin-top: 3rem;
+            @include flexStyles(end, center);
+
+            .pageList {
+              button {
+                border: 1px solid #ccc;
+                width: 2rem;
+                height: 2rem;
+                margin-left: 0.5rem;
+              }
+              button.activePage {
+                background: $gradientText2;
+                color: white;
+                border: 1px solid $gradientText2;
+              }
+            }
+          }
+        }
+      }
+
+      .noContent {
+        width: 100%;
+        height: 35vh;
+        @include flexStyles(center, center);
+        flex-direction: column;
+
+        img {
+          width: 3%;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .about-content {
+        width: 100%;
+        height: auto;
+
+        .info {
+          @include flexStyles(start, start);
+          flex-direction: column;
+
+          small {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.1rem;
+          }
+        }
+
+        .barTitle {
+          margin-bottom: 1rem;
+          color: $gradientText2;
+        }
+
+        .barTitle2,
+        .barTitle3 {
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+          color: $gradientText2;
+        }
+
+        .social {
+          @include flexStyles(start, center);
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

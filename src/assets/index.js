@@ -119,3 +119,7 @@ export { default as shorts } from "./categoryService/video-player.png";
 export { default as cinematic } from "./categoryService/editing.png";
 export { default as infographic } from "./categoryService/multimedia.png";
 export { default as client } from "./client.webp";
+export { default as talent } from "./talent.jpg";
+export { default as dashboard } from "./dashboard.png";
+export { default as information } from "./information.png";
+export { default as noResult } from "./delete.png";

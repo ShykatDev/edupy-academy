@@ -11,6 +11,8 @@ import Marketplace from "./Components/MarketPlace/Marketplace";
 import SingleAnimatedCategory from "./Components/MarketPlace/SingleAnimatedCategory";
 import PostJob from "./Components/MarketPlace/PostJob";
 import SingleJob from "./Components/MarketPlace/SingleJob";
+import ClientProfile from "./Components/MarketPlace/ClientProfile";
+import TalentProfile from "./Components/MarketPlace/TalentProfile";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -36,6 +38,14 @@ function App() {
           <Route
             path="/single-job"
             element={<SingleJob darkTheme={darkTheme} />}
+          />
+          <Route
+            path="/talent"
+            element={<TalentProfile darkTheme={darkTheme} />}
+          />
+          <Route
+            path="/client"
+            element={<ClientProfile darkTheme={darkTheme} />}
           />
 
           {/* MarketPlace----------------------x----------------- */}

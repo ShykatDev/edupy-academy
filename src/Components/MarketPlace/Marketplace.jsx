@@ -117,7 +117,7 @@ const Marketplace = ({ darkTheme }) => {
           <div className="title">
             <h1 className="primary-text">Popular Services</h1>
             <Link
-              to="/marketplace/categories"
+              to="/all-jobs"
               className="allCategory primary-text"
             >
               View All

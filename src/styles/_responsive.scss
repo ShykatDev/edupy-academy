@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1020px) and (max-width: 1400px) {
+@media only screen and (min-width: 1366px) and (max-width: 1400px) {
   #navbar {
     .desktop_menu {
       @include basicStyle(10vh, 0, 5rem);
@@ -370,9 +370,12 @@
     height: 60vh;
   }
 }
-@media only screen and (max-width: 767px) {
+//tablet - laptop
+@media only screen and (min-width: 600px) and (max-width: 1366px) {
 }
-@media only screen and (max-width: 575px) {
+
+//mobile
+@media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden !important;
   }

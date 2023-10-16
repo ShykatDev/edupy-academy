@@ -112,6 +112,7 @@ export { default as illustration } from "./popularServices/illustration.webp";
 export { default as logo_design } from "./popularServices/logo-design.webp";
 export { default as social } from "./popularServices/social.webp";
 export { default as wordpress } from "./popularServices/wordpress.webp";
+export { default as dashboardBG } from "./dashboardBG.png";
 
 //marketplace-category-services
 export { default as mainLogoVideo } from "./categoryService/clapperboard.png";

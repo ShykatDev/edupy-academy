@@ -32,7 +32,9 @@ const OurTeam = () => {
         transition={{ duration: 0.7, delay: 0 }}
         className="primary-text"
       >
-        {t("team.title1")} <span className="textGradient">{t("team.title2")}</span>, {t("team.title3")}{" "}
+        {t("team.title1")}{" "}
+        <span className="textGradient">{t("team.title2")}</span>,{" "}
+        {t("team.title3")}{" "}
         <span className="textGradient">{t("team.title4")}</span>
       </motion.h1>
       <motion.p
@@ -61,23 +63,6 @@ const OurTeam = () => {
           </motion.div>
         </motion.div>
 
-        {/* <motion.div
-          whileInView={{ opacity: [0, 1], x: [-10, 0] }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className={`team-member`}
-          onClick={handleActive}
-        >
-          <motion.div
-            whileInView={{ y: [20, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="details team-bg"
-          >
-            <h2 className="primary-text">MD. Kamrul Hasan</h2>
-            <small className="star">CSE - BUET</small>
-            <p className="secondary-text">Co-Founder & Instructor</p>
-          </motion.div>
-        </motion.div> */}
-
         <motion.div
           whileInView={{ opacity: [0, 1], x: [-10, 0] }}
           transition={{ duration: 0.7, delay: 0.6 }}
@@ -89,7 +74,7 @@ const OurTeam = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="details team-bg"
           >
-            <h2 className="primary-text">Oyasiul Islam</h2>
+            <h2 className="primary-text">Md. Oyasiul Islam</h2>
             <small className="star">CSE - BUET</small>
             <p className="secondary-text">Co-Founder & Instructor</p>
           </motion.div>
@@ -123,17 +108,15 @@ const OurTeam = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="details team-bg"
           >
-            <h2 className="primary-text">Sheikh Abdul Munim</h2>
-            <small className="star">
-              Mechatronics - Lovely Professional University
-            </small>
-            <p className="secondary-text">Co-founder & Instructor</p>
+            <h2 className="primary-text">Mahabuba Hasan Mati</h2>
+            <small className="star">EEE - BAUET</small>
+            <p className="secondary-text">Chief Marketing Officer</p>
           </motion.div>
         </motion.div>
 
-        {/* <motion.div
+        <motion.div
           whileInView={{ opacity: [0, 1], x: [-10, 0] }}
-          transition={{ duration: 0.7, delay: 1.5 }}
+          transition={{ duration: 0.7, delay: 1.8 }}
           className={`team-member`}
           onClick={handleActive}
         >
@@ -142,28 +125,11 @@ const OurTeam = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="details team-bg"
           >
-            <h2 className="primary-text">Md. Sabbir Hossain</h2>
+            <h2 className="primary-text">Mehra Khatun Ananna</h2>
             <small className="star">
-              BBA - Rabindra University, Bangladesh
+              Sociology - Rabindra University, Bangladesh.
             </small>
-            <p className="secondary-text">Chief Marketing Officer</p>
-          </motion.div>
-        </motion.div> */}
-
-        <motion.div
-          whileInView={{ opacity: [0, 1], x: [-10, 0] }}
-          transition={{ duration: 0.7, delay: 1.8 }}
-          className={`team-member`}
-          onClick={handleActive}
-        >
-          <motion.div 
-            whileInView={{ y: [20, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="details team-bg"
-          >
-            <h2 className="primary-text">Abrar Shahriar Tanha</h2>
-            <small className="star">EEE - Islamic University</small>
-            <p className="secondary-text">Designer</p>
+            <p className="secondary-text">Admin Assistant Intern</p>
           </motion.div>
         </motion.div>
       </div>
